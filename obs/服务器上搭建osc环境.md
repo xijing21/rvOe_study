@@ -287,26 +287,10 @@ xijing21@obs-worker-02:/usr/lib/x86_64-linux-gnu$ find /usr/lib -name 'libvirglr
 
 xijing21@obs-worker-02:/usr/lib/x86_64-linux-gnu$ cd /usr/lib/x86_64-linux-gnu/
 
-xijing21@obs-worker-02:/usr/lib/x86_64-linux-gnu$ sudo ln -s libvirglrenderer.so.1 libvirglrenderer.so.1
+xijing21@obs-worker-02:/usr/lib/x86_64-linux-gnu$ sudo ln -s libvirglrenderer.so.1 libvirglrenderer.so.0
 [sudo] password for xijing21: 
 ```
 
 
 
-一般用户服务器上禁止sudo；
-
-
-
-脚本上面加入export LD_LIBRARY_PATH=你那个库 
-
-在~/.bashrc 中配置；或者在run_smp32_oe.sh 上面加入：
-export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
-
-export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/libvirglrenderer.so.1:$LD_LIBRARY_PATH
-
-依然报错：
-
-xijing21@obs-worker-02:~/downloads/openEuler_SMP32$ ./run_smp32_oe_xj.sh 
-qemu/bin/qemu-system-riscv64: error while loading shared libraries: libvirglrenderer.so.0: cannot open shared object file: No such file or directory
-
+一般用户服务器上禁止sudo，问题解决详见：https://github.com/plctlab/openEuler-riscv/issues/45
