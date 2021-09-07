@@ -169,7 +169,8 @@ xx@xx-S1-Series:~/oE/D1$
 对最后一个分区执行resize2fs命令来调整分区大小
 
 ```
-xx@xx-S1-Series:~/oE/D1$ sudo resize2fs /dev/sda4
+xx@xx-S1-Series:~/oE/D1$ 
+
 resize2fs 1.45.5 (07-Jan-2020)
 请先运行“e2fsck -f /dev/sda4”。
 
@@ -227,4 +228,195 @@ windows上的串口我之前已经安装了，具体的步骤可以参考：[参
 
 
 显示、鼠标键盘都好了，接下来就开始使用系统了。
+
+
+
+更新内核：
+
+1. 将k1包拷贝到u盘
+
+2. 将u盘插入D1
+
+3. fdisk -l
+
+   查到u盘为：/dev/sda1
+
+4. 挂载u盘，将带更新的k1.tar.gz拷贝到D1上（/mypkgs）
+
+   ```
+   mkdir upan   #pwd:/upan
+   mkdir mypkgs   #pwd:/mypkgs
+   
+   mount /dev/sda1 /upan    #将u盘挂载到/upan下
+   
+   cd /upan  #就能访问U盘中的文件了
+   
+   cp k1.tar.gz /mypkgs
+   umount /upan   #卸载
+   ```
+
+5. 更新前准备：
+
+   ```
+   cd /mypkgs
+   
+   mkdir k1
+   tar -xzvf k1.tar.gz -C k1
+   
+   cd k1
+   ls -l
+   ```
+
+   
+
+5. 更新boot.img:
+
+   ```
+   # 挂载boot分区:
+   mount /dev/mmcblk0p3 /mnt
+   
+   # 更新boot.img
+   cp /mypkgs/k1/boot.img /mnt
+    
+   # 卸载
+   umount /mnt
+   ```
+
+   
+
+6. 更新驱动: 
+
+   ```
+   cp -rf /mypkgs/k1/rootfs/lib/ /usr/lib/
+   ```
+
+8. 断电重启D1
+
+   > 发现分辨率有明显提升。
+
+
+
+umount：https://blog.csdn.net/whatday/article/details/90770857?utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link
+
+
+
+
+
+## 系统使用测试
+
+测试项目：
+
+1. 基本显示：
+
+   更新为k1后分辨率更高；但是任然存在日历、资源管理器显示有阴影，看不清的问题；
+
+2. wifi：没有图形化配置，需要命令行去设置
+
+   nmtui设置网络：ssid名称包含中文的无法设置，设置了也无法使用；
+
+3. 时间/日期对不对
+
+   网络设置后时间自动同步为正确时间
+
+4. 终端：
+
+   - Terminal中：不显示当前用户和host，不显示当前所在的路径；（ubuntu等都会有，建议有更方便用户）
+   - 不支持ll命令——》ls -l 
+   - 
+
+5. 中文显示：乱码；
+
+   
+
+6. 浏览器：
+
+   搜狗搜索ok；
+
+   百度搜索不行；网易、cn.bing.com；——》Oops 。。。 something went wrong with。。。。
+
+   ```
+   更新mesa-dri-drivers防止浏览器oops
+   yum install mesa-dri-drivers
+   
+   [root@openEuler-RISCV-rare ~]# yum install mesa-dri-drivers
+   Last metadata expiration check: 0:01:07 ago on Tue Sep  7 15:39:06 2021.
+   Dependencies resolved.
+   ==================================================================================================================================
+    Package                            Architecture              Version                        Repository                      Size
+   ==================================================================================================================================
+   Installing:
+    mesa-dri-drivers                   riscv64                   20.1.4-2.oe1                   xfce_base                      9.6 M
+   Installing dependencies:
+    llvm-libs                          riscv64                   10.0.1-3.oe1                   pandora_base                    22 M
+    mesa-filesystem                    riscv64                   20.1.4-2.oe1                   xfce_base                      8.2 k
+   
+   Transaction Summary
+   ==================================================================================================================================
+   Install  3 Packages
+   
+   Total download size: 31 M
+   Installed size: 117 M
+   Is this ok [y/N]: r^Hy
+   Is this ok [y/N]: y
+   Downloading Packages:
+   (1/3): mesa-filesystem-20.1.4-2.oe1.riscv64.rpm                                                    57 kB/s | 8.2 kB     00:00    
+   (2/3): mesa-dri-drivers-20.1.4-2.oe1.riscv64.rpm                                                  933 kB/s | 9.6 MB     00:10    
+   (3/3): llvm-libs-10.0.1-3.oe1.riscv64.rpm                                                         1.4 MB/s |  22 MB     00:15    
+   ----------------------------------------------------------------------------------------------------------------------------------
+   Total                                                                                             2.0 MB/s |  31 MB     00:15     
+   Running transaction check
+   Transaction check succeeded.
+   Running transaction test
+   Transaction test succeeded.
+   Running transaction
+     Preparing        :                                                                                                          1/1 
+     Installing       : mesa-filesystem-20.1.4-2.oe1.riscv64                                                                     1/3 
+     Installing       : llvm-libs-10.0.1-3.oe1.riscv64                                                                           2/3 
+     Installing       : mesa-dri-drivers-20.1.4-2.oe1.riscv64                                                                    3/3 
+     Running scriptlet: mesa-dri-drivers-20.1.4-2.oe1.riscv64                                                                    3/3 
+   /sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+   
+   
+     Verifying        : llvm-libs-10.0.1-3.oe1.riscv64                                                                           1/3 
+     Verifying        : mesa-dri-drivers-20.1.4-2.oe1.riscv64                                                                    2/3 
+     Verifying        : mesa-filesystem-20.1.4-2.oe1.riscv64                                                                     3/3 
+   
+   Installed:
+     mesa-dri-drivers-20.1.4-2.oe1.riscv64        llvm-libs-10.0.1-3.oe1.riscv64        mesa-filesystem-20.1.4-2.oe1.riscv64       
+   
+   Complete!
+   
+   ```
+
+   > 更新后访问baidu等网站依然不行，还是Oops；
+
+7. yum安装
+
+   可用，执行了上述的yum install mesa-dri-drivers等；
+
+   
+
+8. 中文输入法
+
+   在https://repo.openeuler.org/openEuler-preview/RISC-V/everything/rpms/ 查了一下ibus和fcitx，有ibus的安装包。试试是否能够安装并使用
+
+   ```
+   [root@openEuler-RISCV-rare ~]# yum install ibus-libpinyin
+   Last metadata expiration check: 1:05:22 ago on Tue Sep  7 15:46:48 2021.
+   Error: 
+    Problem: cannot install the best candidate for the job
+     - nothing provides libibus-1.0.so.5()(64bit) needed by ibus-libpinyin-1.10.0-6.riscv64
+     - nothing provides liblua-5.4.so()(64bit) needed by ibus-libpinyin-1.10.0-6.riscv64
+     - nothing provides ibus >= 1.5.11 needed by ibus-libpinyin-1.10.0-6.riscv64
+   (try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)
+   [root@openEuler-RISCV-rare ~]# 
+   ```
+
+   
+
+9. 开关机
+
+   通过右上角的root进入界面交互shutdown:没反应——》直接断电
+
+   
 
