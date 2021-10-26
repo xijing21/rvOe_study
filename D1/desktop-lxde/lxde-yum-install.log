@@ -1,0 +1,1515 @@
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        29G  1.2G   27G   5% /
+devtmpfs        492M     0  492M   0% /dev
+tmpfs           496M     0  496M   0% /dev/shm
+tmpfs           496M  1.7M  495M   1% /run
+tmpfs           496M     0  496M   0% /sys/fs/cgroup
+tmpfs           496M     0  496M   0% /tmp
+tmpfs           100M     0  100M   0% /run/user/0
+Disk /dev/mmcblk0: 29.74 GiB, 31914983424 bytes, 62333952 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: EACEFD8D-68B3-493F-868A-5364E0A693D8
+
+Device          Start      End  Sectors  Size Type
+/dev/mmcblk0p1  34784    35039      256  128K Linux filesystem
+/dev/mmcblk0p2  35040    35295      256  128K Linux filesystem
+/dev/mmcblk0p3  35296   100831    65536   32M Linux filesystem
+/dev/mmcblk0p4 100832 62333918 62233087 29.7G Linux filesystem
+Tue Oct 26 10:04:48 UTC 2021
+[webkit2gtk3]
+name=webkit2gtk3
+baseurl=http://121.36.3.168:82/home:/pandora:/webkit2gtk3/standard_riscv64/
+enabled=1
+gpgcheck=0
+
+[unresolvable2]
+name=unresolvable2
+baseurl=http://121.36.3.168:82/home:/pandora:/unresolvable2/standard_riscv64/
+enabled=1
+gpgcheck=0
+
+[lxde]
+name=lxde
+baseurl=http://121.36.3.168:82/home:/pandora:/lxde/lxde_riscv64/
+enabled=1
+gpgcheck=0
+
+[mainline]
+name=mainline
+baseurl=http://119.3.219.20:82/openEuler:/Mainline:/RISC-V/standard_riscv64/
+enabled=1
+gpgcheck=0
+
+[preview]
+name=preview
+baseurl=https://repo.openeuler.org/openEuler-preview/RISC-V/everything/
+enabled=1
+gpgcheck=0
+
+[base]
+name=base
+baseurl=https://isrc.iscas.ac.cn/mirror/openeuler-sig-riscv/oe-RISCV-repo/
+enabled=1
+gpgcheck=0
+
+[oe-noarch]
+name=oe-noarch
+baseurl=http://repo.openeuler.org/openEuler-20.03-LTS/everything/aarch64
+enabled=1
+gpgcheck=0
+
+[oe2109]
+name=oe2109
+baseurl=http://repo.openeuler.org/openEuler-21.09/everything/aarch64
+enabled=0
+gpgcheck=0
+Last metadata expiration check: 0:35:19 ago on Tue Oct 26 09:29:42 2021.
+Dependencies resolved.
+================================================================================
+ Package                 Architecture   Version              Repository    Size
+================================================================================
+Installing:
+ lxmenu-data             noarch         0.1.5-1.oe1          lxde          67 k
+Installing dependencies:
+ openEuler-menus         noarch         1.0.0-1.oe1          lxde         139 k
+
+Transaction Summary
+================================================================================
+Install  2 Packages
+
+Total download size: 206 k
+Installed size: 857 k
+Is this ok [y/N]: Downloading Packages:
+(1/2): lxmenu-data-0.1.5-1.oe1.noarch.rpm       147 kB/s |  67 kB     00:00    
+(2/2): openEuler-menus-1.0.0-1.oe1.noarch.rpm   288 kB/s | 139 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           401 kB/s | 206 kB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : openEuler-menus-1.0.0-1.oe1.noarch                     1/2 
+  Running scriptlet: openEuler-menus-1.0.0-1.oe1.noarch                     1/2 
+  Installing       : lxmenu-data-0.1.5-1.oe1.noarch                         2/2 
+  Verifying        : lxmenu-data-0.1.5-1.oe1.noarch                         1/2 
+  Verifying        : openEuler-menus-1.0.0-1.oe1.noarch                     2/2 
+
+Installed:
+  lxmenu-data-0.1.5-1.oe1.noarch       openEuler-menus-1.0.0-1.oe1.noarch      
+
+Complete!
+Waiting for process with pid 1686 to finish.
+Last metadata expiration check: 0:00:12 ago on Tue Oct 26 10:05:39 2021.
+Dependencies resolved.
+================================================================================
+ Package                Architecture  Version              Repository      Size
+================================================================================
+Installing:
+ libfm-devel            riscv64       1.3.1-1.oe1          lxde            41 k
+Installing dependencies:
+ libfm                  riscv64       1.3.1-1.oe1          lxde           424 k
+ menu-cache             riscv64       1.1.0-1.oe1          lxde            57 k
+ dbus-glib              riscv64       0.110-5.oe1          mainline        96 k
+ libexif                riscv64       0.6.22-2.oe1         mainline       414 k
+ glib2-devel            riscv64       2.62.1-1.oe1         preview        5.1 M
+ libffi-devel           riscv64       3.3-9.oe1            preview         13 k
+ libselinux-devel       riscv64       2.9-1.oe1            preview        196 k
+ libsepol-devel         riscv64       2.9-1.oe1            preview        853 k
+ pcre-devel             riscv64       8.43-5.oe1           preview        619 k
+ pcre2-devel            riscv64       10.33-4.oe1          preview        774 k
+ util-linux-devel       riscv64       2.35.2-1.oe1         preview         30 k
+ zlib-devel             riscv64       1.2.11-17.oe1        preview        130 k
+
+Transaction Summary
+================================================================================
+Install  13 Packages
+
+Total download size: 8.6 M
+Installed size: 66 M
+Is this ok [y/N]: Downloading Packages:
+(1/13): libfm-devel-1.3.1-1.oe1.riscv64.rpm     336 kB/s |  41 kB     00:00    
+(2/13): menu-cache-1.1.0-1.oe1.riscv64.rpm      385 kB/s |  57 kB     00:00    
+(3/13): dbus-glib-0.110-5.oe1.riscv64.rpm       384 kB/s |  96 kB     00:00    
+(4/13): libfm-1.3.1-1.oe1.riscv64.rpm           901 kB/s | 424 kB     00:00    
+(5/13): libexif-0.6.22-2.oe1.riscv64.rpm        593 kB/s | 414 kB     00:00    
+(6/13): libffi-devel-3.3-9.oe1.riscv64.rpm       25 kB/s |  13 kB     00:00    
+(7/13): glib2-devel-2.62.1-1.oe1.riscv64.rpm    690 kB/s | 5.1 MB     00:07    
+(8/13): libselinux-devel-2.9-1.oe1.riscv64.rpm   27 kB/s | 196 kB     00:07    
+(9/13): libsepol-devel-2.9-1.oe1.riscv64.rpm    117 kB/s | 853 kB     00:07    
+(10/13): pcre-devel-8.43-5.oe1.riscv64.rpm      1.1 MB/s | 619 kB     00:00    
+(11/13): pcre2-devel-10.33-4.oe1.riscv64.rpm    611 kB/s | 774 kB     00:01    
+(12/13): zlib-devel-1.2.11-17.oe1.riscv64.rpm   148 kB/s | 130 kB     00:00    
+(13/13): util-linux-devel-2.35.2-1.oe1.riscv64.  23 kB/s |  30 kB     00:01    
+--------------------------------------------------------------------------------
+Total                                           899 kB/s | 8.6 MB     00:09     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : zlib-devel-1.2.11-17.oe1.riscv64                      1/13 
+  Installing       : pcre2-devel-10.33-4.oe1.riscv64                       2/13 
+  Installing       : pcre-devel-8.43-5.oe1.riscv64                         3/13 
+  Installing       : libsepol-devel-2.9-1.oe1.riscv64                      4/13 
+  Installing       : libselinux-devel-2.9-1.oe1.riscv64                    5/13 
+  Installing       : util-linux-devel-2.35.2-1.oe1.riscv64                 6/13 
+  Installing       : libffi-devel-3.3-9.oe1.riscv64                        7/13 
+  Installing       : glib2-devel-2.62.1-1.oe1.riscv64                      8/13 
+  Installing       : libexif-0.6.22-2.oe1.riscv64                          9/13 
+  Running scriptlet: dbus-glib-0.110-5.oe1.riscv64                        10/13 
+  Installing       : dbus-glib-0.110-5.oe1.riscv64                        10/13 
+  Running scriptlet: dbus-glib-0.110-5.oe1.riscv64                        10/13 
+  Installing       : menu-cache-1.1.0-1.oe1.riscv64                       11/13 
+  Installing       : libfm-1.3.1-1.oe1.riscv64                            12/13 
+  Running scriptlet: libfm-devel-1.3.1-1.oe1.riscv64                      13/13 
+  Installing       : libfm-devel-1.3.1-1.oe1.riscv64                      13/13 
+  Running scriptlet: libfm-devel-1.3.1-1.oe1.riscv64                      13/13 
+  Verifying        : libfm-1.3.1-1.oe1.riscv64                             1/13 
+  Verifying        : libfm-devel-1.3.1-1.oe1.riscv64                       2/13 
+  Verifying        : menu-cache-1.1.0-1.oe1.riscv64                        3/13 
+  Verifying        : dbus-glib-0.110-5.oe1.riscv64                         4/13 
+  Verifying        : libexif-0.6.22-2.oe1.riscv64                          5/13 
+  Verifying        : glib2-devel-2.62.1-1.oe1.riscv64                      6/13 
+  Verifying        : libffi-devel-3.3-9.oe1.riscv64                        7/13 
+  Verifying        : libselinux-devel-2.9-1.oe1.riscv64                    8/13 
+  Verifying        : libsepol-devel-2.9-1.oe1.riscv64                      9/13 
+  Verifying        : pcre-devel-8.43-5.oe1.riscv64                        10/13 
+  Verifying        : pcre2-devel-10.33-4.oe1.riscv64                      11/13 
+  Verifying        : util-linux-devel-2.35.2-1.oe1.riscv64                12/13 
+  Verifying        : zlib-devel-1.2.11-17.oe1.riscv64                     13/13 
+
+Installed:
+  libfm-devel-1.3.1-1.oe1.riscv64      libfm-1.3.1-1.oe1.riscv64                
+  menu-cache-1.1.0-1.oe1.riscv64       dbus-glib-0.110-5.oe1.riscv64            
+  libexif-0.6.22-2.oe1.riscv64         glib2-devel-2.62.1-1.oe1.riscv64         
+  libffi-devel-3.3-9.oe1.riscv64       libselinux-devel-2.9-1.oe1.riscv64       
+  libsepol-devel-2.9-1.oe1.riscv64     pcre-devel-8.43-5.oe1.riscv64            
+  pcre2-devel-10.33-4.oe1.riscv64      util-linux-devel-2.35.2-1.oe1.riscv64    
+  zlib-devel-1.2.11-17.oe1.riscv64    
+
+Complete!
+Last metadata expiration check: 0:01:42 ago on Tue Oct 26 10:05:39 2021.
+Package menu-cache-1.1.0-1.oe1.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Last metadata expiration check: 0:02:10 ago on Tue Oct 26 10:05:39 2021.
+Package libfm-1.3.1-1.oe1.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Last metadata expiration check: 0:02:38 ago on Tue Oct 26 10:05:39 2021.
+Dependencies resolved.
+================================================================================
+ Package                       Arch     Version            Repository      Size
+================================================================================
+Installing:
+ pcmanfm                       riscv64  1.3.1-1.oe1        lxde           310 k
+Upgrading:
+ nettle                        riscv64  3.6-7.oe1          webkit2gtk3    1.1 M
+ json-c                        riscv64  0.15-1.oe1         lxde            46 k
+ krb5-libs                     riscv64  1.18.2-3.oe1       lxde           626 k
+ gnutls                        riscv64  3.6.15-3.oe1       mainline       975 k
+ libselinux                    riscv64  3.1-3.oe1          mainline       109 k
+ libselinux-devel              riscv64  3.1-3.oe1          mainline       201 k
+ libsepol                      riscv64  3.1-4.oe1          mainline       265 k
+ libsepol-devel                riscv64  3.1-4.oe1          mainline       898 k
+ p11-kit                       riscv64  0.23.22-1.oe1      mainline       335 k
+ p11-kit-trust                 riscv64  0.23.22-1.oe1      mainline       117 k
+ readline                      riscv64  8.0-2.oe1          mainline       188 k
+Installing dependencies:
+ gstreamer1-plugins-base       riscv64  1.16.2-2.oe1       webkit2gtk3    1.7 M
+ hunspell                      riscv64  1.7.0-8.oe1        webkit2gtk3    408 k
+ webkit2gtk3                   riscv64  2.32.1-2.oe1       webkit2gtk3     15 M
+ webkit2gtk3-jsc               riscv64  2.32.1-2.oe1       webkit2gtk3    3.2 M
+ gvfs                          riscv64  1.40.2-8.oe1       unresolvable2  409 k
+ gvfs-client                   riscv64  1.40.2-8.oe1       unresolvable2  732 k
+ daxctl-libs                   riscv64  71.1-1.oe1         lxde            35 k
+ gnome-online-accounts         riscv64  3.38.2-1.oe1       lxde           430 k
+ libfm-gtk                     riscv64  1.3.1-1.oe1        lxde           154 k
+ libfm-gtk-utils               riscv64  1.3.1-1.oe1        lxde            21 k
+ libldb                        riscv64  2.1.4-2.oe1        lxde           163 k
+ libsmbclient                  riscv64  4.12.5-6.oe1       lxde            59 k
+ libtalloc                     riscv64  2.3.1-1.oe1        lxde            30 k
+ libtdb                        riscv64  1.4.3-1.oe1        lxde            47 k
+ libudisks2                    riscv64  2.9.1-1.oe1        lxde           162 k
+ libwbclient                   riscv64  4.12.5-6.oe1       lxde            37 k
+ ndctl                         riscv64  71.1-1.oe1         lxde           173 k
+ ndctl-libs                    riscv64  71.1-1.oe1         lxde            70 k
+ samba-client                  riscv64  4.12.5-6.oe1       lxde           5.3 M
+ samba-common                  riscv64  4.12.5-6.oe1       lxde            84 k
+ udisks2                       riscv64  2.9.1-1.oe1        lxde           447 k
+ userspace-rcu                 riscv64  0.12.1-1.oe1       lxde            88 k
+ volume_key                    riscv64  0.3.12-3.oe1       lxde           141 k
+ alsa-lib                      riscv64  1.2.4-1.oe1        mainline       432 k
+ btrfs-progs                   riscv64  5.7-3.oe1          mainline       779 k
+ bubblewrap                    riscv64  0.4.1-1.oe1        mainline        39 k
+ cdparanoia-libs               riscv64  10.2-31.oe1        mainline        46 k
+ desktop-file-utils            riscv64  0.26-2.oe1         mainline        52 k
+ dmraid                        riscv64  1.0.0.rc16-53.oe1  mainline       141 k
+ dmraid-events                 riscv64  1.0.0.rc16-53.oe1  mainline        13 k
+ dosfstools                    riscv64  4.1-9.oe1          mainline        96 k
+ enchant2                      riscv64  2.2.15-2.oe1       mainline        52 k
+ gcr                           riscv64  3.38.1-1.oe1       mainline       644 k
+ gdisk                         riscv64  1.0.5-4.oe1        mainline       184 k
+ geoclue2                      riscv64  2.5.7-1.oe1        mainline       146 k
+ gstreamer1                    riscv64  1.16.2-3.oe1       mainline       1.2 M
+ hunspell-en                   noarch   2020.12.07-1.oe1   mainline       208 k
+ hyphen                        riscv64  2.8.8-14.oe1       mainline        43 k
+ iso-codes                     noarch   4.5.0-1.oe1        mainline       3.7 M
+ kpartx                        riscv64  0.8.5-1.oe1        mainline        37 k
+ libXv                         riscv64  1.0.11-11.oe1      mainline        16 k
+ libXxf86vm                    riscv64  1.1.4-13.oe1       mainline        16 k
+ libaio                        riscv64  0.3.112-1.oe1      mainline        21 k
+ libatasmart                   riscv64  0.19-18.oe1        mainline        40 k
+ libblockdev                   riscv64  2.24-5.oe1         mainline       203 k
+ libcdio                       riscv64  2.1.0-2.oe1        mainline       168 k
+ libcdio-paranoia              riscv64  10.2+2.0.0-2.oe1   mainline        67 k
+ libdrm                        riscv64  2.4.103-1.oe1      mainline        84 k
+ libgdata                      riscv64  0.18.1-1.oe1       mainline       428 k
+ libglvnd                      riscv64  1:1.3.2-2.oe1      mainline       242 k
+ libgudev                      riscv64  234-1.oe1          mainline        30 k
+ libnotify                     riscv64  0.7.9-1.oe1        mainline        34 k
+ libogg                        riscv64  2:1.3.4-3.oe1      mainline        30 k
+ libpipeline                   riscv64  1.5.3-1.oe1        mainline        49 k
+ libtevent                     riscv64  0.10.2-1.oe1       mainline        36 k
+ libtheora                     riscv64  1:1.1.1-24.oe1     mainline       173 k
+ libvisual                     riscv64  1:0.4.0-27.oe1     mainline       144 k
+ libvorbis                     riscv64  1:1.3.7-1.oe1      mainline       174 k
+ libwebp                       riscv64  1.1.0-3.oe1        mainline       214 k
+ libwpe                        riscv64  1.6.0-1.oe1        mainline        22 k
+ libxshmfence                  riscv64  1.3-6.oe1          mainline        11 k
+ libxslt                       riscv64  1.1.34-4.oe1       mainline       226 k
+ lmdb                          riscv64  0.9.27-1.oe1       mainline        67 k
+ lzo                           riscv64  2.10-1.oe1         mainline        62 k
+ man-db                        riscv64  2.9.3-2.oe1        mainline       1.1 M
+ mdadm                         riscv64  4.1-5.oe1          mainline       328 k
+ mesa-libEGL                   riscv64  20.1.4-2.oe1       mainline       103 k
+ mesa-libGL                    riscv64  20.1.4-2.oe1       mainline       160 k
+ mesa-libgbm                   riscv64  20.1.4-2.oe1       mainline        36 k
+ mesa-libglapi                 riscv64  20.1.4-2.oe1       mainline        39 k
+ multipath-tools               riscv64  0.8.5-1.oe1        mainline       261 k
+ nspr                          riscv64  4.29.0-1.oe1       mainline       130 k
+ nss                           riscv64  3.54.0-9.oe1       mainline       602 k
+ nss-help                      riscv64  3.54.0-9.oe1       mainline        71 k
+ nss-softokn                   riscv64  3.54.0-9.oe1       mainline       659 k
+ nss-util                      riscv64  3.54.0-9.oe1       mainline       445 k
+ openjpeg2                     riscv64  2.3.1-6.oe1        mainline       193 k
+ opus                          riscv64  1.3.1-1.oe1        mainline       200 k
+ orc                           riscv64  0.4.32-1.oe1       mainline       163 k
+ parted                        riscv64  3.3-7.oe1          mainline       554 k
+ python3-dbus                  riscv64  1.2.16-2.oe1       mainline       112 k
+ python3-pyudev                noarch   0.22.0-2.oe1       mainline        80 k
+ sgml-common                   noarch   0.6.3-51.oe1       mainline        52 k
+ sgpio                         riscv64  1.2.1-2.oe1        mainline        22 k
+ thin-provisioning-tools       riscv64  0.9.0-2.oe1        mainline       442 k
+ woff2                         riscv64  1.0.2-6.oe1        mainline        53 k
+ wpebackend-fdo                riscv64  1.6.1-1.oe1        mainline        28 k
+ xdg-dbus-proxy                riscv64  0.1.2-1.oe1        mainline        33 k
+ xfsprogs                      riscv64  5.9.0-1.oe1        mainline       964 k
+ avahi-glib                    riscv64  0.7-21.oe1         preview         12 k
+ boost-iostreams               riscv64  1.66.0-18.oe1      preview         33 k
+ device-mapper-event           riscv64  8:1.02.150-8.oe1   preview         40 k
+ libbytesize                   riscv64  1.4-8.oe1          preview         45 k
+ lvm2                          riscv64  8:2.02.181-8.oe1   preview        1.3 M
+ lvm2-dbusd                    riscv64  8:2.02.181-8.oe1   preview        106 k
+Installing weak dependencies:
+ thin-provisioning-tools-help  noarch   0.9.0-2.oe1        mainline        26 k
+ trousers                      riscv64  0.3.15-1.oe1       mainline       272 k
+ xfsprogs-xfs_scrub            riscv64  5.9.0-1.oe1        mainline        66 k
+
+Transaction Summary
+================================================================================
+Install  99 Packages
+Upgrade  11 Packages
+
+Total download size: 53 M
+Is this ok [y/N]: Downloading Packages:
+(1/110): hunspell-1.7.0-8.oe1.riscv64.rpm       778 kB/s | 408 kB     00:00    
+(2/110): gstreamer1-plugins-base-1.16.2-2.oe1.r 1.0 MB/s | 1.7 MB     00:01    
+(3/110): gvfs-1.40.2-8.oe1.riscv64.rpm          1.1 MB/s | 409 kB     00:00    
+(4/110): gvfs-client-1.40.2-8.oe1.riscv64.rpm   1.1 MB/s | 732 kB     00:00    
+(5/110): daxctl-libs-71.1-1.oe1.riscv64.rpm     578 kB/s |  35 kB     00:00    
+(6/110): gnome-online-accounts-3.38.2-1.oe1.ris 1.2 MB/s | 430 kB     00:00    
+(7/110): webkit2gtk3-jsc-2.32.1-2.oe1.riscv64.r 1.1 MB/s | 3.2 MB     00:03    
+(8/110): libfm-gtk-utils-1.3.1-1.oe1.riscv64.rp 471 kB/s |  21 kB     00:00    
+(9/110): libfm-gtk-1.3.1-1.oe1.riscv64.rpm      316 kB/s | 154 kB     00:00    
+(10/110): libsmbclient-4.12.5-6.oe1.riscv64.rpm 436 kB/s |  59 kB     00:00    
+(11/110): libldb-2.1.4-2.oe1.riscv64.rpm        679 kB/s | 163 kB     00:00    
+(12/110): libtalloc-2.3.1-1.oe1.riscv64.rpm     216 kB/s |  30 kB     00:00    
+(13/110): libtdb-1.4.3-1.oe1.riscv64.rpm        393 kB/s |  47 kB     00:00    
+(14/110): libudisks2-2.9.1-1.oe1.riscv64.rpm    887 kB/s | 162 kB     00:00    
+(15/110): libwbclient-4.12.5-6.oe1.riscv64.rpm  231 kB/s |  37 kB     00:00    
+(16/110): ndctl-libs-71.1-1.oe1.riscv64.rpm     677 kB/s |  70 kB     00:00    
+(17/110): ndctl-71.1-1.oe1.riscv64.rpm          1.0 MB/s | 173 kB     00:00    
+(18/110): pcmanfm-1.3.1-1.oe1.riscv64.rpm       1.0 MB/s | 310 kB     00:00    
+(19/110): samba-common-4.12.5-6.oe1.riscv64.rpm 661 kB/s |  84 kB     00:00    
+(20/110): udisks2-2.9.1-1.oe1.riscv64.rpm       789 kB/s | 447 kB     00:00    
+(21/110): userspace-rcu-0.12.1-1.oe1.riscv64.rp 717 kB/s |  88 kB     00:00    
+(22/110): volume_key-0.3.12-3.oe1.riscv64.rpm   945 kB/s | 141 kB     00:00    
+(23/110): alsa-lib-1.2.4-1.oe1.riscv64.rpm      1.1 MB/s | 432 kB     00:00    
+(24/110): btrfs-progs-5.7-3.oe1.riscv64.rpm     1.1 MB/s | 779 kB     00:00    
+(25/110): bubblewrap-0.4.1-1.oe1.riscv64.rpm    547 kB/s |  39 kB     00:00    
+(26/110): cdparanoia-libs-10.2-31.oe1.riscv64.r 802 kB/s |  46 kB     00:00    
+(27/110): desktop-file-utils-0.26-2.oe1.riscv64 801 kB/s |  52 kB     00:00    
+(28/110): dmraid-1.0.0.rc16-53.oe1.riscv64.rpm  902 kB/s | 141 kB     00:00    
+(29/110): dmraid-events-1.0.0.rc16-53.oe1.riscv 533 kB/s |  13 kB     00:00    
+(30/110): dosfstools-4.1-9.oe1.riscv64.rpm      847 kB/s |  96 kB     00:00    
+(31/110): enchant2-2.2.15-2.oe1.riscv64.rpm     671 kB/s |  52 kB     00:00    
+(32/110): gcr-3.38.1-1.oe1.riscv64.rpm          1.1 MB/s | 644 kB     00:00    
+(33/110): gdisk-1.0.5-4.oe1.riscv64.rpm         1.0 MB/s | 184 kB     00:00    
+(34/110): geoclue2-2.5.7-1.oe1.riscv64.rpm      913 kB/s | 146 kB     00:00    
+(35/110): samba-client-4.12.5-6.oe1.riscv64.rpm 1.1 MB/s | 5.3 MB     00:05    
+(36/110): hunspell-en-2020.12.07-1.oe1.noarch.r 931 kB/s | 208 kB     00:00    
+(37/110): hyphen-2.8.8-14.oe1.riscv64.rpm       706 kB/s |  43 kB     00:00    
+(38/110): gstreamer1-1.16.2-3.oe1.riscv64.rpm   705 kB/s | 1.2 MB     00:01    
+(39/110): kpartx-0.8.5-1.oe1.riscv64.rpm        507 kB/s |  37 kB     00:00    
+(40/110): libXv-1.0.11-11.oe1.riscv64.rpm       445 kB/s |  16 kB     00:00    
+(41/110): libXxf86vm-1.1.4-13.oe1.riscv64.rpm   436 kB/s |  16 kB     00:00    
+(42/110): libaio-0.3.112-1.oe1.riscv64.rpm      520 kB/s |  21 kB     00:00    
+(43/110): libatasmart-0.19-18.oe1.riscv64.rpm   748 kB/s |  40 kB     00:00    
+(44/110): libblockdev-2.24-5.oe1.riscv64.rpm    1.1 MB/s | 203 kB     00:00    
+(45/110): libcdio-2.1.0-2.oe1.riscv64.rpm       1.0 MB/s | 168 kB     00:00    
+(46/110): libcdio-paranoia-10.2+2.0.0-2.oe1.ris 884 kB/s |  67 kB     00:00    
+(47/110): libdrm-2.4.103-1.oe1.riscv64.rpm      857 kB/s |  84 kB     00:00    
+(48/110): libgdata-0.18.1-1.oe1.riscv64.rpm     1.1 MB/s | 428 kB     00:00    
+(49/110): libglvnd-1.3.2-2.oe1.riscv64.rpm      1.1 MB/s | 242 kB     00:00    
+(50/110): libgudev-234-1.oe1.riscv64.rpm        467 kB/s |  30 kB     00:00    
+(51/110): libnotify-0.7.9-1.oe1.riscv64.rpm     544 kB/s |  34 kB     00:00    
+(52/110): libogg-1.3.4-3.oe1.riscv64.rpm        911 kB/s |  30 kB     00:00    
+(53/110): libpipeline-1.5.3-1.oe1.riscv64.rpm   725 kB/s |  49 kB     00:00    
+(54/110): libtevent-0.10.2-1.oe1.riscv64.rpm     86 kB/s |  36 kB     00:00    
+(55/110): libtheora-1.1.1-24.oe1.riscv64.rpm    1.0 MB/s | 173 kB     00:00    
+(56/110): libvisual-0.4.0-27.oe1.riscv64.rpm    1.1 MB/s | 144 kB     00:00    
+(57/110): libvorbis-1.3.7-1.oe1.riscv64.rpm     960 kB/s | 174 kB     00:00    
+(58/110): libwebp-1.1.0-3.oe1.riscv64.rpm       1.3 MB/s | 214 kB     00:00    
+(59/110): libwpe-1.6.0-1.oe1.riscv64.rpm        739 kB/s |  22 kB     00:00    
+(60/110): libxshmfence-1.3-6.oe1.riscv64.rpm    397 kB/s |  11 kB     00:00    
+(61/110): iso-codes-4.5.0-1.oe1.noarch.rpm      1.0 MB/s | 3.7 MB     00:03    
+(62/110): lmdb-0.9.27-1.oe1.riscv64.rpm         840 kB/s |  67 kB     00:00    
+(63/110): libxslt-1.1.34-4.oe1.riscv64.rpm      413 kB/s | 226 kB     00:00    
+(64/110): lzo-2.10-1.oe1.riscv64.rpm            750 kB/s |  62 kB     00:00    
+(65/110): mdadm-4.1-5.oe1.riscv64.rpm           915 kB/s | 328 kB     00:00    
+(66/110): mesa-libEGL-20.1.4-2.oe1.riscv64.rpm  1.0 MB/s | 103 kB     00:00    
+(67/110): webkit2gtk3-2.32.1-2.oe1.riscv64.rpm  1.0 MB/s |  15 MB     00:15    
+(68/110): mesa-libgbm-20.1.4-2.oe1.riscv64.rpm  483 kB/s |  36 kB     00:00    
+(69/110): mesa-libGL-20.1.4-2.oe1.riscv64.rpm   105 kB/s | 160 kB     00:01    
+(70/110): mesa-libglapi-20.1.4-2.oe1.riscv64.rp 512 kB/s |  39 kB     00:00    
+(71/110): nspr-4.29.0-1.oe1.riscv64.rpm         1.1 MB/s | 130 kB     00:00    
+(72/110): multipath-tools-0.8.5-1.oe1.riscv64.r 1.1 MB/s | 261 kB     00:00    
+(73/110): man-db-2.9.3-2.oe1.riscv64.rpm        426 kB/s | 1.1 MB     00:02    
+(74/110): nss-help-3.54.0-9.oe1.riscv64.rpm     186 kB/s |  71 kB     00:00    
+(75/110): nss-util-3.54.0-9.oe1.riscv64.rpm     1.2 MB/s | 445 kB     00:00    
+(76/110): nss-3.54.0-9.oe1.riscv64.rpm          668 kB/s | 602 kB     00:00    
+(77/110): nss-softokn-3.54.0-9.oe1.riscv64.rpm  1.0 MB/s | 659 kB     00:00    
+(78/110): openjpeg2-2.3.1-6.oe1.riscv64.rpm     680 kB/s | 193 kB     00:00    
+(79/110): opus-1.3.1-1.oe1.riscv64.rpm          751 kB/s | 200 kB     00:00    
+(80/110): orc-0.4.32-1.oe1.riscv64.rpm          653 kB/s | 163 kB     00:00    
+(81/110): python3-dbus-1.2.16-2.oe1.riscv64.rpm 695 kB/s | 112 kB     00:00    
+(82/110): python3-pyudev-0.22.0-2.oe1.noarch.rp 975 kB/s |  80 kB     00:00    
+(83/110): sgml-common-0.6.3-51.oe1.noarch.rpm   887 kB/s |  52 kB     00:00    
+(84/110): sgpio-1.2.1-2.oe1.riscv64.rpm         741 kB/s |  22 kB     00:00    
+(85/110): thin-provisioning-tools-help-0.9.0-2. 530 kB/s |  26 kB     00:00    
+(86/110): parted-3.3-7.oe1.riscv64.rpm          991 kB/s | 554 kB     00:00    
+(87/110): woff2-1.0.2-6.oe1.riscv64.rpm         1.1 MB/s |  53 kB     00:00    
+(88/110): trousers-0.3.15-1.oe1.riscv64.rpm     1.0 MB/s | 272 kB     00:00    
+(89/110): wpebackend-fdo-1.6.1-1.oe1.riscv64.rp 389 kB/s |  28 kB     00:00    
+(90/110): xdg-dbus-proxy-0.1.2-1.oe1.riscv64.rp 625 kB/s |  33 kB     00:00    
+(91/110): thin-provisioning-tools-0.9.0-2.oe1.r 841 kB/s | 442 kB     00:00    
+(92/110): xfsprogs-xfs_scrub-5.9.0-1.oe1.riscv6 412 kB/s |  66 kB     00:00    
+(93/110): avahi-glib-0.7-21.oe1.riscv64.rpm      13 kB/s |  12 kB     00:00    
+(94/110): xfsprogs-5.9.0-1.oe1.riscv64.rpm      801 kB/s | 964 kB     00:01    
+(95/110): boost-iostreams-1.66.0-18.oe1.riscv64  33 kB/s |  33 kB     00:01    
+(96/110): device-mapper-event-1.02.150-8.oe1.ri 198 kB/s |  40 kB     00:00    
+(97/110): lvm2-2.02.181-8.oe1.riscv64.rpm       976 kB/s | 1.3 MB     00:01    
+(98/110): lvm2-dbusd-2.02.181-8.oe1.riscv64.rpm  79 kB/s | 106 kB     00:01    
+(99/110): libbytesize-1.4-8.oe1.riscv64.rpm      33 kB/s |  45 kB     00:01    
+(100/110): json-c-0.15-1.oe1.riscv64.rpm        580 kB/s |  46 kB     00:00    
+(101/110): krb5-libs-1.18.2-3.oe1.riscv64.rpm   965 kB/s | 626 kB     00:00    
+(102/110): libselinux-3.1-3.oe1.riscv64.rpm     1.0 MB/s | 109 kB     00:00    
+(103/110): libselinux-devel-3.1-3.oe1.riscv64.r 1.6 MB/s | 201 kB     00:00    
+(104/110): nettle-3.6-7.oe1.riscv64.rpm         1.0 MB/s | 1.1 MB     00:01    
+(105/110): gnutls-3.6.15-3.oe1.riscv64.rpm      920 kB/s | 975 kB     00:01    
+(106/110): libsepol-3.1-4.oe1.riscv64.rpm       527 kB/s | 265 kB     00:00    
+(107/110): p11-kit-0.23.22-1.oe1.riscv64.rpm    883 kB/s | 335 kB     00:00    
+(108/110): p11-kit-trust-0.23.22-1.oe1.riscv64. 714 kB/s | 117 kB     00:00    
+(109/110): readline-8.0-2.oe1.riscv64.rpm       1.3 MB/s | 188 kB     00:00    
+(110/110): libsepol-devel-3.1-4.oe1.riscv64.rpm 1.3 MB/s | 898 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           2.4 MB/s |  53 MB     00:22     
+Running transaction check
+error: rpmdbNextIterator: skipping h#      15 
+Header V3 RSA/SHA1 Signature, key ID b25e7f66: BAD
+Header SHA256 digest: BAD (Expected 11bf3c667d445cd87c61100303ed7b163f94926774b1de41ef1eb61ffa7f7c2c != 117fd2952cf437124be4aacadcf0638643ac14011b0bfb645f39a0770bfbc9bd)
+Header SHA1 digest: BAD (Expected 254bb67394744bbb59a1297f42ddbbd05545a7b3 != 5a0bcbe2e25cfde14826da1b81ca0f8f595a95f1)
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : nspr-4.29.0-1.oe1.riscv64                            1/121 
+  Installing       : libtalloc-2.3.1-1.oe1.riscv64                        2/121 
+  Upgrading        : readline-8.0-2.oe1.riscv64                           3/121 
+  Upgrading        : p11-kit-0.23.22-1.oe1.riscv64                        4/121 
+  Running scriptlet: p11-kit-0.23.22-1.oe1.riscv64                        4/121 
+  Installing       : gcr-3.38.1-1.oe1.riscv64                             5/121 
+  Installing       : libtevent-0.10.2-1.oe1.riscv64                       6/121 
+  Running scriptlet: libsepol-3.1-4.oe1.riscv64                           7/121 
+  Upgrading        : libsepol-3.1-4.oe1.riscv64                           7/121 
+  Running scriptlet: libsepol-3.1-4.oe1.riscv64                           7/121 
+  Upgrading        : libselinux-3.1-3.oe1.riscv64                         8/121 
+  Installing       : device-mapper-event-8:1.02.150-8.oe1.riscv64         9/121 
+  Running scriptlet: device-mapper-event-8:1.02.150-8.oe1.riscv64         9/121 
+Created symlink /etc/systemd/system/sockets.target.wants/dm-event.socket → /usr/lib/systemd/system/dm-event.socket.
+
+  Installing       : libogg-2:1.3.4-3.oe1.riscv64                        10/121 
+  Running scriptlet: libogg-2:1.3.4-3.oe1.riscv64                        10/121 
+  Installing       : libdrm-2.4.103-1.oe1.riscv64                        11/121 
+  Installing       : libaio-0.3.112-1.oe1.riscv64                        12/121 
+  Installing       : libtdb-1.4.3-1.oe1.riscv64                          13/121 
+  Installing       : mesa-libglapi-20.1.4-2.oe1.riscv64                  14/121 
+  Upgrading        : krb5-libs-1.18.2-3.oe1.riscv64                      15/121 
+  Upgrading        : p11-kit-trust-0.23.22-1.oe1.riscv64                 16/121 
+  Running scriptlet: p11-kit-trust-0.23.22-1.oe1.riscv64                 16/121 
+  Installing       : xfsprogs-xfs_scrub-5.9.0-1.oe1.riscv64              17/121 
+  Installing       : xfsprogs-5.9.0-1.oe1.riscv64                        18/121 
+  Installing       : hunspell-en-2020.12.07-1.oe1.noarch                 19/121 
+  Installing       : hunspell-1.7.0-8.oe1.riscv64                        20/121 
+  Upgrading        : json-c-0.15-1.oe1.riscv64                           21/121 
+  Installing       : avahi-glib-0.7-21.oe1.riscv64                       22/121 
+  Running scriptlet: avahi-glib-0.7-21.oe1.riscv64                       22/121 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : libxshmfence-1.3-6.oe1.riscv64                      23/121 
+  Installing       : libwpe-1.6.0-1.oe1.riscv64                          24/121 
+  Installing       : libnotify-0.7.9-1.oe1.riscv64                       25/121 
+  Installing       : libgudev-234-1.oe1.riscv64                          26/121 
+  Installing       : libcdio-2.1.0-2.oe1.riscv64                         27/121 
+  Running scriptlet: libcdio-2.1.0-2.oe1.riscv64                         27/121 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : kpartx-0.8.5-1.oe1.riscv64                          28/121 
+  Installing       : gstreamer1-1.16.2-3.oe1.riscv64                     29/121 
+  Installing       : gdisk-1.0.5-4.oe1.riscv64                           30/121 
+  Installing       : libudisks2-2.9.1-1.oe1.riscv64                      31/121 
+  Installing       : daxctl-libs-71.1-1.oe1.riscv64                      32/121 
+  Running scriptlet: daxctl-libs-71.1-1.oe1.riscv64                      32/121 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : ndctl-libs-71.1-1.oe1.riscv64                       33/121 
+  Running scriptlet: ndctl-libs-71.1-1.oe1.riscv64                       33/121 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : webkit2gtk3-jsc-2.32.1-2.oe1.riscv64                34/121 
+  Installing       : ndctl-71.1-1.oe1.riscv64                            35/121 
+  Installing       : libcdio-paranoia-10.2+2.0.0-2.oe1.riscv64           36/121 
+  Running scriptlet: geoclue2-2.5.7-1.oe1.riscv64                        37/121 
+  Installing       : geoclue2-2.5.7-1.oe1.riscv64                        37/121 
+  Running scriptlet: geoclue2-2.5.7-1.oe1.riscv64                        37/121 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : enchant2-2.2.15-2.oe1.riscv64                       38/121 
+  Running scriptlet: enchant2-2.2.15-2.oe1.riscv64                       38/121 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : mesa-libgbm-20.1.4-2.oe1.riscv64                    39/121 
+  Installing       : libtheora-1:1.1.1-24.oe1.riscv64                    40/121 
+  Installing       : libvorbis-1:1.3.7-1.oe1.riscv64                     41/121 
+  Installing       : bubblewrap-0.4.1-1.oe1.riscv64                      42/121 
+  Installing       : parted-3.3-7.oe1.riscv64                            43/121 
+  Running scriptlet: parted-3.3-7.oe1.riscv64                            43/121 
+  Upgrading        : libsepol-devel-3.1-4.oe1.riscv64                    44/121 
+  Upgrading        : nettle-3.6-7.oe1.riscv64                            45/121 
+  Installing       : libbytesize-1.4-8.oe1.riscv64                       46/121 
+  Running scriptlet: libbytesize-1.4-8.oe1.riscv64                       46/121 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : boost-iostreams-1.66.0-18.oe1.riscv64               47/121 
+  Installing       : xdg-dbus-proxy-0.1.2-1.oe1.riscv64                  48/121 
+  Installing       : woff2-1.0.2-6.oe1.riscv64                           49/121 
+  Running scriptlet: trousers-0.3.15-1.oe1.riscv64                       50/121 
+  Installing       : trousers-0.3.15-1.oe1.riscv64                       50/121 
+  Running scriptlet: trousers-0.3.15-1.oe1.riscv64                       50/121 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Upgrading        : gnutls-3.6.15-3.oe1.riscv64                         51/121 
+  Running scriptlet: sgpio-1.2.1-2.oe1.riscv64                           52/121 
+  Installing       : sgpio-1.2.1-2.oe1.riscv64                           52/121 
+  Running scriptlet: sgpio-1.2.1-2.oe1.riscv64                           52/121 
+  Installing       : dmraid-events-1.0.0.rc16-53.oe1.riscv64             53/121 
+  Installing       : dmraid-1.0.0.rc16-53.oe1.riscv64                    54/121 
+  Running scriptlet: dmraid-1.0.0.rc16-53.oe1.riscv64                    54/121 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Running scriptlet: sgml-common-0.6.3-51.oe1.noarch                     55/121 
+  Installing       : sgml-common-0.6.3-51.oe1.noarch                     55/121 
+  Installing       : iso-codes-4.5.0-1.oe1.noarch                        56/121 
+  Installing       : python3-pyudev-0.22.0-2.oe1.noarch                  57/121 
+  Installing       : python3-dbus-1.2.16-2.oe1.riscv64                   58/121 
+  Installing       : orc-0.4.32-1.oe1.riscv64                            59/121 
+  Running scriptlet: orc-0.4.32-1.oe1.riscv64                            59/121 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : opus-1.3.1-1.oe1.riscv64                            60/121 
+  Installing       : openjpeg2-2.3.1-6.oe1.riscv64                       61/121 
+  Installing       : mdadm-4.1-5.oe1.riscv64                             62/121 
+  Running scriptlet: mdadm-4.1-5.oe1.riscv64                             62/121 
+Created symlink /etc/systemd/system/multi-user.target.wants/mdmonitor.service → /usr/lib/systemd/system/mdmonitor.service.
+
+  Installing       : lzo-2.10-1.oe1.riscv64                              63/121 
+  Running scriptlet: lzo-2.10-1.oe1.riscv64                              63/121 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : btrfs-progs-5.7-3.oe1.riscv64                       64/121 
+  Installing       : lmdb-0.9.27-1.oe1.riscv64                           65/121 
+  Installing       : libldb-2.1.4-2.oe1.riscv64                          66/121 
+  Installing       : libwbclient-4.12.5-6.oe1.riscv64                    67/121 
+  Installing       : libsmbclient-4.12.5-6.oe1.riscv64                   68/121 
+  Running scriptlet: samba-common-4.12.5-6.oe1.riscv64                   69/121 
+  Installing       : samba-common-4.12.5-6.oe1.riscv64                   69/121 
+  Running scriptlet: samba-common-4.12.5-6.oe1.riscv64                   69/121 
+  Installing       : samba-client-4.12.5-6.oe1.riscv64                   70/121 
+  Running scriptlet: samba-client-4.12.5-6.oe1.riscv64                   70/121 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : libxslt-1.1.34-4.oe1.riscv64                        71/121 
+  Running scriptlet: libxslt-1.1.34-4.oe1.riscv64                        71/121 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : libwebp-1.1.0-3.oe1.riscv64                         72/121 
+  Installing       : libvisual-1:0.4.0-27.oe1.riscv64                    73/121 
+  Installing       : libpipeline-1.5.3-1.oe1.riscv64                     74/121 
+  Running scriptlet: man-db-2.9.3-2.oe1.riscv64                          75/121 
+  Installing       : man-db-2.9.3-2.oe1.riscv64                          75/121 
+  Running scriptlet: man-db-2.9.3-2.oe1.riscv64                          75/121 
+  Installing       : nss-help-3.54.0-9.oe1.riscv64                       76/121 
+  Installing       : nss-3.54.0-9.oe1.riscv64                            77/121 
+  Running scriptlet: nss-3.54.0-9.oe1.riscv64                            77/121 
+  Installing       : nss-util-3.54.0-9.oe1.riscv64                       78/121 
+  Installing       : nss-softokn-3.54.0-9.oe1.riscv64                    79/121 
+  Installing       : volume_key-0.3.12-3.oe1.riscv64                     80/121 
+  Running scriptlet: volume_key-0.3.12-3.oe1.riscv64                     80/121 
+ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : thin-provisioning-tools-help-0.9.0-2.oe1.noarch     81/121 
+  Installing       : thin-provisioning-tools-0.9.0-2.oe1.riscv64         82/121 
+  Installing       : lvm2-8:2.02.181-8.oe1.riscv64                       83/121 
+  Running scriptlet: lvm2-8:2.02.181-8.oe1.riscv64                       83/121 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+Created symlink /etc/systemd/system/sysinit.target.wants/lvm2-monitor.service → /usr/lib/systemd/system/lvm2-monitor.service.
+Created symlink /etc/systemd/system/sysinit.target.wants/lvm2-lvmetad.socket → /usr/lib/systemd/system/lvm2-lvmetad.socket.
+Created symlink /etc/systemd/system/sysinit.target.wants/lvm2-lvmpolld.socket → /usr/lib/systemd/system/lvm2-lvmpolld.socket.
+
+  Installing       : lvm2-dbusd-8:2.02.181-8.oe1.riscv64                 84/121 
+  Running scriptlet: lvm2-dbusd-8:2.02.181-8.oe1.riscv64                 84/121 
+  Installing       : libatasmart-0.19-18.oe1.riscv64                     85/121 
+  Installing       : libXxf86vm-1.1.4-13.oe1.riscv64                     86/121 
+  Installing       : mesa-libEGL-20.1.4-2.oe1.riscv64                    87/121 
+  Installing       : libglvnd-1:1.3.2-2.oe1.riscv64                      88/121 
+  Installing       : mesa-libGL-20.1.4-2.oe1.riscv64                     89/121 
+  Installing       : wpebackend-fdo-1.6.1-1.oe1.riscv64                  90/121 
+  Installing       : libXv-1.0.11-11.oe1.riscv64                         91/121 
+  Installing       : hyphen-2.8.8-14.oe1.riscv64                         92/121 
+  Installing       : dosfstools-4.1-9.oe1.riscv64                        93/121 
+  Installing       : desktop-file-utils-0.26-2.oe1.riscv64               94/121 
+  Installing       : cdparanoia-libs-10.2-31.oe1.riscv64                 95/121 
+  Installing       : alsa-lib-1.2.4-1.oe1.riscv64                        96/121 
+  Installing       : gstreamer1-plugins-base-1.16.2-2.oe1.riscv64        97/121 
+  Installing       : webkit2gtk3-2.32.1-2.oe1.riscv64                    98/121 
+  Installing       : gnome-online-accounts-3.38.2-1.oe1.riscv64          99/121 
+  Installing       : libgdata-0.18.1-1.oe1.riscv64                      100/121 
+  Installing       : userspace-rcu-0.12.1-1.oe1.riscv64                 101/121 
+  Running scriptlet: userspace-rcu-0.12.1-1.oe1.riscv64                 101/121 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : multipath-tools-0.8.5-1.oe1.riscv64                102/121 
+  Running scriptlet: multipath-tools-0.8.5-1.oe1.riscv64                102/121 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : libblockdev-2.24-5.oe1.riscv64                     103/121 
+  Installing       : udisks2-2.9.1-1.oe1.riscv64                        104/121 
+  Running scriptlet: udisks2-2.9.1-1.oe1.riscv64                        104/121 
+Created symlink /etc/systemd/system/graphical.target.wants/udisks2.service → /usr/lib/systemd/system/udisks2.service.
+
+  Installing       : gvfs-client-1.40.2-8.oe1.riscv64                   105/121 
+  Installing       : gvfs-1.40.2-8.oe1.riscv64                          106/121 
+  Running scriptlet: gvfs-1.40.2-8.oe1.riscv64                          106/121 
+  Installing       : libfm-gtk-1.3.1-1.oe1.riscv64                      107/121 
+  Installing       : libfm-gtk-utils-1.3.1-1.oe1.riscv64                108/121 
+  Installing       : pcmanfm-1.3.1-1.oe1.riscv64                        109/121 
+  Upgrading        : libselinux-devel-3.1-3.oe1.riscv64                 110/121 
+  Cleanup          : gnutls-3.6.9-5.oe1.riscv64                         111/121 
+  Cleanup          : libselinux-devel-2.9-1.oe1.riscv64                 112/121 
+  Cleanup          : p11-kit-trust-0.23.14-6.oe1.riscv64                113/121 
+  Running scriptlet: p11-kit-trust-0.23.14-6.oe1.riscv64                113/121 
+  Cleanup          : libsepol-devel-2.9-1.oe1.riscv64                   114/121 
+  Cleanup          : krb5-libs-1.17-9.oe1.riscv64                       115/121 
+  Cleanup          : libselinux-2.9-1.oe1.riscv64                       116/121 
+  Running scriptlet: libsepol-2.9-1.oe1.riscv64                         117/121 
+  Cleanup          : libsepol-2.9-1.oe1.riscv64                         117/121 
+  Running scriptlet: libsepol-2.9-1.oe1.riscv64                         117/121 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Cleanup          : p11-kit-0.23.14-6.oe1.riscv64                      118/121 
+  Running scriptlet: p11-kit-0.23.14-6.oe1.riscv64                      118/121 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Cleanup          : nettle-3.4.1rc1-4.oe1.riscv64                      119/121 
+  Cleanup          : readline-7.0-13.oe1.riscv64                        120/121 
+  Cleanup          : json-c-0.13.1-6.oe1.riscv64                        121/121 
+  Running scriptlet: libwbclient-4.12.5-6.oe1.riscv64                   121/121 
+  Running scriptlet: json-c-0.13.1-6.oe1.riscv64                        121/121 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Running scriptlet: man-db-2.9.3-2.oe1.riscv64                         121/121 
+  Verifying        : gstreamer1-plugins-base-1.16.2-2.oe1.riscv64         1/121 
+  Verifying        : hunspell-1.7.0-8.oe1.riscv64                         2/121 
+  Verifying        : webkit2gtk3-2.32.1-2.oe1.riscv64                     3/121 
+  Verifying        : webkit2gtk3-jsc-2.32.1-2.oe1.riscv64                 4/121 
+  Verifying        : gvfs-1.40.2-8.oe1.riscv64                            5/121 
+  Verifying        : gvfs-client-1.40.2-8.oe1.riscv64                     6/121 
+  Verifying        : daxctl-libs-71.1-1.oe1.riscv64                       7/121 
+  Verifying        : gnome-online-accounts-3.38.2-1.oe1.riscv64           8/121 
+  Verifying        : libfm-gtk-1.3.1-1.oe1.riscv64                        9/121 
+  Verifying        : libfm-gtk-utils-1.3.1-1.oe1.riscv64                 10/121 
+  Verifying        : libldb-2.1.4-2.oe1.riscv64                          11/121 
+  Verifying        : libsmbclient-4.12.5-6.oe1.riscv64                   12/121 
+  Verifying        : libtalloc-2.3.1-1.oe1.riscv64                       13/121 
+  Verifying        : libtdb-1.4.3-1.oe1.riscv64                          14/121 
+  Verifying        : libudisks2-2.9.1-1.oe1.riscv64                      15/121 
+  Verifying        : libwbclient-4.12.5-6.oe1.riscv64                    16/121 
+  Verifying        : ndctl-71.1-1.oe1.riscv64                            17/121 
+  Verifying        : ndctl-libs-71.1-1.oe1.riscv64                       18/121 
+  Verifying        : pcmanfm-1.3.1-1.oe1.riscv64                         19/121 
+  Verifying        : samba-client-4.12.5-6.oe1.riscv64                   20/121 
+  Verifying        : samba-common-4.12.5-6.oe1.riscv64                   21/121 
+  Verifying        : udisks2-2.9.1-1.oe1.riscv64                         22/121 
+  Verifying        : userspace-rcu-0.12.1-1.oe1.riscv64                  23/121 
+  Verifying        : volume_key-0.3.12-3.oe1.riscv64                     24/121 
+  Verifying        : alsa-lib-1.2.4-1.oe1.riscv64                        25/121 
+  Verifying        : btrfs-progs-5.7-3.oe1.riscv64                       26/121 
+  Verifying        : bubblewrap-0.4.1-1.oe1.riscv64                      27/121 
+  Verifying        : cdparanoia-libs-10.2-31.oe1.riscv64                 28/121 
+  Verifying        : desktop-file-utils-0.26-2.oe1.riscv64               29/121 
+  Verifying        : dmraid-1.0.0.rc16-53.oe1.riscv64                    30/121 
+  Verifying        : dmraid-events-1.0.0.rc16-53.oe1.riscv64             31/121 
+  Verifying        : dosfstools-4.1-9.oe1.riscv64                        32/121 
+  Verifying        : enchant2-2.2.15-2.oe1.riscv64                       33/121 
+  Verifying        : gcr-3.38.1-1.oe1.riscv64                            34/121 
+  Verifying        : gdisk-1.0.5-4.oe1.riscv64                           35/121 
+  Verifying        : geoclue2-2.5.7-1.oe1.riscv64                        36/121 
+  Verifying        : gstreamer1-1.16.2-3.oe1.riscv64                     37/121 
+  Verifying        : hunspell-en-2020.12.07-1.oe1.noarch                 38/121 
+  Verifying        : hyphen-2.8.8-14.oe1.riscv64                         39/121 
+  Verifying        : iso-codes-4.5.0-1.oe1.noarch                        40/121 
+  Verifying        : kpartx-0.8.5-1.oe1.riscv64                          41/121 
+  Verifying        : libXv-1.0.11-11.oe1.riscv64                         42/121 
+  Verifying        : libXxf86vm-1.1.4-13.oe1.riscv64                     43/121 
+  Verifying        : libaio-0.3.112-1.oe1.riscv64                        44/121 
+  Verifying        : libatasmart-0.19-18.oe1.riscv64                     45/121 
+  Verifying        : libblockdev-2.24-5.oe1.riscv64                      46/121 
+  Verifying        : libcdio-2.1.0-2.oe1.riscv64                         47/121 
+  Verifying        : libcdio-paranoia-10.2+2.0.0-2.oe1.riscv64           48/121 
+  Verifying        : libdrm-2.4.103-1.oe1.riscv64                        49/121 
+  Verifying        : libgdata-0.18.1-1.oe1.riscv64                       50/121 
+  Verifying        : libglvnd-1:1.3.2-2.oe1.riscv64                      51/121 
+  Verifying        : libgudev-234-1.oe1.riscv64                          52/121 
+  Verifying        : libnotify-0.7.9-1.oe1.riscv64                       53/121 
+  Verifying        : libogg-2:1.3.4-3.oe1.riscv64                        54/121 
+  Verifying        : libpipeline-1.5.3-1.oe1.riscv64                     55/121 
+  Verifying        : libtevent-0.10.2-1.oe1.riscv64                      56/121 
+  Verifying        : libtheora-1:1.1.1-24.oe1.riscv64                    57/121 
+  Verifying        : libvisual-1:0.4.0-27.oe1.riscv64                    58/121 
+  Verifying        : libvorbis-1:1.3.7-1.oe1.riscv64                     59/121 
+  Verifying        : libwebp-1.1.0-3.oe1.riscv64                         60/121 
+  Verifying        : libwpe-1.6.0-1.oe1.riscv64                          61/121 
+  Verifying        : libxshmfence-1.3-6.oe1.riscv64                      62/121 
+  Verifying        : libxslt-1.1.34-4.oe1.riscv64                        63/121 
+  Verifying        : lmdb-0.9.27-1.oe1.riscv64                           64/121 
+  Verifying        : lzo-2.10-1.oe1.riscv64                              65/121 
+  Verifying        : man-db-2.9.3-2.oe1.riscv64                          66/121 
+  Verifying        : mdadm-4.1-5.oe1.riscv64                             67/121 
+  Verifying        : mesa-libEGL-20.1.4-2.oe1.riscv64                    68/121 
+  Verifying        : mesa-libGL-20.1.4-2.oe1.riscv64                     69/121 
+  Verifying        : mesa-libgbm-20.1.4-2.oe1.riscv64                    70/121 
+  Verifying        : mesa-libglapi-20.1.4-2.oe1.riscv64                  71/121 
+  Verifying        : multipath-tools-0.8.5-1.oe1.riscv64                 72/121 
+  Verifying        : nspr-4.29.0-1.oe1.riscv64                           73/121 
+  Verifying        : nss-3.54.0-9.oe1.riscv64                            74/121 
+  Verifying        : nss-help-3.54.0-9.oe1.riscv64                       75/121 
+  Verifying        : nss-softokn-3.54.0-9.oe1.riscv64                    76/121 
+  Verifying        : nss-util-3.54.0-9.oe1.riscv64                       77/121 
+  Verifying        : openjpeg2-2.3.1-6.oe1.riscv64                       78/121 
+  Verifying        : opus-1.3.1-1.oe1.riscv64                            79/121 
+  Verifying        : orc-0.4.32-1.oe1.riscv64                            80/121 
+  Verifying        : parted-3.3-7.oe1.riscv64                            81/121 
+  Verifying        : python3-dbus-1.2.16-2.oe1.riscv64                   82/121 
+  Verifying        : python3-pyudev-0.22.0-2.oe1.noarch                  83/121 
+  Verifying        : sgml-common-0.6.3-51.oe1.noarch                     84/121 
+  Verifying        : sgpio-1.2.1-2.oe1.riscv64                           85/121 
+  Verifying        : thin-provisioning-tools-0.9.0-2.oe1.riscv64         86/121 
+  Verifying        : thin-provisioning-tools-help-0.9.0-2.oe1.noarch     87/121 
+  Verifying        : trousers-0.3.15-1.oe1.riscv64                       88/121 
+  Verifying        : woff2-1.0.2-6.oe1.riscv64                           89/121 
+  Verifying        : wpebackend-fdo-1.6.1-1.oe1.riscv64                  90/121 
+  Verifying        : xdg-dbus-proxy-0.1.2-1.oe1.riscv64                  91/121 
+  Verifying        : xfsprogs-5.9.0-1.oe1.riscv64                        92/121 
+  Verifying        : xfsprogs-xfs_scrub-5.9.0-1.oe1.riscv64              93/121 
+  Verifying        : avahi-glib-0.7-21.oe1.riscv64                       94/121 
+  Verifying        : boost-iostreams-1.66.0-18.oe1.riscv64               95/121 
+  Verifying        : device-mapper-event-8:1.02.150-8.oe1.riscv64        96/121 
+  Verifying        : libbytesize-1.4-8.oe1.riscv64                       97/121 
+  Verifying        : lvm2-8:2.02.181-8.oe1.riscv64                       98/121 
+  Verifying        : lvm2-dbusd-8:2.02.181-8.oe1.riscv64                 99/121 
+  Verifying        : nettle-3.6-7.oe1.riscv64                           100/121 
+  Verifying        : nettle-3.4.1rc1-4.oe1.riscv64                      101/121 
+  Verifying        : json-c-0.15-1.oe1.riscv64                          102/121 
+  Verifying        : json-c-0.13.1-6.oe1.riscv64                        103/121 
+  Verifying        : krb5-libs-1.18.2-3.oe1.riscv64                     104/121 
+  Verifying        : krb5-libs-1.17-9.oe1.riscv64                       105/121 
+  Verifying        : gnutls-3.6.15-3.oe1.riscv64                        106/121 
+  Verifying        : gnutls-3.6.9-5.oe1.riscv64                         107/121 
+  Verifying        : libselinux-3.1-3.oe1.riscv64                       108/121 
+  Verifying        : libselinux-2.9-1.oe1.riscv64                       109/121 
+  Verifying        : libselinux-devel-3.1-3.oe1.riscv64                 110/121 
+  Verifying        : libselinux-devel-2.9-1.oe1.riscv64                 111/121 
+  Verifying        : libsepol-3.1-4.oe1.riscv64                         112/121 
+  Verifying        : libsepol-2.9-1.oe1.riscv64                         113/121 
+  Verifying        : libsepol-devel-3.1-4.oe1.riscv64                   114/121 
+  Verifying        : libsepol-devel-2.9-1.oe1.riscv64                   115/121 
+  Verifying        : p11-kit-0.23.22-1.oe1.riscv64                      116/121 
+  Verifying        : p11-kit-0.23.14-6.oe1.riscv64                      117/121 
+  Verifying        : p11-kit-trust-0.23.22-1.oe1.riscv64                118/121 
+  Verifying        : p11-kit-trust-0.23.14-6.oe1.riscv64                119/121 
+  Verifying        : readline-8.0-2.oe1.riscv64                         120/121 
+  Verifying        : readline-7.0-13.oe1.riscv64                        121/121 
+
+Upgraded:
+  nettle-3.6-7.oe1.riscv64             json-c-0.15-1.oe1.riscv64                
+  krb5-libs-1.18.2-3.oe1.riscv64       gnutls-3.6.15-3.oe1.riscv64              
+  libselinux-3.1-3.oe1.riscv64         libselinux-devel-3.1-3.oe1.riscv64       
+  libsepol-3.1-4.oe1.riscv64           libsepol-devel-3.1-4.oe1.riscv64         
+  p11-kit-0.23.22-1.oe1.riscv64        p11-kit-trust-0.23.22-1.oe1.riscv64      
+  readline-8.0-2.oe1.riscv64          
+
+Installed:
+  pcmanfm-1.3.1-1.oe1.riscv64                                                   
+  thin-provisioning-tools-help-0.9.0-2.oe1.noarch                               
+  trousers-0.3.15-1.oe1.riscv64                                                 
+  xfsprogs-xfs_scrub-5.9.0-1.oe1.riscv64                                        
+  gstreamer1-plugins-base-1.16.2-2.oe1.riscv64                                  
+  hunspell-1.7.0-8.oe1.riscv64                                                  
+  webkit2gtk3-2.32.1-2.oe1.riscv64                                              
+  webkit2gtk3-jsc-2.32.1-2.oe1.riscv64                                          
+  gvfs-1.40.2-8.oe1.riscv64                                                     
+  gvfs-client-1.40.2-8.oe1.riscv64                                              
+  daxctl-libs-71.1-1.oe1.riscv64                                                
+  gnome-online-accounts-3.38.2-1.oe1.riscv64                                    
+  libfm-gtk-1.3.1-1.oe1.riscv64                                                 
+  libfm-gtk-utils-1.3.1-1.oe1.riscv64                                           
+  libldb-2.1.4-2.oe1.riscv64                                                    
+  libsmbclient-4.12.5-6.oe1.riscv64                                             
+  libtalloc-2.3.1-1.oe1.riscv64                                                 
+  libtdb-1.4.3-1.oe1.riscv64                                                    
+  libudisks2-2.9.1-1.oe1.riscv64                                                
+  libwbclient-4.12.5-6.oe1.riscv64                                              
+  ndctl-71.1-1.oe1.riscv64                                                      
+  ndctl-libs-71.1-1.oe1.riscv64                                                 
+  samba-client-4.12.5-6.oe1.riscv64                                             
+  samba-common-4.12.5-6.oe1.riscv64                                             
+  udisks2-2.9.1-1.oe1.riscv64                                                   
+  userspace-rcu-0.12.1-1.oe1.riscv64                                            
+  volume_key-0.3.12-3.oe1.riscv64                                               
+  alsa-lib-1.2.4-1.oe1.riscv64                                                  
+  btrfs-progs-5.7-3.oe1.riscv64                                                 
+  bubblewrap-0.4.1-1.oe1.riscv64                                                
+  cdparanoia-libs-10.2-31.oe1.riscv64                                           
+  desktop-file-utils-0.26-2.oe1.riscv64                                         
+  dmraid-1.0.0.rc16-53.oe1.riscv64                                              
+  dmraid-events-1.0.0.rc16-53.oe1.riscv64                                       
+  dosfstools-4.1-9.oe1.riscv64                                                  
+  enchant2-2.2.15-2.oe1.riscv64                                                 
+  gcr-3.38.1-1.oe1.riscv64                                                      
+  gdisk-1.0.5-4.oe1.riscv64                                                     
+  geoclue2-2.5.7-1.oe1.riscv64                                                  
+  gstreamer1-1.16.2-3.oe1.riscv64                                               
+  hunspell-en-2020.12.07-1.oe1.noarch                                           
+  hyphen-2.8.8-14.oe1.riscv64                                                   
+  iso-codes-4.5.0-1.oe1.noarch                                                  
+  kpartx-0.8.5-1.oe1.riscv64                                                    
+  libXv-1.0.11-11.oe1.riscv64                                                   
+  libXxf86vm-1.1.4-13.oe1.riscv64                                               
+  libaio-0.3.112-1.oe1.riscv64                                                  
+  libatasmart-0.19-18.oe1.riscv64                                               
+  libblockdev-2.24-5.oe1.riscv64                                                
+  libcdio-2.1.0-2.oe1.riscv64                                                   
+  libcdio-paranoia-10.2+2.0.0-2.oe1.riscv64                                     
+  libdrm-2.4.103-1.oe1.riscv64                                                  
+  libgdata-0.18.1-1.oe1.riscv64                                                 
+  libglvnd-1:1.3.2-2.oe1.riscv64                                                
+  libgudev-234-1.oe1.riscv64                                                    
+  libnotify-0.7.9-1.oe1.riscv64                                                 
+  libogg-2:1.3.4-3.oe1.riscv64                                                  
+  libpipeline-1.5.3-1.oe1.riscv64                                               
+  libtevent-0.10.2-1.oe1.riscv64                                                
+  libtheora-1:1.1.1-24.oe1.riscv64                                              
+  libvisual-1:0.4.0-27.oe1.riscv64                                              
+  libvorbis-1:1.3.7-1.oe1.riscv64                                               
+  libwebp-1.1.0-3.oe1.riscv64                                                   
+  libwpe-1.6.0-1.oe1.riscv64                                                    
+  libxshmfence-1.3-6.oe1.riscv64                                                
+  libxslt-1.1.34-4.oe1.riscv64                                                  
+  lmdb-0.9.27-1.oe1.riscv64                                                     
+  lzo-2.10-1.oe1.riscv64                                                        
+  man-db-2.9.3-2.oe1.riscv64                                                    
+  mdadm-4.1-5.oe1.riscv64                                                       
+  mesa-libEGL-20.1.4-2.oe1.riscv64                                              
+  mesa-libGL-20.1.4-2.oe1.riscv64                                               
+  mesa-libgbm-20.1.4-2.oe1.riscv64                                              
+  mesa-libglapi-20.1.4-2.oe1.riscv64                                            
+  multipath-tools-0.8.5-1.oe1.riscv64                                           
+  nspr-4.29.0-1.oe1.riscv64                                                     
+  nss-3.54.0-9.oe1.riscv64                                                      
+  nss-help-3.54.0-9.oe1.riscv64                                                 
+  nss-softokn-3.54.0-9.oe1.riscv64                                              
+  nss-util-3.54.0-9.oe1.riscv64                                                 
+  openjpeg2-2.3.1-6.oe1.riscv64                                                 
+  opus-1.3.1-1.oe1.riscv64                                                      
+  orc-0.4.32-1.oe1.riscv64                                                      
+  parted-3.3-7.oe1.riscv64                                                      
+  python3-dbus-1.2.16-2.oe1.riscv64                                             
+  python3-pyudev-0.22.0-2.oe1.noarch                                            
+  sgml-common-0.6.3-51.oe1.noarch                                               
+  sgpio-1.2.1-2.oe1.riscv64                                                     
+  thin-provisioning-tools-0.9.0-2.oe1.riscv64                                   
+  woff2-1.0.2-6.oe1.riscv64                                                     
+  wpebackend-fdo-1.6.1-1.oe1.riscv64                                            
+  xdg-dbus-proxy-0.1.2-1.oe1.riscv64                                            
+  xfsprogs-5.9.0-1.oe1.riscv64                                                  
+  avahi-glib-0.7-21.oe1.riscv64                                                 
+  boost-iostreams-1.66.0-18.oe1.riscv64                                         
+  device-mapper-event-8:1.02.150-8.oe1.riscv64                                  
+  libbytesize-1.4-8.oe1.riscv64                                                 
+  lvm2-8:2.02.181-8.oe1.riscv64                                                 
+  lvm2-dbusd-8:2.02.181-8.oe1.riscv64                                           
+
+Complete!
+Last metadata expiration check: 0:07:03 ago on Tue Oct 26 10:05:39 2021.
+Dependencies resolved.
+================================================================================
+ Package                   Architecture Version             Repository     Size
+================================================================================
+Installing:
+ libwnck                   riscv64      2.31.0-13.oe1       lxde          344 k
+Installing dependencies:
+ libXres                   riscv64      1.2.0-7.oe1         mainline       13 k
+ startup-notification      riscv64      0.12-17.oe1         mainline       30 k
+ xcb-util                  riscv64      0.4.0-13.oe1        mainline       15 k
+
+Transaction Summary
+================================================================================
+Install  4 Packages
+
+Total download size: 402 k
+Installed size: 2.0 M
+Is this ok [y/N]: Downloading Packages:
+(1/4): libXres-1.2.0-7.oe1.riscv64.rpm          268 kB/s |  13 kB     00:00    
+(2/4): startup-notification-0.12-17.oe1.riscv64 409 kB/s |  30 kB     00:00    
+(3/4): xcb-util-0.4.0-13.oe1.riscv64.rpm        454 kB/s |  15 kB     00:00    
+(4/4): libwnck-2.31.0-13.oe1.riscv64.rpm        526 kB/s | 344 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           593 kB/s | 402 kB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : xcb-util-0.4.0-13.oe1.riscv64                          1/4 
+  Installing       : startup-notification-0.12-17.oe1.riscv64               2/4 
+  Running scriptlet: startup-notification-0.12-17.oe1.riscv64               2/4 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : libXres-1.2.0-7.oe1.riscv64                            3/4 
+  Installing       : libwnck-2.31.0-13.oe1.riscv64                          4/4 
+  Running scriptlet: libwnck-2.31.0-13.oe1.riscv64                          4/4 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Verifying        : libwnck-2.31.0-13.oe1.riscv64                          1/4 
+  Verifying        : libXres-1.2.0-7.oe1.riscv64                            2/4 
+  Verifying        : startup-notification-0.12-17.oe1.riscv64               3/4 
+  Verifying        : xcb-util-0.4.0-13.oe1.riscv64                          4/4 
+
+Installed:
+  libwnck-2.31.0-13.oe1.riscv64                libXres-1.2.0-7.oe1.riscv64      
+  startup-notification-0.12-17.oe1.riscv64     xcb-util-0.4.0-13.oe1.riscv64    
+
+Complete!
+Last metadata expiration check: 0:07:47 ago on Tue Oct 26 10:05:39 2021.
+Dependencies resolved.
+================================================================================
+ Package            Arch        Version                      Repository    Size
+================================================================================
+Installing:
+ lxpanel            riscv64     0.10.0-1.oe1                 lxde         1.3 M
+Installing dependencies:
+ wireless-tools     riscv64     1:29-23.oe1                  lxde          95 k
+ iw                 riscv64     5.9-1.oe1                    mainline     102 k
+ keybinder3         riscv64     0.3.2-9.oe1                  mainline      15 k
+ libwnck3           riscv64     3.36.0-1.oe1                 mainline     385 k
+ zenity             riscv64     3.32.0-2.oe1                 mainline     4.3 M
+ crda               riscv64     3.18_2018.05.31-6.oe1        preview       27 k
+
+Transaction Summary
+================================================================================
+Install  7 Packages
+
+Total download size: 6.2 M
+Installed size: 12 M
+Is this ok [y/N]: Downloading Packages:
+(1/7): wireless-tools-29-23.oe1.riscv64.rpm     730 kB/s |  95 kB     00:00    
+(2/7): iw-5.9-1.oe1.riscv64.rpm                 618 kB/s | 102 kB     00:00    
+(3/7): keybinder3-0.3.2-9.oe1.riscv64.rpm       358 kB/s |  15 kB     00:00    
+(4/7): libwnck3-3.36.0-1.oe1.riscv64.rpm        874 kB/s | 385 kB     00:00    
+(5/7): lxpanel-0.10.0-1.oe1.riscv64.rpm         966 kB/s | 1.3 MB     00:01    
+(6/7): zenity-3.32.0-2.oe1.riscv64.rpm          1.6 MB/s | 4.3 MB     00:02    
+(7/7): crda-3.18_2018.05.31-6.oe1.riscv64.rpm    12 kB/s |  27 kB     00:02    
+--------------------------------------------------------------------------------
+Total                                           2.1 MB/s | 6.2 MB     00:02     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : zenity-3.32.0-2.oe1.riscv64                            1/7 
+  Installing       : libwnck3-3.36.0-1.oe1.riscv64                          2/7 
+  Installing       : keybinder3-0.3.2-9.oe1.riscv64                         3/7 
+  Installing       : iw-5.9-1.oe1.riscv64                                   4/7 
+  Installing       : crda-3.18_2018.05.31-6.oe1.riscv64                     5/7 
+  Running scriptlet: crda-3.18_2018.05.31-6.oe1.riscv64                     5/7 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : wireless-tools-1:29-23.oe1.riscv64                     6/7 
+  Installing       : lxpanel-0.10.0-1.oe1.riscv64                           7/7 
+  Running scriptlet: lxpanel-0.10.0-1.oe1.riscv64                           7/7 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Verifying        : lxpanel-0.10.0-1.oe1.riscv64                           1/7 
+  Verifying        : wireless-tools-1:29-23.oe1.riscv64                     2/7 
+  Verifying        : iw-5.9-1.oe1.riscv64                                   3/7 
+  Verifying        : keybinder3-0.3.2-9.oe1.riscv64                         4/7 
+  Verifying        : libwnck3-3.36.0-1.oe1.riscv64                          5/7 
+  Verifying        : zenity-3.32.0-2.oe1.riscv64                            6/7 
+  Verifying        : crda-3.18_2018.05.31-6.oe1.riscv64                     7/7 
+
+Installed:
+  lxpanel-0.10.0-1.oe1.riscv64           wireless-tools-1:29-23.oe1.riscv64    
+  iw-5.9-1.oe1.riscv64                   keybinder3-0.3.2-9.oe1.riscv64        
+  libwnck3-3.36.0-1.oe1.riscv64          zenity-3.32.0-2.oe1.riscv64           
+  crda-3.18_2018.05.31-6.oe1.riscv64    
+
+Complete!
+Last metadata expiration check: 0:08:46 ago on Tue Oct 26 10:05:39 2021.
+Dependencies resolved.
+================================================================================
+ Package                Architecture  Version              Repository      Size
+================================================================================
+Installing:
+ lxappearance           riscv64       0.6.3-1.oe1          lxde           103 k
+Installing dependencies:
+ lxsession              riscv64       0.5.5-5.oe1          lxde           317 k
+ libappindicator        riscv64       12.10.0-27.oe1       mainline        38 k
+ libdbusmenu            riscv64       16.04.0-12.oe1       mainline        76 k
+ libdbusmenu-gtk2       riscv64       16.04.0-12.oe1       mainline        34 k
+ libindicator           riscv64       12.10.1-15.oe1       mainline        67 k
+ upower                 riscv64       0.99.8-5.oe1         mainline       147 k
+
+Transaction Summary
+================================================================================
+Install  7 Packages
+
+Total download size: 781 k
+Installed size: 3.0 M
+Is this ok [y/N]: Downloading Packages:
+(1/7): libappindicator-12.10.0-27.oe1.riscv64.r 374 kB/s |  38 kB     00:00    
+(2/7): lxappearance-0.6.3-1.oe1.riscv64.rpm     453 kB/s | 103 kB     00:00    
+(3/7): libdbusmenu-16.04.0-12.oe1.riscv64.rpm   574 kB/s |  76 kB     00:00    
+(4/7): libdbusmenu-gtk2-16.04.0-12.oe1.riscv64. 817 kB/s |  34 kB     00:00    
+(5/7): lxsession-0.5.5-5.oe1.riscv64.rpm        829 kB/s | 317 kB     00:00    
+(6/7): libindicator-12.10.1-15.oe1.riscv64.rpm  478 kB/s |  67 kB     00:00    
+(7/7): upower-0.99.8-5.oe1.riscv64.rpm          1.0 MB/s | 147 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           1.7 MB/s | 781 kB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : libdbusmenu-16.04.0-12.oe1.riscv64                     1/7 
+  Running scriptlet: libdbusmenu-16.04.0-12.oe1.riscv64                     1/7 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : libindicator-12.10.1-15.oe1.riscv64                    2/7 
+  Running scriptlet: libindicator-12.10.1-15.oe1.riscv64                    2/7 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : libdbusmenu-gtk2-16.04.0-12.oe1.riscv64                3/7 
+  Running scriptlet: libdbusmenu-gtk2-16.04.0-12.oe1.riscv64                3/7 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : libappindicator-12.10.0-27.oe1.riscv64                 4/7 
+  Running scriptlet: libappindicator-12.10.0-27.oe1.riscv64                 4/7 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : upower-0.99.8-5.oe1.riscv64                            5/7 
+  Installing       : lxsession-0.5.5-5.oe1.riscv64                          6/7 
+  Installing       : lxappearance-0.6.3-1.oe1.riscv64                       7/7 
+  Running scriptlet: lxappearance-0.6.3-1.oe1.riscv64                       7/7 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Verifying        : lxappearance-0.6.3-1.oe1.riscv64                       1/7 
+  Verifying        : lxsession-0.5.5-5.oe1.riscv64                          2/7 
+  Verifying        : libappindicator-12.10.0-27.oe1.riscv64                 3/7 
+  Verifying        : libdbusmenu-16.04.0-12.oe1.riscv64                     4/7 
+  Verifying        : libdbusmenu-gtk2-16.04.0-12.oe1.riscv64                5/7 
+  Verifying        : libindicator-12.10.1-15.oe1.riscv64                    6/7 
+  Verifying        : upower-0.99.8-5.oe1.riscv64                            7/7 
+
+Installed:
+  lxappearance-0.6.3-1.oe1.riscv64         lxsession-0.5.5-5.oe1.riscv64       
+  libappindicator-12.10.0-27.oe1.riscv64   libdbusmenu-16.04.0-12.oe1.riscv64  
+  libdbusmenu-gtk2-16.04.0-12.oe1.riscv64  libindicator-12.10.1-15.oe1.riscv64 
+  upower-0.99.8-5.oe1.riscv64             
+
+Complete!
+Last metadata expiration check: 0:24:48 ago on Tue Oct 26 10:05:39 2021.
+Package lxsession-0.5.5-5.oe1.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Last metadata expiration check: 0:25:17 ago on Tue Oct 26 10:05:39 2021.
+Dependencies resolved.
+================================================================================
+ Package                    Architecture Version            Repository     Size
+================================================================================
+Installing:
+ lxde-common                noarch       0.99.2-1.oe1       lxde          815 k
+Installing dependencies:
+ imlib2                     riscv64      1.4.9-9.oe1        lxde          184 k
+ openbox                    riscv64      3.6.1-13.oe1       lxde          338 k
+ giflib                     riscv64      5.2.1-2.oe1        mainline       80 k
+ libXxf86dga                riscv64      1.1.5-1.oe1        mainline       17 k
+ libdmx                     riscv64      1.1.4-6.oe1        mainline       15 k
+ mcpp                       riscv64      2.7.2-26.oe1       mainline       74 k
+ python3-pyxdg              noarch       0.26-3.oe1         mainline       97 k
+ xdg-utils                  noarch       1.1.3-5.oe1        mainline       53 k
+ xorg-x11-server-utils      riscv64      7.7-29.oe1         mainline      119 k
+ xorg-x11-utils             riscv64      7.5-31.oe1         mainline       94 k
+ xorg-x11-xauth             riscv64      1:1.1-1.oe1        mainline       25 k
+ xorg-x11-xinit             riscv64      1.4.0-6.oe1        mainline       48 k
+ openEuler-logos            noarch       1.0-7.oe1          preview       8.7 M
+
+Transaction Summary
+================================================================================
+Install  14 Packages
+
+Total download size: 11 M
+Installed size: 14 M
+Is this ok [y/N]: Downloading Packages:
+(1/14): imlib2-1.4.9-9.oe1.riscv64.rpm          255 kB/s | 184 kB     00:00    
+(2/14): openbox-3.6.1-13.oe1.riscv64.rpm        390 kB/s | 338 kB     00:00    
+(3/14): libXxf86dga-1.1.5-1.oe1.riscv64.rpm     145 kB/s |  17 kB     00:00    
+(4/14): giflib-5.2.1-2.oe1.riscv64.rpm          281 kB/s |  80 kB     00:00    
+(5/14): libdmx-1.1.4-6.oe1.riscv64.rpm          465 kB/s |  15 kB     00:00    
+(6/14): mcpp-2.7.2-26.oe1.riscv64.rpm           778 kB/s |  74 kB     00:00    
+(7/14): python3-pyxdg-0.26-3.oe1.noarch.rpm     910 kB/s |  97 kB     00:00    
+(8/14): lxde-common-0.99.2-1.oe1.noarch.rpm     629 kB/s | 815 kB     00:01    
+(9/14): xdg-utils-1.1.3-5.oe1.noarch.rpm        324 kB/s |  53 kB     00:00    
+(10/14): xorg-x11-server-utils-7.7-29.oe1.riscv 569 kB/s | 119 kB     00:00    
+(11/14): xorg-x11-xauth-1.1-1.oe1.riscv64.rpm   335 kB/s |  25 kB     00:00    
+(12/14): xorg-x11-utils-7.5-31.oe1.riscv64.rpm  667 kB/s |  94 kB     00:00    
+(13/14): xorg-x11-xinit-1.4.0-6.oe1.riscv64.rpm 897 kB/s |  48 kB     00:00    
+(14/14): openEuler-logos-1.0-7.oe1.noarch.rpm   1.6 MB/s | 8.7 MB     00:05    
+--------------------------------------------------------------------------------
+Total                                           1.5 MB/s |  11 MB     00:06     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : openEuler-logos-1.0-7.oe1.noarch                      1/14 
+  Running scriptlet: openEuler-logos-1.0-7.oe1.noarch                      1/14 
+  Installing       : xorg-x11-xauth-1:1.1-1.oe1.riscv64                    2/14 
+  Installing       : xdg-utils-1.1.3-5.oe1.noarch                          3/14 
+  Installing       : python3-pyxdg-0.26-3.oe1.noarch                       4/14 
+  Installing       : mcpp-2.7.2-26.oe1.riscv64                             5/14 
+  Running scriptlet: mcpp-2.7.2-26.oe1.riscv64                             5/14 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : xorg-x11-server-utils-7.7-29.oe1.riscv64              6/14 
+  Installing       : xorg-x11-xinit-1.4.0-6.oe1.riscv64                    7/14 
+  Installing       : libdmx-1.1.4-6.oe1.riscv64                            8/14 
+  Installing       : libXxf86dga-1.1.5-1.oe1.riscv64                       9/14 
+  Running scriptlet: xorg-x11-utils-7.5-31.oe1.riscv64                    10/14 
+  Installing       : xorg-x11-utils-7.5-31.oe1.riscv64                    10/14 
+  Running scriptlet: xorg-x11-utils-7.5-31.oe1.riscv64                    10/14 
+  Installing       : giflib-5.2.1-2.oe1.riscv64                           11/14 
+  Installing       : imlib2-1.4.9-9.oe1.riscv64                           12/14 
+  Running scriptlet: imlib2-1.4.9-9.oe1.riscv64                           12/14 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : openbox-3.6.1-13.oe1.riscv64                         13/14 
+  Running scriptlet: openbox-3.6.1-13.oe1.riscv64                         13/14 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Installing       : lxde-common-0.99.2-1.oe1.noarch                      14/14 
+  Running scriptlet: openEuler-logos-1.0-7.oe1.noarch                     14/14 
+  Running scriptlet: lxde-common-0.99.2-1.oe1.noarch                      14/14 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Verifying        : imlib2-1.4.9-9.oe1.riscv64                            1/14 
+  Verifying        : lxde-common-0.99.2-1.oe1.noarch                       2/14 
+  Verifying        : openbox-3.6.1-13.oe1.riscv64                          3/14 
+  Verifying        : giflib-5.2.1-2.oe1.riscv64                            4/14 
+  Verifying        : libXxf86dga-1.1.5-1.oe1.riscv64                       5/14 
+  Verifying        : libdmx-1.1.4-6.oe1.riscv64                            6/14 
+  Verifying        : mcpp-2.7.2-26.oe1.riscv64                             7/14 
+  Verifying        : python3-pyxdg-0.26-3.oe1.noarch                       8/14 
+  Verifying        : xdg-utils-1.1.3-5.oe1.noarch                          9/14 
+  Verifying        : xorg-x11-server-utils-7.7-29.oe1.riscv64             10/14 
+  Verifying        : xorg-x11-utils-7.5-31.oe1.riscv64                    11/14 
+  Verifying        : xorg-x11-xauth-1:1.1-1.oe1.riscv64                   12/14 
+  Verifying        : xorg-x11-xinit-1.4.0-6.oe1.riscv64                   13/14 
+  Verifying        : openEuler-logos-1.0-7.oe1.noarch                     14/14 
+
+Installed:
+  lxde-common-0.99.2-1.oe1.noarch     imlib2-1.4.9-9.oe1.riscv64               
+  openbox-3.6.1-13.oe1.riscv64        giflib-5.2.1-2.oe1.riscv64               
+  libXxf86dga-1.1.5-1.oe1.riscv64     libdmx-1.1.4-6.oe1.riscv64               
+  mcpp-2.7.2-26.oe1.riscv64           python3-pyxdg-0.26-3.oe1.noarch          
+  xdg-utils-1.1.3-5.oe1.noarch        xorg-x11-server-utils-7.7-29.oe1.riscv64 
+  xorg-x11-utils-7.5-31.oe1.riscv64   xorg-x11-xauth-1:1.1-1.oe1.riscv64       
+  xorg-x11-xinit-1.4.0-6.oe1.riscv64  openEuler-logos-1.0-7.oe1.noarch         
+
+Complete!
+Last metadata expiration check: 0:27:37 ago on Tue Oct 26 10:05:39 2021.
+Package wireless-tools-1:29-23.oe1.riscv64 is already installed.
+Package volume_key-0.3.12-3.oe1.riscv64 is already installed.
+Package userspace-rcu-0.12.1-1.oe1.riscv64 is already installed.
+Package udisks2-2.9.1-1.oe1.riscv64 is already installed.
+Package pcmanfm-1.3.1-1.oe1.riscv64 is already installed.
+Package openbox-3.6.1-13.oe1.riscv64 is already installed.
+Package openEuler-menus-1.0.0-1.oe1.noarch is already installed.
+Package ndctl-71.1-1.oe1.riscv64 is already installed.
+Package menu-cache-1.1.0-1.oe1.riscv64 is already installed.
+Package lxsession-0.5.5-5.oe1.riscv64 is already installed.
+Package lxpanel-0.10.0-1.oe1.riscv64 is already installed.
+Package lxmenu-data-0.1.5-1.oe1.noarch is already installed.
+Package lxde-common-0.99.2-1.oe1.noarch is already installed.
+Package lxappearance-0.6.3-1.oe1.riscv64 is already installed.
+Package libwnck-2.31.0-13.oe1.riscv64 is already installed.
+Package libtdb-1.4.3-1.oe1.riscv64 is already installed.
+Package libtalloc-2.3.1-1.oe1.riscv64 is already installed.
+Package libldb-2.1.4-2.oe1.riscv64 is already installed.
+No match for argument: libfm-extra
+Package libfm-1.3.1-1.oe1.riscv64 is already installed.
+Package json-c-0.15-1.oe1.riscv64 is already installed.
+Package imlib2-1.4.9-9.oe1.riscv64 is already installed.
+Package gnome-online-accounts-3.38.2-1.oe1.riscv64 is already installed.
+Error: Unable to find a match: libfm-extra
+Last metadata expiration check: 0:37:58 ago on Tue Oct 26 10:05:39 2021.
+No match for argument: GPicView
+Error: Unable to find a match: GPicView
+Last metadata expiration check: 0:38:47 ago on Tue Oct 26 10:05:39 2021.
+No match for argument: gpicview
+Error: Unable to find a match: gpicview
+Last metadata expiration check: 0:39:44 ago on Tue Oct 26 10:05:39 2021.
+No match for argument: lxappearance-obconf
+Error: Unable to find a match: lxappearance-obconf
+Last metadata expiration check: 0:40:46 ago on Tue Oct 26 10:05:39 2021.
+Dependencies resolved.
+================================================================================
+ Package           Architecture      Version               Repository      Size
+================================================================================
+Installing:
+ lxinput           riscv64           0.3.5-1.oe1           lxde            83 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 83 k
+Installed size: 238 k
+Downloading Packages:
+lxinput-0.3.5-1.oe1.riscv64.rpm                 124 kB/s |  83 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           121 kB/s |  83 kB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : lxinput-0.3.5-1.oe1.riscv64                            1/1 
+  Running scriptlet: lxinput-0.3.5-1.oe1.riscv64                            1/1 
+  Verifying        : lxinput-0.3.5-1.oe1.riscv64                            1/1 
+
+Installed:
+  lxinput-0.3.5-1.oe1.riscv64                                                   
+
+Complete!
+Last metadata expiration check: 0:41:44 ago on Tue Oct 26 10:05:39 2021.
+No match for argument: lxrandr
+Error: Unable to find a match: lxrandr
+Last metadata expiration check: 0:42:35 ago on Tue Oct 26 10:05:39 2021.
+Dependencies resolved.
+================================================================================
+ Package          Architecture      Version                Repository      Size
+================================================================================
+Installing:
+ lxtask           riscv64           0.1.9-1.oe1            lxde            83 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 83 k
+Installed size: 279 k
+Downloading Packages:
+lxtask-0.1.9-1.oe1.riscv64.rpm                  809 kB/s |  83 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           681 kB/s |  83 kB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : lxtask-0.1.9-1.oe1.riscv64                             1/1 
+  Running scriptlet: lxtask-0.1.9-1.oe1.riscv64                             1/1 
+  Verifying        : lxtask-0.1.9-1.oe1.riscv64                             1/1 
+
+Installed:
+  lxtask-0.1.9-1.oe1.riscv64                                                    
+
+Complete!
+Last metadata expiration check: 0:43:28 ago on Tue Oct 26 10:05:39 2021.
+Dependencies resolved.
+================================================================================
+ Package                    Arch        Version              Repository    Size
+================================================================================
+Installing:
+ vte                        riscv64     0.28.2-1.oe1         lxde         326 k
+Installing dependencies:
+ python3-rpm-generators     noarch      9-1.oe1              mainline      22 k
+ python2                    riscv64     2.7.16-17.oe1        preview      6.2 M
+ python2-debug              riscv64     2.7.16-17.oe1        preview      1.8 M
+ python2-devel              riscv64     2.7.16-17.oe1        preview      4.9 M
+ python2-help               noarch      2.7.16-17.oe1        preview       15 k
+ python2-setuptools         noarch      40.4.3-4.oe1         preview      487 k
+ python2-tkinter            riscv64     2.7.16-17.oe1        preview      332 k
+ python2-tools              riscv64     2.7.16-17.oe1        preview       16 k
+ python3-setuptools         noarch      40.4.3-4.oe1         preview      481 k
+ tk                         riscv64     1:8.6.8-4.oe1        preview      1.0 M
+
+Transaction Summary
+================================================================================
+Install  11 Packages
+
+Total download size: 16 M
+Installed size: 73 M
+Downloading Packages:
+(1/11): python3-rpm-generators-9-1.oe1.noarch.r 427 kB/s |  22 kB     00:00    
+(2/11): vte-0.28.2-1.oe1.riscv64.rpm            540 kB/s | 326 kB     00:00    
+(3/11): python2-debug-2.7.16-17.oe1.riscv64.rpm 532 kB/s | 1.8 MB     00:03    
+(4/11): python2-help-2.7.16-17.oe1.noarch.rpm    16 kB/s |  15 kB     00:00    
+(5/11): python2-2.7.16-17.oe1.riscv64.rpm       1.1 MB/s | 6.2 MB     00:05    
+(6/11): python2-devel-2.7.16-17.oe1.riscv64.rpm 663 kB/s | 4.9 MB     00:07    
+(7/11): python2-setuptools-40.4.3-4.oe1.noarch. 127 kB/s | 487 kB     00:03    
+(8/11): python2-tkinter-2.7.16-17.oe1.riscv64.r 127 kB/s | 332 kB     00:02    
+(9/11): python2-tools-2.7.16-17.oe1.riscv64.rpm  59 kB/s |  16 kB     00:00    
+(10/11): python3-setuptools-40.4.3-4.oe1.noarch 705 kB/s | 481 kB     00:00    
+(11/11): tk-8.6.8-4.oe1.riscv64.rpm             773 kB/s | 1.0 MB     00:01    
+--------------------------------------------------------------------------------
+Total                                           1.6 MB/s |  16 MB     00:09     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Running scriptlet: tk-1:8.6.8-4.oe1.riscv64                              1/11 
+  Installing       : tk-1:8.6.8-4.oe1.riscv64                              1/11 
+  Installing       : python3-setuptools-40.4.3-4.oe1.noarch                2/11 
+  Installing       : python3-rpm-generators-9-1.oe1.noarch                 3/11 
+  Installing       : python2-help-2.7.16-17.oe1.noarch                     4/11 
+  Installing       : python2-setuptools-40.4.3-4.oe1.noarch                5/11 
+  Installing       : python2-tkinter-2.7.16-17.oe1.riscv64                 6/11 
+  Installing       : python2-tools-2.7.16-17.oe1.riscv64                   7/11 
+  Installing       : python2-2.7.16-17.oe1.riscv64                         8/11 
+  Installing       : python2-debug-2.7.16-17.oe1.riscv64                   9/11 
+  Installing       : python2-devel-2.7.16-17.oe1.riscv64                  10/11 
+  Installing       : vte-0.28.2-1.oe1.riscv64                             11/11 
+  Running scriptlet: vte-0.28.2-1.oe1.riscv64                             11/11 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Verifying        : vte-0.28.2-1.oe1.riscv64                              1/11 
+  Verifying        : python3-rpm-generators-9-1.oe1.noarch                 2/11 
+  Verifying        : python2-2.7.16-17.oe1.riscv64                         3/11 
+  Verifying        : python2-debug-2.7.16-17.oe1.riscv64                   4/11 
+  Verifying        : python2-devel-2.7.16-17.oe1.riscv64                   5/11 
+  Verifying        : python2-help-2.7.16-17.oe1.noarch                     6/11 
+  Verifying        : python2-setuptools-40.4.3-4.oe1.noarch                7/11 
+  Verifying        : python2-tkinter-2.7.16-17.oe1.riscv64                 8/11 
+  Verifying        : python2-tools-2.7.16-17.oe1.riscv64                   9/11 
+  Verifying        : python3-setuptools-40.4.3-4.oe1.noarch               10/11 
+  Verifying        : tk-1:8.6.8-4.oe1.riscv64                             11/11 
+
+Installed:
+  vte-0.28.2-1.oe1.riscv64               python3-rpm-generators-9-1.oe1.noarch 
+  python2-2.7.16-17.oe1.riscv64          python2-debug-2.7.16-17.oe1.riscv64   
+  python2-devel-2.7.16-17.oe1.riscv64    python2-help-2.7.16-17.oe1.noarch     
+  python2-setuptools-40.4.3-4.oe1.noarch python2-tkinter-2.7.16-17.oe1.riscv64 
+  python2-tools-2.7.16-17.oe1.riscv64    python3-setuptools-40.4.3-4.oe1.noarch
+  tk-1:8.6.8-4.oe1.riscv64              
+
+Complete!
+Last metadata expiration check: 0:45:21 ago on Tue Oct 26 10:05:39 2021.
+Dependencies resolved.
+================================================================================
+ Package           Architecture   Version                 Repository       Size
+================================================================================
+Installing:
+ lxterminal        riscv64        0.3.2-1.oe1             lxde            115 k
+Upgrading:
+ gtk3              riscv64        3.24.29-1.oe1           mainline        4.4 M
+Installing dependencies:
+ vte291            riscv64        0.62.3-1.oe1            mainline        277 k
+Installing weak dependencies:
+ dconf             riscv64        0.38.0-1.oe1            mainline         79 k
+
+Transaction Summary
+================================================================================
+Install  3 Packages
+Upgrade  1 Package
+
+Total download size: 4.8 M
+Downloading Packages:
+(1/4): dconf-0.38.0-1.oe1.riscv64.rpm           512 kB/s |  79 kB     00:00    
+(2/4): lxterminal-0.3.2-1.oe1.riscv64.rpm       361 kB/s | 115 kB     00:00    
+(3/4): vte291-0.62.3-1.oe1.riscv64.rpm          749 kB/s | 277 kB     00:00    
+(4/4): gtk3-3.24.29-1.oe1.riscv64.rpm           2.4 MB/s | 4.4 MB     00:01    
+--------------------------------------------------------------------------------
+Total                                           2.4 MB/s | 4.8 MB     00:02     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : dconf-0.38.0-1.oe1.riscv64                             1/5 
+  Running scriptlet: gtk3-3.24.29-1.oe1.riscv64                             2/5 
+  Upgrading        : gtk3-3.24.29-1.oe1.riscv64                             2/5 
+  Running scriptlet: gtk3-3.24.29-1.oe1.riscv64                             2/5 
+  Installing       : vte291-0.62.3-1.oe1.riscv64                            3/5 
+  Installing       : lxterminal-0.3.2-1.oe1.riscv64                         4/5 
+  Running scriptlet: gtk3-3.24.1-3.oe1.riscv64                              5/5 
+  Cleanup          : gtk3-3.24.1-3.oe1.riscv64                              5/5 
+  Running scriptlet: gtk3-3.24.1-3.oe1.riscv64                              5/5 
+  Running scriptlet: dconf-0.38.0-1.oe1.riscv64                             5/5 
+  Running scriptlet: gtk3-3.24.1-3.oe1.riscv64                              5/5 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Verifying        : lxterminal-0.3.2-1.oe1.riscv64                         1/5 
+  Verifying        : dconf-0.38.0-1.oe1.riscv64                             2/5 
+  Verifying        : vte291-0.62.3-1.oe1.riscv64                            3/5 
+  Verifying        : gtk3-3.24.29-1.oe1.riscv64                             4/5 
+  Verifying        : gtk3-3.24.1-3.oe1.riscv64                              5/5 
+
+Upgraded:
+  gtk3-3.24.29-1.oe1.riscv64                                                    
+
+Installed:
+  lxterminal-0.3.2-1.oe1.riscv64           dconf-0.38.0-1.oe1.riscv64          
+  vte291-0.62.3-1.oe1.riscv64             
+
+Complete!
+Last metadata expiration check: 0:48:47 ago on Tue Oct 26 10:05:39 2021.
+Package wireless-tools-1:29-23.oe1.riscv64 is already installed.
+Package vte-0.28.2-1.oe1.riscv64 is already installed.
+Package volume_key-0.3.12-3.oe1.riscv64 is already installed.
+Package userspace-rcu-0.12.1-1.oe1.riscv64 is already installed.
+Package udisks2-2.9.1-1.oe1.riscv64 is already installed.
+Package pcmanfm-1.3.1-1.oe1.riscv64 is already installed.
+Package openbox-3.6.1-13.oe1.riscv64 is already installed.
+Package openEuler-menus-1.0.0-1.oe1.noarch is already installed.
+Package ndctl-71.1-1.oe1.riscv64 is already installed.
+Package menu-cache-1.1.0-1.oe1.riscv64 is already installed.
+Package lxterminal-0.3.2-1.oe1.riscv64 is already installed.
+Package lxtask-0.1.9-1.oe1.riscv64 is already installed.
+Package lxsession-0.5.5-5.oe1.riscv64 is already installed.
+Package lxpanel-0.10.0-1.oe1.riscv64 is already installed.
+Package lxmenu-data-0.1.5-1.oe1.noarch is already installed.
+Package lxinput-0.3.5-1.oe1.riscv64 is already installed.
+Package lxde-common-0.99.2-1.oe1.noarch is already installed.
+Package lxappearance-0.6.3-1.oe1.riscv64 is already installed.
+Package libwnck-2.31.0-13.oe1.riscv64 is already installed.
+Package libtdb-1.4.3-1.oe1.riscv64 is already installed.
+Package libtalloc-2.3.1-1.oe1.riscv64 is already installed.
+Package libldb-2.1.4-2.oe1.riscv64 is already installed.
+No match for argument: libfm-extra
+Package libfm-1.3.1-1.oe1.riscv64 is already installed.
+Package json-c-0.15-1.oe1.riscv64 is already installed.
+Package imlib2-1.4.9-9.oe1.riscv64 is already installed.
+Package gnome-online-accounts-3.38.2-1.oe1.riscv64 is already installed.
+Error: Unable to find a match: libfm-extra

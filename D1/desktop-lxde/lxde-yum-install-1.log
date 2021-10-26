@@ -1,0 +1,256 @@
+Last metadata expiration check: 0:24:19 ago on Tue Oct 26 13:15:23 2021.
+Dependencies resolved.
+================================================================================
+ Package                     Architecture Version              Repository  Size
+================================================================================
+Installing:
+ python3-parameterized       noarch       0.7.4-1.oe1          lxde        41 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 41 k
+Installed size: 149 k
+Is this ok [y/N]: Downloading Packages:
+python3-parameterized-0.7.4-1.oe1.noarch.rpm    520 kB/s |  41 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           437 kB/s |  41 kB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : python3-parameterized-0.7.4-1.oe1.noarch               1/1 
+  Running scriptlet: python3-parameterized-0.7.4-1.oe1.noarch               1/1 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Verifying        : python3-parameterized-0.7.4-1.oe1.noarch               1/1 
+
+Installed:
+  python3-parameterized-0.7.4-1.oe1.noarch                                      
+
+Complete!
+Last metadata expiration check: 0:26:12 ago on Tue Oct 26 13:15:23 2021.
+Error: 
+ Problem: problem with installed package python3-gpgme-1.13.1-5.oe1.riscv64
+  - package python3-gpgme-1.13.1-5.oe1.riscv64 requires python(abi) = 3.7, but none of the providers can be installed
+  - package python3-gpgme-1.15.1-1.oe1.riscv64 requires python(abi) = 3.7, but none of the providers can be installed
+  - package python3-gpgme-1.13.1-5.riscv64 requires python(abi) = 3.7, but none of the providers can be installed
+  - cannot install both python3-3.9.7-1.0.riscv64.fc33.riscv64 and python3-3.7.4-8.riscv64
+  - package python3-cov-core-1.15.0-20.fc33.noarch requires python(abi) = 3.9, but none of the providers can be installed
+  - cannot install the best candidate for the job
+(try to add '--allowerasing' to command line to replace conflicting packages or '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)
+Last metadata expiration check: 0:27:26 ago on Tue Oct 26 13:15:23 2021.
+Dependencies resolved.
+================================================================================
+ Package                Architecture  Version              Repository      Size
+================================================================================
+Installing:
+ python3-nose2          noarch        0.9.2-1.oe1          lxde           250 k
+Installing dependencies:
+ python3-cov-core       noarch        1.15.0-1.oe1         lxde            17 k
+ python3-coverage       riscv64       5.4-1.oe1            mainline       294 k
+
+Transaction Summary
+================================================================================
+Install  3 Packages
+
+Total download size: 561 k
+Installed size: 2.1 M
+Is this ok [y/N]: Downloading Packages:
+(1/3): python3-cov-core-1.15.0-1.oe1.noarch.rpm 357 kB/s |  17 kB     00:00    
+(2/3): python3-coverage-5.4-1.oe1.riscv64.rpm   1.6 MB/s | 294 kB     00:00    
+(3/3): python3-nose2-0.9.2-1.oe1.noarch.rpm     720 kB/s | 250 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           1.5 MB/s | 561 kB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : python3-coverage-5.4-1.oe1.riscv64                     1/3 
+  Installing       : python3-cov-core-1.15.0-1.oe1.noarch                   2/3 
+  Installing       : python3-nose2-0.9.2-1.oe1.noarch                       3/3 
+  Running scriptlet: python3-nose2-0.9.2-1.oe1.noarch                       3/3 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Verifying        : python3-cov-core-1.15.0-1.oe1.noarch                   1/3 
+  Verifying        : python3-nose2-0.9.2-1.oe1.noarch                       2/3 
+  Verifying        : python3-coverage-5.4-1.oe1.riscv64                     3/3 
+
+Installed:
+  python3-nose2-0.9.2-1.oe1.noarch      python3-cov-core-1.15.0-1.oe1.noarch   
+  python3-coverage-5.4-1.oe1.riscv64   
+
+Complete!
+Last metadata expiration check: 0:29:12 ago on Tue Oct 26 13:15:23 2021.
+Error: 
+ Problem: package python3-libstoragemgmt-1.8.0-6.oe1.noarch requires libstoragemgmt = 1.8.0-6.oe1, but none of the providers can be installed
+  - package libstoragemgmt-1.8.2-1.0.riscv64.fc32.riscv64 requires python3-libstoragemgmt, but none of the providers can be installed
+  - cannot install both libstoragemgmt-1.8.2-1.0.riscv64.fc32.riscv64 and libstoragemgmt-1.8.0-6.oe1.riscv64
+  - cannot install the best candidate for the job
+  - nothing provides libstoragemgmt = 1.8.0-3.oe1 needed by python3-libstoragemgmt-1.8.0-3.oe1.noarch
+  - nothing provides python(abi) = 3.8 needed by python3-libstoragemgmt-1.8.2-1.0.riscv64.fc32.noarch
+(try to add '--allowerasing' to command line to replace conflicting packages or '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)
+Last metadata expiration check: 0:31:48 ago on Tue Oct 26 13:15:23 2021.
+Error: 
+ Problem: cannot install the best candidate for the job
+  - nothing provides python(abi) = 3.8 needed by python3-libstoragemgmt-1.8.2-1.0.riscv64.fc32.noarch
+(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)
+Last metadata expiration check: 0:33:27 ago on Tue Oct 26 13:15:23 2021.
+Package python3-cov-core-1.15.0-1.oe1.noarch is already installed.
+Error: 
+ Problem: problem with installed package python3-gpgme-1.13.1-5.oe1.riscv64
+  - package python3-gpgme-1.13.1-5.oe1.riscv64 requires python(abi) = 3.7, but none of the providers can be installed
+  - package python3-gpgme-1.15.1-1.oe1.riscv64 requires python(abi) = 3.7, but none of the providers can be installed
+  - package python3-gpgme-1.13.1-5.riscv64 requires python(abi) = 3.7, but none of the providers can be installed
+  - cannot install both python3-3.9.7-1.0.riscv64.fc33.riscv64 and python3-3.7.4-8.riscv64
+  - package python3-cov-core-1.15.0-20.fc33.noarch requires python(abi) = 3.9, but none of the providers can be installed
+  - cannot install the best candidate for the job
+(try to add '--allowerasing' to command line to replace conflicting packages or '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)
+Last metadata expiration check: 0:35:03 ago on Tue Oct 26 13:15:23 2021.
+Package python3-cov-core-1.15.0-1.oe1.noarch is already installed.
+Error: 
+ Problem: problem with installed package python3-gpgme-1.13.1-5.oe1.riscv64
+  - package python3-gpgme-1.13.1-5.oe1.riscv64 requires python(abi) = 3.7, but none of the providers can be installed
+  - package python3-gpgme-1.15.1-1.oe1.riscv64 requires python(abi) = 3.7, but none of the providers can be installed
+  - package python3-gpgme-1.13.1-5.riscv64 requires python(abi) = 3.7, but none of the providers can be installed
+  - cannot install both python3-3.9.7-1.0.riscv64.fc33.riscv64 and python3-3.7.4-8.riscv64
+  - package python3-cov-core-1.15.0-20.fc33.noarch requires python(abi) = 3.9, but none of the providers can be installed
+  - cannot install the best candidate for the job
+(try to add '--allowerasing' to command line to replace conflicting packages or '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)
+Last metadata expiration check: 0:42:05 ago on Tue Oct 26 13:15:23 2021.
+Dependencies resolved.
+================================================================================
+ Package                Architecture  Version              Repository      Size
+================================================================================
+Installing:
+ python3.8              riscv64       3.8.9-1.fc33         fedora34        16 M
+Upgrading:
+ libxcrypt              riscv64       4.4.19-1.fc33        fedora34       135 k
+ libxcrypt-devel        riscv64       4.4.19-1.fc33        fedora34        29 k
+Installing dependencies:
+ libxcrypt-compat       riscv64       4.4.19-1.fc33        fedora34       107 k
+ libxcrypt-static       riscv64       4.4.19-1.fc33        fedora34       242 k
+ whois-nls              noarch        5.5.9-1.fc33         fedora34        33 k
+Installing weak dependencies:
+ mkpasswd               riscv64       5.5.9-1.fc33         fedora34        40 k
+
+Transaction Summary
+================================================================================
+Install  5 Packages
+Upgrade  2 Packages
+
+Total download size: 16 M
+Is this ok [y/N]: Operation aborted.
+Last metadata expiration check: 0:44:34 ago on Tue Oct 26 13:15:23 2021.
+Package python3-gpgme-1.13.1-5.oe1.riscv64 is already installed.
+Dependencies resolved.
+================================================================================
+ Package              Architecture   Version              Repository       Size
+================================================================================
+Upgrading:
+ gpgme                riscv64        1.15.1-1.oe1         mainline        327 k
+ python3-gpgme        riscv64        1.15.1-1.oe1         mainline        228 k
+
+Transaction Summary
+================================================================================
+Upgrade  2 Packages
+
+Total download size: 556 k
+Is this ok [y/N]: Downloading Packages:
+(1/2): python3-gpgme-1.15.1-1.oe1.riscv64.rpm   913 kB/s | 228 kB     00:00    
+(2/2): gpgme-1.15.1-1.oe1.riscv64.rpm           1.1 MB/s | 327 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           1.7 MB/s | 556 kB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Upgrading        : gpgme-1.15.1-1.oe1.riscv64                             1/4 
+  Upgrading        : python3-gpgme-1.15.1-1.oe1.riscv64                     2/4 
+  Cleanup          : python3-gpgme-1.13.1-5.oe1.riscv64                     3/4 
+  Cleanup          : gpgme-1.13.1-5.oe1.riscv64                             4/4 
+  Running scriptlet: gpgme-1.13.1-5.oe1.riscv64                             4/4 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Verifying        : gpgme-1.15.1-1.oe1.riscv64                             1/4 
+  Verifying        : gpgme-1.13.1-5.oe1.riscv64                             2/4 
+  Verifying        : python3-gpgme-1.15.1-1.oe1.riscv64                     3/4 
+  Verifying        : python3-gpgme-1.13.1-5.oe1.riscv64                     4/4 
+
+Upgraded:
+  gpgme-1.15.1-1.oe1.riscv64         python3-gpgme-1.15.1-1.oe1.riscv64        
+
+Complete!
+Last metadata expiration check: 0:46:31 ago on Tue Oct 26 13:15:23 2021.
+Package python3-cov-core-1.15.0-1.oe1.noarch is already installed.
+Error: 
+ Problem: problem with installed package python3-gpgme-1.15.1-1.oe1.riscv64
+  - package python3-gpgme-1.15.1-1.oe1.riscv64 requires python(abi) = 3.7, but none of the providers can be installed
+  - package python3-gpgme-1.13.1-5.oe1.riscv64 requires python(abi) = 3.7, but none of the providers can be installed
+  - package python3-gpgme-1.13.1-5.riscv64 requires python(abi) = 3.7, but none of the providers can be installed
+  - cannot install both python3-3.9.7-1.0.riscv64.fc33.riscv64 and python3-3.7.4-8.riscv64
+  - package python3-cov-core-1.15.0-20.fc33.noarch requires python(abi) = 3.9, but none of the providers can be installed
+  - cannot install the best candidate for the job
+(try to add '--allowerasing' to command line to replace conflicting packages or '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)
+Last metadata expiration check: 1:26:04 ago on Tue Oct 26 13:15:23 2021.
+Package python3-cov-core-1.15.0-1.oe1.noarch is already installed.
+Error: 
+ Problem: problem with installed package python3-gpgme-1.15.1-1.oe1.riscv64
+  - package python3-gpgme-1.15.1-1.oe1.riscv64 requires python(abi) = 3.7, but none of the providers can be installed
+  - package python3-gpgme-1.13.1-5.oe1.riscv64 requires python(abi) = 3.7, but none of the providers can be installed
+  - package python3-gpgme-1.13.1-5.riscv64 requires python(abi) = 3.7, but none of the providers can be installed
+  - cannot install both python3-3.9.7-1.0.riscv64.fc33.riscv64 and python3-3.7.4-8.riscv64
+  - package python3-cov-core-1.15.0-20.fc33.noarch requires python(abi) = 3.9, but none of the providers can be installed
+  - cannot install the best candidate for the job
+(try to add '--allowerasing' to command line to replace conflicting packages or '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)
+Last metadata expiration check: 1:37:26 ago on Tue Oct 26 13:15:23 2021.
+No match for argument: pythonï¼-abi
+Error: Unable to find a match: python\udcef\udcbc-abi
+Last metadata expiration check: 1:43:47 ago on Tue Oct 26 13:15:23 2021.
+Dependencies resolved.
+================================================================================
+ Package              Architecture Version                 Repository      Size
+================================================================================
+Installing:
+ selinux-policy       noarch       3.14.6-36.fc33          fedora34        73 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 73 k
+Installed size: 25 k
+Is this ok [y/N]: Downloading Packages:
+selinux-policy-3.14.6-36.fc33.noarch.rpm         36 kB/s |  73 kB     00:02    
+--------------------------------------------------------------------------------
+Total                                            36 kB/s |  73 kB     00:02     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : selinux-policy-3.14.6-36.fc33.noarch                   1/1 
+  Running scriptlet: selinux-policy-3.14.6-36.fc33.noarch                   1/1 
+/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
+
+
+  Verifying        : selinux-policy-3.14.6-36.fc33.noarch                   1/1 
+
+Installed:
+  selinux-policy-3.14.6-36.fc33.noarch                                          
+
+Complete!
