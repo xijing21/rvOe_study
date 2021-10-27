@@ -1,0 +1,212 @@
+
+df -h  
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        29G  1.8G   26G   7% /
+devtmpfs        492M     0  492M   0% /dev
+tmpfs           496M     0  496M   0% /dev/shm
+tmpfs           496M  1.7M  495M   1% /run
+tmpfs           496M     0  496M   0% /sys/fs/cgroup
+tmpfs           496M     0  496M   0% /tmp
+tmpfs           100M     0  100M   0% /run/user/0
+fdisk -l 
+Disk /dev/mmcblk0: 29.74 GiB, 31914983424 bytes, 62333952 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: EACEFD8D-68B3-493F-868A-5364E0A693D8
+
+Device          Start      End  Sectors  Size Type
+/dev/mmcblk0p1  34784    35039      256  128K Linux filesystem
+/dev/mmcblk0p2  35040    35295      256  128K Linux filesystem
+/dev/mmcblk0p3  35296   100831    65536   32M Linux filesystem
+/dev/mmcblk0p4 100832 62333918 62233087 29.7G Linux filesystem
+date 
+Wed Oct 27 09:29:32 UTC 2021
+cat /etc/yum.repos.d/oe-rv.repo 
+[webkit2gtk3]
+name=webkit2gtk3
+baseurl=http://121.36.3.168:82/home:/pandora:/webkit2gtk3/standard_riscv64/
+enabled=1
+gpgcheck=0
+
+[unresolvable2]
+name=unresolvable2
+baseurl=http://121.36.3.168:82/home:/pandora:/unresolvable2/standard_riscv64/
+enabled=1
+gpgcheck=0
+
+[xfce]
+name=xfce
+baseurl=http://121.36.3.168:82/home:/pandora:/xfce/standard_riscv64/
+enabled=1
+gpgcheck=0
+
+[xfce4]
+name=xfce4
+baseurl=http://121.36.3.168:82/home:/pandora:/xfce4/webkit2gtk3/
+enabled=1
+gpgcheck=0
+
+[mainline]
+name=mainline
+baseurl=http://119.3.219.20:82/openEuler:/Mainline:/RISC-V/standard_riscv64/
+enabled=1
+gpgcheck=0
+
+[preview]
+name=preview
+baseurl=https://repo.openeuler.org/openEuler-preview/RISC-V/everything/
+enabled=1
+gpgcheck=0
+
+[base]
+name=base
+baseurl=https://isrc.iscas.ac.cn/mirror/openeuler-sig-riscv/oe-RISCV-repo/
+enabled=1
+gpgcheck=0
+
+[oe-noarch]
+name=oe-noarch
+baseurl=http://repo.openeuler.org/openEuler-20.03-LTS/everything/aarch64
+enabled=1
+gpgcheck=0
+
+[fedora]
+name=fedora
+baseurl=http://fedora.riscv.rocks/repos/f33-build/latest/riscv64/
+enabled=1
+gpgcheck=0
+
+echo 'install Xfce Desktop 15 packages'
+install Xfce Desktop 15 packages
+yum -y install libxfce4util  
+Last metadata expiration check: 0:11:26 ago on Wed Oct 27 09:18:22 2021.
+Package libxfce4util-4.14.0-3.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+yum -y install xfconf  
+Last metadata expiration check: 0:12:22 ago on Wed Oct 27 09:18:22 2021.
+Package xfconf-4.14.4-1.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+yum -y install libxfce4ui 
+Last metadata expiration check: 0:13:18 ago on Wed Oct 27 09:18:22 2021.
+Package libxfce4ui-4.14.1-6.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+yum -y install exo  
+Last metadata expiration check: 0:14:15 ago on Wed Oct 27 09:18:22 2021.
+Package exo-0.12.11-3.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+yum -y install garcon  
+Last metadata expiration check: 0:15:12 ago on Wed Oct 27 09:18:22 2021.
+Package garcon-0.6.4-5.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+yum -y install thunar  
+Last metadata expiration check: 0:16:09 ago on Wed Oct 27 09:18:22 2021.
+Package Thunar-1.8.16-1.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+yum -y install thunar-volman  
+Last metadata expiration check: 0:17:04 ago on Wed Oct 27 09:18:22 2021.
+Package thunar-volman-0.9.5-3.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+yum -y install tumbler  
+Last metadata expiration check: 0:18:01 ago on Wed Oct 27 09:18:22 2021.
+Package tumbler-0.2.9-1.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+yum -y install xfce4-appfinder    
+Last metadata expiration check: 0:18:57 ago on Wed Oct 27 09:18:22 2021.
+Package xfce4-appfinder-4.14.1-1.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+yum -y install xfce4-panel  
+Last metadata expiration check: 0:19:54 ago on Wed Oct 27 09:18:22 2021.
+Package xfce4-panel-4.14.4-3.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+yum -y install xfce4-power-manager 
+Last metadata expiration check: 0:20:50 ago on Wed Oct 27 09:18:22 2021.
+Package xfce4-power-manager-1.6.6-3.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+yum -y install xfce4-settings 
+Last metadata expiration check: 0:21:47 ago on Wed Oct 27 09:18:22 2021.
+Package xfce4-settings-4.14.3-4.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+yum -y install xfdesktop 
+Last metadata expiration check: 0:22:43 ago on Wed Oct 27 09:18:22 2021.
+Package xfdesktop-4.14.4-1.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+yum -y install xfwm4 
+Last metadata expiration check: 0:23:39 ago on Wed Oct 27 09:18:22 2021.
+Package xfwm4-4.14.6-1.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+yum -y install xfce4-session 
+Last metadata expiration check: 0:24:35 ago on Wed Oct 27 09:18:22 2021.
+Package xfce4-session-4.14.2-2.oe1.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+
+
+echo 'install Xfce Applications 6 packages'
+install Xfce Applications 6 packages
+yum -y install parole 
+Last metadata expiration check: 0:25:31 ago on Wed Oct 27 09:18:22 2021.
+Package parole-1.0.5-3.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+yum -y install xfce4-terminal 
+Last metadata expiration check: 0:26:28 ago on Wed Oct 27 09:18:22 2021.
+Package xfce4-terminal-0.8.10-1.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+yum -y install xfburn 
+Last metadata expiration check: 0:27:24 ago on Wed Oct 27 09:18:22 2021.
+Package xfburn-0.6.2-2.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+yum -y install ristretto 
+Last metadata expiration check: 0:28:20 ago on Wed Oct 27 09:18:22 2021.
+Package ristretto-0.10.0-4.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+yum -y install xfce4-notifyd 
+Last metadata expiration check: 0:29:16 ago on Wed Oct 27 09:18:22 2021.
+Package xfce4-notifyd-0.6.2-1.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+yum -y install xfce4-pulseaudio-plugin 
+Last metadata expiration check: 0:30:13 ago on Wed Oct 27 09:18:22 2021.
+Package xfce4-pulseaudio-plugin-0.4.3-4.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!

@@ -1,0 +1,1619 @@
+webkit2gtk3                                     742 kB/s | 104 kB     00:00    
+unresolvable2                                   1.2 MB/s | 250 kB     00:00    
+xfce                                            1.4 MB/s | 314 kB     00:00    
+xfce4                                            10 kB/s | 984  B     00:00    
+Error: Failed to download metadata for repo 'xfce4': Cannot download repomd.xml: Cannot download repodata/repomd.xml: All mirrors were tried
+webkit2gtk3                                      51 kB/s | 1.7 kB     00:00    
+unresolvable2                                    31 kB/s | 1.7 kB     00:00    
+xfce                                             65 kB/s | 1.7 kB     00:00    
+xfce4                                           295 kB/s |  25 kB     00:00    
+mainline                                        2.8 MB/s | 9.6 MB     00:03    
+preview                                         1.0 MB/s | 7.9 MB     00:07    
+base                                             14 kB/s | 3.0 kB     00:00    
+oe-noarch                                       1.5 MB/s | 9.0 MB     00:05    
+Error: 
+ Problem 1: cannot install the best update candidate for package cryptsetup-2.0.4-2.oe1.riscv64
+  - nothing provides libjson-c.so.5()(64bit) needed by cryptsetup-2.3.3-3.oe1.riscv64
+  - nothing provides libjson-c.so.5(JSONC_0.14)(64bit) needed by cryptsetup-2.3.3-3.oe1.riscv64
+ Problem 2: cannot install the best update candidate for package libreport-2.10.1-7.oe1.riscv64
+  - nothing provides libjson-c.so.5()(64bit) needed by libreport-2.13.1-5.oe1.riscv64
+  - nothing provides libjson-c.so.5(JSONC_0.14)(64bit) needed by libreport-2.13.1-5.oe1.riscv64
+ Problem 3: cannot install the best update candidate for package perl-Math-BigInt-FastCalc-0.500.700-4.oe1.riscv64
+  - nothing provides libperl.so.5.32()(64bit) needed by perl-Math-BigInt-FastCalc-0.500.900-2.riscv64
+  - nothing provides perl(:MODULE_COMPAT_5.32.1) needed by perl-Math-BigInt-FastCalc-0.500.900-2.riscv64
+ Problem 4: cannot install the best update candidate for package perl-Pod-Checker-4:1.73-398.oe1.noarch
+  - nothing provides perl(:MODULE_COMPAT_5.32.1) needed by perl-Pod-Checker-4:1.74-1.noarch
+ Problem 5: cannot install the best update candidate for package perl-Pod-Usage-4:1.69-418.oe1.noarch
+  - nothing provides perl(:MODULE_COMPAT_5.32.1) needed by perl-Pod-Usage-4:2.01-1.noarch
+ Problem 6: cannot install the best update candidate for package perl-Test-Simple-2:1.302140-3.oe1.noarch
+  - nothing provides perl(:MODULE_COMPAT_5.32.1) needed by perl-Test-Simple-2:1.302175-2.noarch
+ Problem 7: cannot install the best update candidate for package perl-Unicode-EastAsianWidth-1.33-15.noarch
+  - nothing provides perl(:MODULE_COMPAT_5.32.1) needed by perl-Unicode-EastAsianWidth-12.0-1.noarch
+ Problem 8: cannot install the best update candidate for package python3-dnf-4.2.15-8.oe1.noarch
+  - nothing provides python3-hawkey >= 0.48.0 needed by python3-dnf-4.2.23-5.oe1.noarch
+  - nothing provides python3-libdnf >= 0.48.0 needed by python3-dnf-4.2.23-5.oe1.noarch
+ Problem 9: cannot install the best update candidate for package satyr-0.27-5.oe1.riscv64
+  - nothing provides libjson-c.so.5()(64bit) needed by satyr-0.36-1.oe1.riscv64
+  - nothing provides libjson-c.so.5(JSONC_0.14)(64bit) needed by satyr-0.36-1.oe1.riscv64
+ Problem 10: package ima-evm-utils-libs-1.3.2-2.oe1.riscv64 requires libtss2-mu.so.0()(64bit), but none of the providers can be installed
+  - package ima-evm-utils-libs-1.3.2-2.oe1.riscv64 requires libtss2-rc.so.0()(64bit), but none of the providers can be installed
+  - package ima-evm-utils-libs-1.3.2-2.oe1.riscv64 requires libtss2-sys.so.1()(64bit), but none of the providers can be installed
+  - package ima-evm-utils-libs-1.3.2-2.oe1.riscv64 requires libtss2-esys.so.0()(64bit), but none of the providers can be installed
+  - cannot install the best update candidate for package ima-evm-utils-libs-1.2.1-8.oe1.riscv64
+  - nothing provides libjson-c.so.5()(64bit) needed by tpm2-tss-3.0.3-1.oe1.riscv64
+  - nothing provides libjson-c.so.5(JSONC_0.14)(64bit) needed by tpm2-tss-3.0.3-1.oe1.riscv64
+ Problem 11: package dnf-4.2.23-5.oe1.noarch requires python3-dnf = 4.2.23-5.oe1, but none of the providers can be installed
+  - cannot install the best update candidate for package dnf-4.2.15-8.oe1.noarch
+  - nothing provides python3-hawkey >= 0.48.0 needed by python3-dnf-4.2.23-5.oe1.noarch
+  - nothing provides python3-libdnf >= 0.48.0 needed by python3-dnf-4.2.23-5.oe1.noarch
+ Problem 12: package python3-3.7.4-8.riscv64 requires libffi.so.6()(64bit), but none of the providers can be installed
+  - cannot install both libffi-3.3-10.oe1.riscv64 and libffi-3.3-9.oe1.riscv64
+  - cannot install both libffi-3.3-9.oe1.riscv64 and libffi-3.3-10.oe1.riscv64
+  - cannot install both libffi-3.3-7.riscv64 and libffi-3.3-10.oe1.riscv64
+  - cannot install the best update candidate for package python3-3.7.4-8.riscv64
+  - cannot install the best update candidate for package libffi-3.3-9.oe1.riscv64
+ Problem 13: package yum-4.2.23-5.oe1.noarch requires dnf = 4.2.23-5.oe1, but none of the providers can be installed
+  - package dnf-4.2.23-5.oe1.noarch requires python3-dnf = 4.2.23-5.oe1, but none of the providers can be installed
+  - cannot install the best update candidate for package yum-4.2.15-8.oe1.noarch
+  - nothing provides python3-hawkey >= 0.48.0 needed by python3-dnf-4.2.23-5.oe1.noarch
+  - nothing provides python3-libdnf >= 0.48.0 needed by python3-dnf-4.2.23-5.oe1.noarch
+(try to add '--allowerasing' to command line to replace conflicting packages or '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)
+Last metadata expiration check: 0:10:51 ago on Wed Oct 27 07:22:04 2021.
+No match for argument: libxfce4util
+Error: Unable to find a match: libxfce4util
+webkit2gtk3                                     9.0 kB/s | 1.7 kB     00:00    
+unresolvable2                                    67 kB/s | 1.7 kB     00:00    
+xfce                                             41 kB/s | 1.7 kB     00:00    
+xfce4                                            65 kB/s | 1.6 kB     00:00    
+mainline                                         56 kB/s | 1.7 kB     00:00    
+preview                                         7.7 kB/s | 2.9 kB     00:00    
+base                                             13 kB/s | 3.0 kB     00:00    
+oe-noarch                                        27 kB/s | 3.8 kB     00:00    
+fedora                                          920 kB/s |  53 MB     00:58    
+Error: 
+ Problem 1: cannot install the best update candidate for package satyr-0.27-5.oe1.riscv64
+  - nothing provides libjson-c.so.5(JSONC_0.14)(64bit) needed by satyr-0.36-1.oe1.riscv64
+ Problem 2: package p11-kit-0.23.22-2.fc33.riscv64 requires libffi.so.6()(64bit), but none of the providers can be installed
+  - cannot install both libffi-3.3-10.oe1.riscv64 and libffi-3.3-9.oe1.riscv64
+  - cannot install both libffi-3.3-9.oe1.riscv64 and libffi-3.3-10.oe1.riscv64
+  - cannot install both libffi-3.3-7.riscv64 and libffi-3.3-10.oe1.riscv64
+  - cannot install both libffi-3.1-25.0.riscv64.fc33.riscv64 and libffi-3.3-10.oe1.riscv64
+  - cannot install the best update candidate for package p11-kit-0.23.14-6.oe1.riscv64
+  - cannot install the best update candidate for package libffi-3.3-9.oe1.riscv64
+ Problem 3: package perl-threads-2:2.21-2.oe1.riscv64 requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - package perl-threads-2:2.21-2.oe1.riscv64 requires libperl.so.5.28()(64bit), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - cannot install the best update candidate for package perl-threads-1:2.22-419.oe1.riscv64
+  - cannot install the best update candidate for package perl-libs-4:5.28.0-434.oe1.riscv64
+ Problem 4: package python3-cairo-1.20.0-1.oe1.riscv64 requires python(abi) = 3.7, but none of the providers can be installed
+  - cannot install both python3-3.9.7-1.0.riscv64.fc33.riscv64 and python3-3.7.4-8.riscv64
+  - cannot install the best update candidate for package python3-cairo-1.18.2-1.riscv64
+  - cannot install the best update candidate for package python3-3.7.4-8.riscv64
+ Problem 5: package unbound-libs-1.13.1-1.fc33.riscv64 requires libevent-2.1.so.6()(64bit), but none of the providers can be installed
+  - cannot install both libevent-2.1.12-4.oe1.riscv64 and libevent-2.1.11-2.oe1.riscv64
+  - cannot install both libevent-2.1.11-2.oe1.riscv64 and libevent-2.1.12-4.oe1.riscv64
+  - cannot install both libevent-2.1.11-2.riscv64 and libevent-2.1.12-4.oe1.riscv64
+  - cannot install both libevent-2.1.8-10.fc33.riscv64 and libevent-2.1.12-4.oe1.riscv64
+  - cannot install the best update candidate for package unbound-libs-1.10.1-1.oe1.riscv64
+  - cannot install the best update candidate for package libevent-2.1.11-2.oe1.riscv64
+ Problem 6: package xmlrpc-c-1.51.06-1.oe1.riscv64 requires libreadline.so.7()(64bit), but none of the providers can be installed
+  - cannot install both readline-8.0-5.fc33.riscv64 and readline-7.0-13.oe1.riscv64
+  - cannot install both readline-8.0-5.fc33.riscv64 and readline-8.0-2.oe1.riscv64
+  - cannot install both readline-8.0-5.fc33.riscv64 and readline-7.0-13.riscv64
+  - cannot install the best update candidate for package xmlrpc-c-1.51.06-1.oe1.riscv64
+  - cannot install the best update candidate for package readline-7.0-13.oe1.riscv64
+ Problem 7: problem with installed package kernel-devel-5.5.19-3.oe1.riscv64
+  - cannot install both kernel-devel-5.10.6-200.0.riscv64.fc33.riscv64 and kernel-devel-5.5.19-3.oe1.riscv64
+  - cannot install both kernel-devel-5.10.6-200.0.riscv64.fc33.riscv64 and kernel-devel-5.10-3.oe1.riscv64
+  - cannot install the best update candidate for package kernel-devel-5.5.19-3.oe1.riscv64
+ Problem 8: package harfbuzz-2.7.4-1.oe1.riscv64 requires libicudata.so.62()(64bit), but none of the providers can be installed
+  - package harfbuzz-2.7.4-1.oe1.riscv64 requires libicuuc.so.62()(64bit), but none of the providers can be installed
+  - cannot install both libicu-67.1-4.fc33.riscv64 and libicu-62.1-5.oe1.riscv64
+  - cannot install both libicu-67.1-4.fc33.riscv64 and libicu-67.1-2.oe1.riscv64
+  - cannot install both libicu-67.1-4.fc33.riscv64 and libicu-62.1-5.riscv64
+  - cannot install the best update candidate for package libicu-62.1-5.oe1.riscv64
+  - cannot install the best update candidate for package harfbuzz-1.8.7-2.oe1.riscv64
+ Problem 9: package python3-six-1.15.0-3.oe1.noarch requires python(abi) = 3.7, but none of the providers can be installed
+  - cannot install both python3-3.9.7-1.0.riscv64.fc33.riscv64 and python3-3.7.4-8.riscv64
+  - package fros-1.1-24.fc33.noarch requires python(abi) = 3.9, but none of the providers can be installed
+  - cannot install the best update candidate for package python3-six-1.12.0-1.noarch
+  - cannot install the best update candidate for package fros-1.1-18.oe1.noarch
+ Problem 10: package python3-iniparse-0.5-1.oe1.noarch requires python(abi) = 3.7, but none of the providers can be installed
+  - installed package python3-3.7.4-8.riscv64 obsoletes python3-libs provided by python3-libs-3.9.7-1.0.riscv64.fc33.riscv64
+  - package python3-3.7.4-8.riscv64 obsoletes python3-libs provided by python3-libs-3.9.7-1.0.riscv64.fc33.riscv64
+  - package gdb-headless-10.2-4.0.riscv64.fc33.riscv64 requires libpython3.9.so.1.0()(64bit), but none of the providers can be installed
+  - cannot install the best update candidate for package python3-iniparse-0.4-36.oe1.noarch
+  - cannot install the best update candidate for package gdb-headless-9.2-3.oe1.riscv64
+ Problem 11: package perl-version-8:0.99.28-1.oe1.riscv64 requires libperl.so.5.28()(64bit), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-4:5.32.1-471.0.riscv64.fc33.riscv64 requires perl-libs(riscv-64) = 4:5.32.1-471.0.riscv64.fc33, but none of the providers can be installed
+  - package perl-4:5.32.1-471.0.riscv64.fc33.riscv64 requires perl(:MODULE_COMPAT_5.32.1), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-version-8:0.99.24-3.oe1.riscv64
+  - cannot install the best update candidate for package perl-4:5.28.0-434.oe1.riscv64
+ Problem 12: package perl-libnet-3.13-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Algorithm-Diff-1.1903-17.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-libnet-3.11-420.oe1.noarch
+  - cannot install the best update candidate for package perl-Algorithm-Diff-1.1903-14.oe1.noarch
+ Problem 13: package perl-Unicode-Collate-1.29-1.oe1.riscv64 requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - package perl-Unicode-Collate-1.29-1.oe1.riscv64 requires libperl.so.5.28()(64bit), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Archive-Tar-2.38-3.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Unicode-Collate-1.25-4.oe1.riscv64
+  - cannot install the best update candidate for package perl-Archive-Tar-2.30-421.oe1.noarch
+ Problem 14: package perl-Text-Balanced-2.04-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-B-Debug-1.26-427.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Text-Balanced-2.03-420.oe1.noarch
+  - cannot install the best update candidate for package perl-B-Debug-1.26-4.oe1.noarch
+ Problem 15: package perl-Test-Harness-1:3.43_02-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-CPAN-Meta-2.150010-457.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Test-Harness-1:3.43_01-3.oe1.noarch
+  - cannot install the best update candidate for package perl-CPAN-Meta-2.150010-419.oe1.noarch
+ Problem 16: package perl-Term-Cap-1.17-510.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-CPAN-Meta-Requirements-2.140-458.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Term-Cap-1.17-510.oe1.noarch
+  - cannot install the best update candidate for package perl-CPAN-Meta-Requirements-2.140-419.oe1.noarch
+ Problem 17: package perl-Socket-4:2.031-1.oe1.riscv64 requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - package perl-Socket-4:2.031-1.oe1.riscv64 requires libperl.so.5.28()(64bit), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-CPAN-Meta-YAML-0.018-458.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Socket-4:2.029-2.oe1.riscv64
+  - cannot install the best update candidate for package perl-CPAN-Meta-YAML-0.018-420.oe1.noarch
+ Problem 18: package perl-Pod-Simple-1:3.42-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Carp-1.50-457.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Pod-Simple-1:3.35-418.oe1.noarch
+  - cannot install the best update candidate for package perl-Carp-1.50-418.oe1.noarch
+ Problem 19: package perl-Pod-Perldoc-1:3.28-3.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Data-Dumper-2.174-459.fc33.riscv64 requires libperl.so.5.32()(64bit), but none of the providers can be installed
+  - package perl-Data-Dumper-2.174-459.fc33.riscv64 requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Pod-Perldoc-1:3.28-3.oe1.noarch
+  - cannot install the best update candidate for package perl-Data-Dumper-2.172-3.oe1.riscv64
+ Problem 20: package perl-PerlIO-via-QuotedPrint-0.09-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Digest-1.20-1.fc33.noarch requires perl(:MODULE_COMPAT_5.32.1), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-PerlIO-via-QuotedPrint-0.08-397.oe1.noarch
+  - cannot install the best update candidate for package perl-Digest-1.17-419.oe1.noarch
+ Problem 21: package perl-Module-Load-Conditional-0.74-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Digest-SHA-1:6.02-458.fc33.riscv64 requires libperl.so.5.32()(64bit), but none of the providers can be installed
+  - package perl-Digest-SHA-1:6.02-458.fc33.riscv64 requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Module-Load-Conditional-0.68-418.oe1.noarch
+  - cannot install the best update candidate for package perl-Digest-SHA-1:6.02-7.oe1.riscv64
+ Problem 22: package perl-Module-Load-1:0.36-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Encode-4:3.08-458.fc33.riscv64 requires libperl.so.5.32()(64bit), but none of the providers can be installed
+  - package perl-Encode-4:3.08-458.fc33.riscv64 requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Module-Load-1:0.32-418.oe1.noarch
+  - cannot install the best update candidate for package perl-Encode-4:2.98-9.oe1.riscv64
+ Problem 23: package perl-Locale-Maketext-1:1.29-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Encode-devel-4:3.08-458.fc33.riscv64 requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Locale-Maketext-1:1.28-1.oe1.noarch
+  - cannot install the best update candidate for package perl-Encode-devel-4:2.98-9.oe1.riscv64
+ Problem 24: package perl-IPC-SysV-2.09-1.oe1.riscv64 requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - package perl-IPC-SysV-2.09-1.oe1.riscv64 requires libperl.so.5.28()(64bit), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Env-1.04-457.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-IPC-SysV-2.07-5.oe1.riscv64
+  - cannot install the best update candidate for package perl-Env-1.04-397.oe1.noarch
+ Problem 25: package perl-IO-Socket-IP-0.41-2.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Error-1:0.17029-4.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-IO-Socket-IP-0.39-420.oe1.noarch
+  - cannot install the best update candidate for package perl-Error-1:0.17026-4.oe1.noarch
+ Problem 26: package perl-IO-Compress-2.100-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Exporter-5.74-458.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-IO-Compress-2.081-6.oe1.noarch
+  - cannot install the best update candidate for package perl-Exporter-5.73-420.oe1.noarch
+ Problem 27: package perl-Git-2.30.0-4.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-ExtUtils-Command-2:7.46-3.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Git-2.23.0-12.oe1.noarch
+  - cannot install the best update candidate for package perl-ExtUtils-Command-1:7.42-2.oe1.noarch
+ Problem 28: package perl-Getopt-Long-1:2.52-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-ExtUtils-MakeMaker-2:7.46-3.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Getopt-Long-2.50-419.oe1.noarch
+  - cannot install the best update candidate for package perl-ExtUtils-MakeMaker-1:7.42-2.oe1.noarch
+ Problem 29: package perl-Filter-Simple-1:0.94-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-ExtUtils-Manifest-1:1.73-1.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Filter-Simple-1:0.94-1.oe1.noarch
+  - cannot install the best update candidate for package perl-ExtUtils-Manifest-1:1.71-4.oe1.noarch
+ Problem 30: package perl-Filter-2:1.60-1.oe1.riscv64 requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - package perl-Filter-2:1.60-1.oe1.riscv64 requires libperl.so.5.28()(64bit), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-File-Path-2.18-1.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Filter-2:1.59-2.oe1.riscv64
+  - cannot install the best update candidate for package perl-File-Path-2.16-4.oe1.noarch
+ Problem 31: package perl-File-Temp-1:0.2311-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-File-Which-1.23-7.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-File-Which-1.22-6.oe1.noarch
+  - cannot install the best update candidate for package perl-File-Temp-1:0.230.800-4.oe1.noarch
+ Problem 32: package perl-File-HomeDir-1.006-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-HTTP-Tiny-0.078-1.fc33.noarch requires perl(:MODULE_COMPAT_5.32.1), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-HTTP-Tiny-0.076-3.oe1.noarch
+  - cannot install the best update candidate for package perl-File-HomeDir-1.004-4.oe1.noarch
+ Problem 33: package perl-File-Fetch-1.00-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-IPC-Cmd-2:1.04-458.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-IPC-Cmd-2:1.04-4.oe1.noarch
+  - cannot install the best update candidate for package perl-File-Fetch-0.56-4.oe1.noarch
+ Problem 34: package perl-ExtUtils-ParseXS-2:3.35-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-IPC-System-Simple-1.30-3.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-IPC-System-Simple-1.25-19.oe1.noarch
+  - cannot install the best update candidate for package perl-ExtUtils-ParseXS-2:3.35-1.oe1.noarch
+ Problem 35: package perl-ExtUtils-Install-2.20-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-JSON-PP-1:4.05-2.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-JSON-PP-1:4.04-2.oe1.noarch
+  - cannot install the best update candidate for package perl-ExtUtils-Install-2.14-419.oe1.noarch
+ Problem 36: package perl-Digest-MD5-2.58-1.oe1.riscv64 requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - package perl-Digest-MD5-2.58-1.oe1.riscv64 requires libperl.so.5.28()(64bit), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Locale-Codes-3.68-1.fc33.noarch requires perl(:MODULE_COMPAT_5.32.1), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Locale-Codes-3.58-2.oe1.noarch
+  - cannot install the best update candidate for package perl-Digest-MD5-2.55-419.oe1.riscv64
+ Problem 37: package perl-Devel-PPPort-3.62-1.oe1.riscv64 requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - package perl-Devel-PPPort-3.62-1.oe1.riscv64 requires libperl.so.5.28()(64bit), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-MIME-Base64-3.16-1.fc33.riscv64 requires libperl.so.5.32()(64bit), but none of the providers can be installed
+  - package perl-MIME-Base64-3.16-1.fc33.riscv64 requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-MIME-Base64-3.15-418.oe1.riscv64
+  - cannot install the best update candidate for package perl-Devel-PPPort-3.42-4.oe1.riscv64
+ Problem 38: package perl-DB_File-1.855-1.oe1.riscv64 requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - package perl-DB_File-1.855-1.oe1.riscv64 requires libperl.so.5.28()(64bit), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Math-BigInt-1:1.9998.18-457.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Math-BigInt-1:1.9998.13-5.oe1.noarch
+  - cannot install the best update candidate for package perl-DB_File-1.842-2.oe1.riscv64
+ Problem 39: package perl-Config-Perl-V-0.33-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Math-BigInt-FastCalc-0.500.900-457.fc33.riscv64 requires libperl.so.5.32()(64bit), but none of the providers can be installed
+  - package perl-Math-BigInt-FastCalc-0.500.900-457.fc33.riscv64 requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Math-BigInt-FastCalc-0.500.700-4.oe1.riscv64
+  - cannot install the best update candidate for package perl-Config-Perl-V-0.30-5.oe1.noarch
+ Problem 40: package perl-Compress-Raw-Zlib-1:2.100-1.oe1.riscv64 requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - package perl-Compress-Raw-Zlib-1:2.100-1.oe1.riscv64 requires libperl.so.5.28()(64bit), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Math-BigRat-0.2614-457.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Math-BigRat-0.2614-2.oe1.noarch
+  - cannot install the best update candidate for package perl-Compress-Raw-Zlib-2.081-6.oe1.riscv64
+ Problem 41: package perl-Compress-Raw-Bzip2-2.100-1.oe1.riscv64 requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - package perl-Compress-Raw-Bzip2-2.100-1.oe1.riscv64 requires libperl.so.5.28()(64bit), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Module-CoreList-1:5.20210920-1.fc33.noarch requires perl(:MODULE_COMPAT_5.32.1), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Module-CoreList-1:5.20180920-2.oe1.noarch
+  - cannot install the best update candidate for package perl-Compress-Raw-Bzip2-2.081-8.oe1.riscv64
+ Problem 42: package python3-gpgme-1.15.1-1.oe1.riscv64 requires python(abi) = 3.7, but none of the providers can be installed
+  - cannot install both python3-3.9.7-1.0.riscv64.fc33.riscv64 and python3-3.7.4-8.riscv64
+  - package python3-distro-1.5.0-4.fc33.noarch requires python(abi) = 3.9, but none of the providers can be installed
+  - cannot install the best update candidate for package python3-gpgme-1.13.1-5.oe1.riscv64
+  - cannot install the best update candidate for package python3-distro-1.3.0-5.noarch
+ Problem 43: package python3-gpgme-1.15.1-1.oe1.riscv64 requires python(abi) = 3.7, but none of the providers can be installed
+  - problem with installed package python3-gpgme-1.13.1-5.oe1.riscv64
+  - cannot install both python3-3.9.7-1.0.riscv64.fc33.riscv64 and python3-3.7.4-8.riscv64
+  - package python3-gpgme-1.13.1-5.oe1.riscv64 requires gpgme = 1.13.1-5.oe1, but none of the providers can be installed
+  - package python3-dnf-4.7.0-1.fc33.noarch requires python(abi) = 3.9, but none of the providers can be installed
+  - cannot install both gpgme-1.15.1-1.oe1.riscv64 and gpgme-1.13.1-5.oe1.riscv64
+  - cannot install both gpgme-1.13.1-5.oe1.riscv64 and gpgme-1.15.1-1.oe1.riscv64
+  - cannot install the best update candidate for package python3-dnf-4.2.15-8.oe1.noarch
+  - cannot install the best update candidate for package gpgme-1.13.1-5.oe1.riscv64
+ Problem 44: package python3-dateutil-1:2.8.1-3.oe1.noarch requires python(abi) = 3.7, but none of the providers can be installed
+  - cannot install both python3-3.9.7-1.0.riscv64.fc33.riscv64 and python3-3.7.4-8.riscv64
+  - package python3-dnf-plugins-core-4.0.21-1.fc33.noarch requires python(abi) = 3.9, but none of the providers can be installed
+  - cannot install the best update candidate for package python3-dnf-plugins-core-4.0.11-5.oe1.noarch
+  - cannot install the best update candidate for package python3-dateutil-1:2.7.0-7.oe1.noarch
+ Problem 45: problem with installed package perl-version-8:0.99.24-3.oe1.riscv64
+  - package perl-version-8:0.99.24-3.oe1.riscv64 requires libperl.so.5.28()(64bit), but none of the providers can be installed
+  - package perl-version-8:0.99.28-1.oe1.riscv64 requires libperl.so.5.28()(64bit), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Module-Metadata-1.000037-457.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Module-Metadata-1.000036-3.oe1.noarch
+ Problem 46: problem with installed package perl-Test-Harness-1:3.43_01-3.oe1.noarch
+  - package perl-Test-Harness-1:3.43_01-3.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - package perl-Test-Harness-1:3.43_02-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Params-Check-1:0.38-457.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Params-Check-1:0.38-418.oe1.noarch
+ Problem 47: problem with installed package perl-Term-Cap-1.17-510.oe1.noarch
+  - package perl-Term-Cap-1.17-510.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-PathTools-3.78-458.fc33.riscv64 requires libperl.so.5.32()(64bit), but none of the providers can be installed
+  - package perl-PathTools-3.78-458.fc33.riscv64 requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-PathTools-3.75-4.oe1.riscv64
+ Problem 48: problem with installed package perl-Pod-Perldoc-1:3.28-3.oe1.noarch
+  - package perl-Pod-Perldoc-1:3.28-3.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Perl-OSType-1.010-458.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Perl-OSType-1.010-421.oe1.noarch
+ Problem 49: problem with installed package perl-Locale-Maketext-1:1.28-1.oe1.noarch
+  - package perl-Locale-Maketext-1:1.28-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - package perl-Locale-Maketext-1:1.29-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Pod-Checker-4:1.74-1.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Pod-Checker-4:1.73-398.oe1.noarch
+ Problem 50: problem with installed package perl-Filter-Simple-1:0.94-1.oe1.noarch
+  - package perl-Filter-Simple-1:0.94-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Pod-Escapes-1:1.07-457.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Pod-Escapes-1:1.07-419.oe1.noarch
+ Problem 51: problem with installed package perl-ExtUtils-ParseXS-2:3.35-1.oe1.noarch
+  - package perl-ExtUtils-ParseXS-2:3.35-1.oe1.noarch requires perl(:MODULE_COMPAT_5.28.0), but none of the providers can be installed
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.oe1.riscv64
+  - cannot install both perl-libs-4:5.32.1-471.0.riscv64.fc33.riscv64 and perl-libs-4:5.28.0-434.riscv64
+  - package perl-Pod-Parser-1.63-444.fc33.noarch requires perl(:MODULE_COMPAT_5.32.0), but none of the providers can be installed
+  - cannot install the best update candidate for package perl-Pod-Parser-1.63-397.oe1.noarch
+(try to add '--allowerasing' to command line to replace conflicting packages or '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)
+Last metadata expiration check: 0:11:58 ago on Wed Oct 27 07:35:15 2021.
+Dependencies resolved.
+================================================================================
+ Package             Architecture   Version                 Repository     Size
+================================================================================
+Installing:
+ libxfce4util        riscv64        4.14.0-3.fc33           fedora        174 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 174 k
+Installed size: 785 k
+Downloading Packages:
+libxfce4util-4.14.0-3.fc33.riscv64.rpm           71 kB/s | 174 kB     00:02    
+--------------------------------------------------------------------------------
+Total                                            71 kB/s | 174 kB     00:02     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : libxfce4util-4.14.0-3.fc33.riscv64                     1/1 
+  Running scriptlet: libxfce4util-4.14.0-3.fc33.riscv64                     1/1 
+  Verifying        : libxfce4util-4.14.0-3.fc33.riscv64                     1/1 
+
+Installed:
+  libxfce4util-4.14.0-3.fc33.riscv64                                            
+
+Complete!
+Last metadata expiration check: 0:58:54 ago on Wed Oct 27 07:35:15 2021.
+Dependencies resolved.
+================================================================================
+ Package         Architecture   Version                    Repository      Size
+================================================================================
+Installing:
+ xfconf          riscv64        4.14.4-1.fc33              fedora         254 k
+Installing dependencies:
+ dbus-x11        riscv64        1:1.12.16-13.oe1           preview         19 k
+
+Transaction Summary
+================================================================================
+Install  2 Packages
+
+Total download size: 273 k
+Installed size: 1.1 M
+Downloading Packages:
+(1/2): dbus-x11-1.12.16-13.oe1.riscv64.rpm       47 kB/s |  19 kB     00:00    
+(2/2): xfconf-4.14.4-1.fc33.riscv64.rpm         150 kB/s | 254 kB     00:01    
+--------------------------------------------------------------------------------
+Total                                           157 kB/s | 273 kB     00:01     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : dbus-x11-1:1.12.16-13.oe1.riscv64                      1/2 
+  Installing       : xfconf-4.14.4-1.fc33.riscv64                           2/2 
+  Running scriptlet: xfconf-4.14.4-1.fc33.riscv64                           2/2 
+  Verifying        : dbus-x11-1:1.12.16-13.oe1.riscv64                      1/2 
+  Verifying        : xfconf-4.14.4-1.fc33.riscv64                           2/2 
+
+Installed:
+  xfconf-4.14.4-1.fc33.riscv64         dbus-x11-1:1.12.16-13.oe1.riscv64        
+
+Complete!
+Last metadata expiration check: 1:03:04 ago on Wed Oct 27 07:35:15 2021.
+Dependencies resolved.
+================================================================================
+ Package                   Architecture Version               Repository   Size
+================================================================================
+Installing:
+ libxfce4ui                riscv64      4.14.1-6.fc33         fedora      275 k
+Installing dependencies:
+ startup-notification      riscv64      0.12-20.fc33          fedora       41 k
+ xcb-util                  riscv64      0.4.0-16.fc33         fedora       18 k
+
+Transaction Summary
+================================================================================
+Install  3 Packages
+
+Total download size: 333 k
+Installed size: 1.5 M
+Downloading Packages:
+(1/3): xcb-util-0.4.0-16.fc33.riscv64.rpm       3.5 kB/s |  18 kB     00:05    
+(2/3): startup-notification-0.12-20.fc33.riscv6 8.1 kB/s |  41 kB     00:05    
+(3/3): libxfce4ui-4.14.1-6.fc33.riscv64.rpm      39 kB/s | 275 kB     00:06    
+--------------------------------------------------------------------------------
+Total                                            48 kB/s | 333 kB     00:07     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : xcb-util-0.4.0-16.fc33.riscv64                         1/3 
+  Installing       : startup-notification-0.12-20.fc33.riscv64              2/3 
+  Installing       : libxfce4ui-4.14.1-6.fc33.riscv64                       3/3 
+  Running scriptlet: libxfce4ui-4.14.1-6.fc33.riscv64                       3/3 
+  Verifying        : libxfce4ui-4.14.1-6.fc33.riscv64                       1/3 
+  Verifying        : startup-notification-0.12-20.fc33.riscv64              2/3 
+  Verifying        : xcb-util-0.4.0-16.fc33.riscv64                         3/3 
+
+Installed:
+  libxfce4ui-4.14.1-6.fc33.riscv64   startup-notification-0.12-20.fc33.riscv64  
+  xcb-util-0.4.0-16.fc33.riscv64    
+
+Complete!
+Last metadata expiration check: 1:05:37 ago on Wed Oct 27 07:35:15 2021.
+Dependencies resolved.
+================================================================================
+ Package      Architecture     Version                    Repository       Size
+================================================================================
+Installing:
+ exo          riscv64          0.12.11-3.fc33             fedora          684 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 684 k
+Installed size: 3.2 M
+Downloading Packages:
+exo-0.12.11-3.fc33.riscv64.rpm                  248 kB/s | 684 kB     00:02    
+--------------------------------------------------------------------------------
+Total                                           247 kB/s | 684 kB     00:02     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : exo-0.12.11-3.fc33.riscv64                             1/1 
+  Running scriptlet: exo-0.12.11-3.fc33.riscv64                             1/1 
+  Verifying        : exo-0.12.11-3.fc33.riscv64                             1/1 
+
+Installed:
+  exo-0.12.11-3.fc33.riscv64                                                    
+
+Complete!
+Last metadata expiration check: 1:08:07 ago on Wed Oct 27 07:35:15 2021.
+Dependencies resolved.
+================================================================================
+ Package         Architecture     Version                 Repository       Size
+================================================================================
+Installing:
+ garcon          riscv64          0.6.4-5.fc33            fedora          207 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 207 k
+Installed size: 818 k
+Downloading Packages:
+garcon-0.6.4-5.fc33.riscv64.rpm                 130 kB/s | 207 kB     00:01    
+--------------------------------------------------------------------------------
+Total                                           129 kB/s | 207 kB     00:01     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : garcon-0.6.4-5.fc33.riscv64                            1/1 
+  Running scriptlet: garcon-0.6.4-5.fc33.riscv64                            1/1 
+  Verifying        : garcon-0.6.4-5.fc33.riscv64                            1/1 
+
+Installed:
+  garcon-0.6.4-5.fc33.riscv64                                                   
+
+Complete!
+Last metadata expiration check: 1:10:38 ago on Wed Oct 27 07:35:15 2021.
+Dependencies resolved.
+================================================================================
+ Package             Architecture    Version               Repository      Size
+================================================================================
+Installing:
+ Thunar              riscv64         1.8.16-1.fc33         fedora         1.5 M
+Installing dependencies:
+ libgudev            riscv64         234-1.oe1             xfce            30 k
+ libXres             riscv64         1.2.0-9.fc33          fedora          14 k
+ libexif             riscv64         0.6.22-3.fc33         fedora         443 k
+ libnotify           riscv64         0.7.9-3.fc33          fedora          41 k
+ libwnck3            riscv64         3.36.0-2.fc33         fedora         388 k
+ xfce4-panel         riscv64         4.14.4-3.fc33         fedora         968 k
+
+Transaction Summary
+================================================================================
+Install  7 Packages
+
+Total download size: 3.3 M
+Installed size: 16 M
+Downloading Packages:
+(1/7): libgudev-234-1.oe1.riscv64.rpm           208 kB/s |  30 kB     00:00    
+(2/7): libXres-1.2.0-9.fc33.riscv64.rpm          22 kB/s |  14 kB     00:00    
+(3/7): libnotify-0.7.9-3.fc33.riscv64.rpm        90 kB/s |  41 kB     00:00    
+(4/7): libexif-0.6.22-3.fc33.riscv64.rpm        273 kB/s | 443 kB     00:01    
+(5/7): Thunar-1.8.16-1.fc33.riscv64.rpm         669 kB/s | 1.5 MB     00:02    
+(6/7): libwnck3-3.36.0-2.fc33.riscv64.rpm       302 kB/s | 388 kB     00:01    
+(7/7): xfce4-panel-4.14.4-3.fc33.riscv64.rpm    1.0 MB/s | 968 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           1.2 MB/s | 3.3 MB     00:02     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : libnotify-0.7.9-3.fc33.riscv64                         1/7 
+  Installing       : libexif-0.6.22-3.fc33.riscv64                          2/7 
+  Installing       : libXres-1.2.0-9.fc33.riscv64                           3/7 
+  Installing       : libwnck3-3.36.0-2.fc33.riscv64                         4/7 
+  Installing       : xfce4-panel-4.14.4-3.fc33.riscv64                      5/7 
+  Installing       : libgudev-234-1.oe1.riscv64                             6/7 
+  Running scriptlet: Thunar-1.8.16-1.fc33.riscv64                           7/7 
+  Installing       : Thunar-1.8.16-1.fc33.riscv64                           7/7 
+  Running scriptlet: Thunar-1.8.16-1.fc33.riscv64                           7/7 
+  Verifying        : libgudev-234-1.oe1.riscv64                             1/7 
+  Verifying        : Thunar-1.8.16-1.fc33.riscv64                           2/7 
+  Verifying        : libXres-1.2.0-9.fc33.riscv64                           3/7 
+  Verifying        : libexif-0.6.22-3.fc33.riscv64                          4/7 
+  Verifying        : libnotify-0.7.9-3.fc33.riscv64                         5/7 
+  Verifying        : libwnck3-3.36.0-2.fc33.riscv64                         6/7 
+  Verifying        : xfce4-panel-4.14.4-3.fc33.riscv64                      7/7 
+
+Installed:
+  Thunar-1.8.16-1.fc33.riscv64             libgudev-234-1.oe1.riscv64           
+  libXres-1.2.0-9.fc33.riscv64             libexif-0.6.22-3.fc33.riscv64        
+  libnotify-0.7.9-3.fc33.riscv64           libwnck3-3.36.0-2.fc33.riscv64       
+  xfce4-panel-4.14.4-3.fc33.riscv64       
+
+Complete!
+Last metadata expiration check: 1:12:29 ago on Wed Oct 27 07:35:15 2021.
+Dependencies resolved.
+================================================================================
+ Package              Architecture   Version                Repository     Size
+================================================================================
+Installing:
+ thunar-volman        riscv64        0.9.5-3.fc33           fedora        206 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 206 k
+Installed size: 984 k
+Downloading Packages:
+thunar-volman-0.9.5-3.fc33.riscv64.rpm          123 kB/s | 206 kB     00:01    
+--------------------------------------------------------------------------------
+Total                                           122 kB/s | 206 kB     00:01     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : thunar-volman-0.9.5-3.fc33.riscv64                     1/1 
+  Running scriptlet: thunar-volman-0.9.5-3.fc33.riscv64                     1/1 
+  Verifying        : thunar-volman-0.9.5-3.fc33.riscv64                     1/1 
+
+Installed:
+  thunar-volman-0.9.5-3.fc33.riscv64                                            
+
+Complete!
+Last metadata expiration check: 1:14:07 ago on Wed Oct 27 07:35:15 2021.
+Dependencies resolved.
+================================================================================
+ Package                 Architecture Version               Repository     Size
+================================================================================
+Installing:
+ tumbler                 riscv64      0.2.9-1.fc33          fedora        229 k
+Installing dependencies:
+ poppler-data            noarch       0.4.10-1.oe1          mainline      2.3 M
+ libgsf                  riscv64      1.14.47-2.fc33        fedora        245 k
+ nspr                    riscv64      4.32.0-1.fc33         fedora        129 k
+ nss                     riscv64      3.62.0-1.fc33         fedora        684 k
+ nss-softokn             riscv64      3.62.0-1.fc33         fedora        394 k
+ nss-softokn-freebl      riscv64      3.62.0-1.fc33         fedora        345 k
+ nss-sysinit             riscv64      3.62.0-1.fc33         fedora         19 k
+ nss-util                riscv64      3.62.0-1.fc33         fedora         86 k
+ openjpeg2               riscv64      2.3.1-10.fc33         fedora        158 k
+ poppler                 riscv64      0.90.0-6.fc33         fedora        1.0 M
+ poppler-glib            riscv64      0.90.0-6.fc33         fedora        149 k
+
+Transaction Summary
+================================================================================
+Install  12 Packages
+
+Total download size: 5.7 M
+Installed size: 22 M
+Downloading Packages:
+(1/12): poppler-data-0.4.10-1.oe1.noarch.rpm    1.9 MB/s | 2.3 MB     00:01    
+(2/12): nspr-4.32.0-1.fc33.riscv64.rpm          102 kB/s | 129 kB     00:01    
+(3/12): libgsf-1.14.47-2.fc33.riscv64.rpm       184 kB/s | 245 kB     00:01    
+(4/12): nss-softokn-3.62.0-1.fc33.riscv64.rpm   674 kB/s | 394 kB     00:00    
+(5/12): nss-sysinit-3.62.0-1.fc33.riscv64.rpm    91 kB/s |  19 kB     00:00    
+(6/12): nss-softokn-freebl-3.62.0-1.fc33.riscv6 388 kB/s | 345 kB     00:00    
+(7/12): nss-util-3.62.0-1.fc33.riscv64.rpm      335 kB/s |  86 kB     00:00    
+(8/12): openjpeg2-2.3.1-10.fc33.riscv64.rpm     260 kB/s | 158 kB     00:00    
+(9/12): nss-3.62.0-1.fc33.riscv64.rpm           389 kB/s | 684 kB     00:01    
+(10/12): poppler-0.90.0-6.fc33.riscv64.rpm      1.0 MB/s | 1.0 MB     00:00    
+(11/12): poppler-glib-0.90.0-6.fc33.riscv64.rpm 297 kB/s | 149 kB     00:00    
+(12/12): tumbler-0.2.9-1.fc33.riscv64.rpm       551 kB/s | 229 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           1.7 MB/s | 5.7 MB     00:03     
+Running transaction check
+error: rpmdbNextIterator: skipping h#      15 
+Header V3 RSA/SHA1 Signature, key ID b25e7f66: BAD
+Header SHA256 digest: BAD (Expected 11bf3c667d445cd87c61100303ed7b163f94926774b1de41ef1eb61ffa7f7c2c != 117fd2952cf437124be4aacadcf0638643ac14011b0bfb645f39a0770bfbc9bd)
+Header SHA1 digest: BAD (Expected 254bb67394744bbb59a1297f42ddbbd05545a7b3 != 5a0bcbe2e25cfde14826da1b81ca0f8f595a95f1)
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : nspr-4.32.0-1.fc33.riscv64                            1/12 
+  Installing       : nss-util-3.62.0-1.fc33.riscv64                        2/12 
+  Installing       : nss-softokn-freebl-3.62.0-1.fc33.riscv64              3/12 
+  Installing       : nss-softokn-3.62.0-1.fc33.riscv64                     4/12 
+  Installing       : nss-3.62.0-1.fc33.riscv64                             5/12 
+  Running scriptlet: nss-3.62.0-1.fc33.riscv64                             5/12 
+  Installing       : nss-sysinit-3.62.0-1.fc33.riscv64                     6/12 
+  Installing       : openjpeg2-2.3.1-10.fc33.riscv64                       7/12 
+  Installing       : libgsf-1.14.47-2.fc33.riscv64                         8/12 
+  Installing       : poppler-data-0.4.10-1.oe1.noarch                      9/12 
+  Installing       : poppler-0.90.0-6.fc33.riscv64                        10/12 
+  Installing       : poppler-glib-0.90.0-6.fc33.riscv64                   11/12 
+  Installing       : tumbler-0.2.9-1.fc33.riscv64                         12/12 
+  Running scriptlet: nss-3.62.0-1.fc33.riscv64                            12/12 
+  Running scriptlet: tumbler-0.2.9-1.fc33.riscv64                         12/12 
+  Verifying        : poppler-data-0.4.10-1.oe1.noarch                      1/12 
+  Verifying        : libgsf-1.14.47-2.fc33.riscv64                         2/12 
+  Verifying        : nspr-4.32.0-1.fc33.riscv64                            3/12 
+  Verifying        : nss-3.62.0-1.fc33.riscv64                             4/12 
+  Verifying        : nss-softokn-3.62.0-1.fc33.riscv64                     5/12 
+  Verifying        : nss-softokn-freebl-3.62.0-1.fc33.riscv64              6/12 
+  Verifying        : nss-sysinit-3.62.0-1.fc33.riscv64                     7/12 
+  Verifying        : nss-util-3.62.0-1.fc33.riscv64                        8/12 
+  Verifying        : openjpeg2-2.3.1-10.fc33.riscv64                       9/12 
+  Verifying        : poppler-0.90.0-6.fc33.riscv64                        10/12 
+  Verifying        : poppler-glib-0.90.0-6.fc33.riscv64                   11/12 
+  Verifying        : tumbler-0.2.9-1.fc33.riscv64                         12/12 
+
+Installed:
+  tumbler-0.2.9-1.fc33.riscv64              poppler-data-0.4.10-1.oe1.noarch   
+  libgsf-1.14.47-2.fc33.riscv64             nspr-4.32.0-1.fc33.riscv64         
+  nss-3.62.0-1.fc33.riscv64                 nss-softokn-3.62.0-1.fc33.riscv64  
+  nss-softokn-freebl-3.62.0-1.fc33.riscv64  nss-sysinit-3.62.0-1.fc33.riscv64  
+  nss-util-3.62.0-1.fc33.riscv64            openjpeg2-2.3.1-10.fc33.riscv64    
+  poppler-0.90.0-6.fc33.riscv64             poppler-glib-0.90.0-6.fc33.riscv64 
+
+Complete!
+Last metadata expiration check: 1:16:51 ago on Wed Oct 27 07:35:15 2021.
+Dependencies resolved.
+================================================================================
+ Package                Architecture   Version              Repository     Size
+================================================================================
+Installing:
+ xfce4-appfinder        riscv64        4.14.1-1.fc33        fedora        234 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 234 k
+Installed size: 1.0 M
+Downloading Packages:
+xfce4-appfinder-4.14.1-1.fc33.riscv64.rpm        98 kB/s | 234 kB     00:02    
+--------------------------------------------------------------------------------
+Total                                            97 kB/s | 234 kB     00:02     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : xfce4-appfinder-4.14.1-1.fc33.riscv64                  1/1 
+  Running scriptlet: xfce4-appfinder-4.14.1-1.fc33.riscv64                  1/1 
+  Verifying        : xfce4-appfinder-4.14.1-1.fc33.riscv64                  1/1 
+
+Installed:
+  xfce4-appfinder-4.14.1-1.fc33.riscv64                                         
+
+Complete!
+Last metadata expiration check: 1:19:58 ago on Wed Oct 27 07:35:15 2021.
+Package xfce4-panel-4.14.4-3.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Last metadata expiration check: 1:21:31 ago on Wed Oct 27 07:35:15 2021.
+Dependencies resolved.
+================================================================================
+ Package                  Architecture Version               Repository    Size
+================================================================================
+Installing:
+ xfce4-power-manager      riscv64      1.6.6-3.fc33          fedora       757 k
+Installing dependencies:
+ libplist                 riscv64      2.2.0-2.oe1           xfce          85 k
+ mozjs60                  riscv64      60.2.2-5.oe1          xfce         6.1 M
+ polkit                   riscv64      0.116-4.oe1           preview      106 k
+ libimobiledevice         riscv64      1.3.0-2.fc33          fedora        74 k
+ libusbmuxd               riscv64      2.0.2-3.fc33          fedora        37 k
+ polkit-pkla-compat       riscv64      0.1-18.fc33           fedora        43 k
+ upower                   riscv64      0.99.11-6.fc33        fedora       175 k
+
+Transaction Summary
+================================================================================
+Install  8 Packages
+
+Total download size: 7.4 M
+Installed size: 29 M
+Downloading Packages:
+(1/8): libplist-2.2.0-2.oe1.riscv64.rpm         314 kB/s |  85 kB     00:00    
+(2/8): polkit-0.116-4.oe1.riscv64.rpm           120 kB/s | 106 kB     00:00    
+(3/8): libimobiledevice-1.3.0-2.fc33.riscv64.rp  73 kB/s |  74 kB     00:01    
+(4/8): libusbmuxd-2.0.2-3.fc33.riscv64.rpm       59 kB/s |  37 kB     00:00    
+(5/8): polkit-pkla-compat-0.1-18.fc33.riscv64.r 171 kB/s |  43 kB     00:00    
+(6/8): upower-0.99.11-6.fc33.riscv64.rpm        274 kB/s | 175 kB     00:00    
+(7/8): xfce4-power-manager-1.6.6-3.fc33.riscv64 792 kB/s | 757 kB     00:00    
+(8/8): mozjs60-60.2.2-5.oe1.riscv64.rpm         1.8 MB/s | 6.1 MB     00:03    
+--------------------------------------------------------------------------------
+Total                                           2.1 MB/s | 7.4 MB     00:03     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : libplist-2.2.0-2.oe1.riscv64                           1/8 
+  Running scriptlet: libplist-2.2.0-2.oe1.riscv64                           1/8 
+  Installing       : libusbmuxd-2.0.2-3.fc33.riscv64                        2/8 
+  Installing       : libimobiledevice-1.3.0-2.fc33.riscv64                  3/8 
+  Installing       : upower-0.99.11-6.fc33.riscv64                          4/8 
+  Running scriptlet: upower-0.99.11-6.fc33.riscv64                          4/8 
+Created symlink /etc/systemd/system/graphical.target.wants/upower.service → /usr/lib/systemd/system/upower.service.
+
+  Installing       : mozjs60-60.2.2-5.oe1.riscv64                           5/8 
+  Running scriptlet: polkit-0.116-4.oe1.riscv64                             6/8 
+  Installing       : polkit-0.116-4.oe1.riscv64                             6/8 
+  Running scriptlet: polkit-0.116-4.oe1.riscv64                             6/8 
+  Installing       : polkit-pkla-compat-0.1-18.fc33.riscv64                 7/8 
+  Installing       : xfce4-power-manager-1.6.6-3.fc33.riscv64               8/8 
+  Running scriptlet: xfce4-power-manager-1.6.6-3.fc33.riscv64               8/8 
+  Verifying        : libplist-2.2.0-2.oe1.riscv64                           1/8 
+  Verifying        : mozjs60-60.2.2-5.oe1.riscv64                           2/8 
+  Verifying        : polkit-0.116-4.oe1.riscv64                             3/8 
+  Verifying        : libimobiledevice-1.3.0-2.fc33.riscv64                  4/8 
+  Verifying        : libusbmuxd-2.0.2-3.fc33.riscv64                        5/8 
+  Verifying        : polkit-pkla-compat-0.1-18.fc33.riscv64                 6/8 
+  Verifying        : upower-0.99.11-6.fc33.riscv64                          7/8 
+  Verifying        : xfce4-power-manager-1.6.6-3.fc33.riscv64               8/8 
+
+Installed:
+  xfce4-power-manager-1.6.6-3.fc33.riscv64    libplist-2.2.0-2.oe1.riscv64      
+  mozjs60-60.2.2-5.oe1.riscv64                polkit-0.116-4.oe1.riscv64        
+  libimobiledevice-1.3.0-2.fc33.riscv64       libusbmuxd-2.0.2-3.fc33.riscv64   
+  polkit-pkla-compat-0.1-18.fc33.riscv64      upower-0.99.11-6.fc33.riscv64     
+
+Complete!
+Last metadata expiration check: 1:28:17 ago on Wed Oct 27 07:35:15 2021.
+Dependencies resolved.
+================================================================================
+ Package                Architecture  Version              Repository      Size
+================================================================================
+Installing:
+ xfce4-settings         riscv64       4.14.3-4.fc33        fedora         842 k
+Installing dependencies:
+ libxklavier            riscv64       5.4-18.oe1           mainline        58 k
+ gnome-icon-theme       noarch        3.12.0-14.fc33       fedora         9.6 M
+ iso-codes              noarch        4.5.0-2.fc33         fedora         3.4 M
+ libxkbfile             riscv64       1.1.0-4.fc33         fedora          87 k
+ xml-common             noarch        0.6.3-55.fc33        fedora          31 k
+
+Transaction Summary
+================================================================================
+Install  6 Packages
+
+Total download size: 14 M
+Installed size: 33 M
+Downloading Packages:
+(1/6): libxklavier-5.4-18.oe1.riscv64.rpm       819 kB/s |  58 kB     00:00    
+(2/6): libxkbfile-1.1.0-4.fc33.riscv64.rpm       82 kB/s |  87 kB     00:01    
+(3/6): xfce4-settings-4.14.3-4.fc33.riscv64.rpm 490 kB/s | 842 kB     00:01    
+(4/6): xml-common-0.6.3-55.fc33.noarch.rpm      105 kB/s |  31 kB     00:00    
+(5/6): iso-codes-4.5.0-2.fc33.noarch.rpm        738 kB/s | 3.4 MB     00:04    
+(6/6): gnome-icon-theme-3.12.0-14.fc33.noarch.r 1.5 MB/s | 9.6 MB     00:06    
+--------------------------------------------------------------------------------
+Total                                           2.1 MB/s |  14 MB     00:06     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Running scriptlet: xml-common-0.6.3-55.fc33.noarch                        1/6 
+  Installing       : xml-common-0.6.3-55.fc33.noarch                        1/6 
+  Installing       : iso-codes-4.5.0-2.fc33.noarch                          2/6 
+  Installing       : libxkbfile-1.1.0-4.fc33.riscv64                        3/6 
+  Installing       : libxklavier-5.4-18.oe1.riscv64                         4/6 
+  Running scriptlet: libxklavier-5.4-18.oe1.riscv64                         4/6 
+  Installing       : gnome-icon-theme-3.12.0-14.fc33.noarch                 5/6 
+  Installing       : xfce4-settings-4.14.3-4.fc33.riscv64                   6/6 
+  Running scriptlet: xfce4-settings-4.14.3-4.fc33.riscv64                   6/6 
+  Running scriptlet: gnome-icon-theme-3.12.0-14.fc33.noarch                 6/6 
+  Verifying        : libxklavier-5.4-18.oe1.riscv64                         1/6 
+  Verifying        : gnome-icon-theme-3.12.0-14.fc33.noarch                 2/6 
+  Verifying        : iso-codes-4.5.0-2.fc33.noarch                          3/6 
+  Verifying        : libxkbfile-1.1.0-4.fc33.riscv64                        4/6 
+  Verifying        : xfce4-settings-4.14.3-4.fc33.riscv64                   5/6 
+  Verifying        : xml-common-0.6.3-55.fc33.noarch                        6/6 
+
+Installed:
+  xfce4-settings-4.14.3-4.fc33.riscv64       libxklavier-5.4-18.oe1.riscv64     
+  gnome-icon-theme-3.12.0-14.fc33.noarch     iso-codes-4.5.0-2.fc33.noarch      
+  libxkbfile-1.1.0-4.fc33.riscv64            xml-common-0.6.3-55.fc33.noarch    
+
+Complete!
+Last metadata expiration check: 1:31:49 ago on Wed Oct 27 07:35:15 2021.
+Dependencies resolved.
+================================================================================
+ Package                        Arch        Version            Repository  Size
+================================================================================
+Installing:
+ xfdesktop                      riscv64     4.14.4-1.fc33      fedora     1.1 M
+Installing dependencies:
+ desktop-backgrounds-compat     noarch      33.0.0-1.fc33      fedora     8.9 k
+ f33-backgrounds-base           noarch      33.0.8-1.fc33      fedora      29 M
+ libXpresent                    riscv64     1.0.0-12.fc33      fedora      16 k
+ redhat-menus                   noarch      12.0.2-18.fc33     fedora     139 k
+ xfwm4                          riscv64     4.14.6-1.fc33      fedora     577 k
+
+Transaction Summary
+================================================================================
+Install  6 Packages
+
+Total download size: 31 M
+Installed size: 36 M
+Downloading Packages:
+(1/6): desktop-backgrounds-compat-33.0.0-1.fc33  12 kB/s | 8.9 kB     00:00    
+(2/6): libXpresent-1.0.0-12.fc33.riscv64.rpm     16 kB/s |  16 kB     00:01    
+(3/6): redhat-menus-12.0.2-18.fc33.noarch.rpm   141 kB/s | 139 kB     00:00    
+(4/6): xfwm4-4.14.6-1.fc33.riscv64.rpm          380 kB/s | 577 kB     00:01    
+(5/6): xfdesktop-4.14.4-1.fc33.riscv64.rpm      374 kB/s | 1.1 MB     00:03    
+(6/6): f33-backgrounds-base-33.0.8-1.fc33.noarc 2.1 MB/s |  29 MB     00:13    
+--------------------------------------------------------------------------------
+Total                                           2.2 MB/s |  31 MB     00:13     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : redhat-menus-12.0.2-18.fc33.noarch                     1/6 
+  Installing       : libXpresent-1.0.0-12.fc33.riscv64                      2/6 
+  Installing       : xfwm4-4.14.6-1.fc33.riscv64                            3/6 
+  Installing       : f33-backgrounds-base-33.0.8-1.fc33.noarch              4/6 
+  Installing       : desktop-backgrounds-compat-33.0.0-1.fc33.noarch        5/6 
+  Installing       : xfdesktop-4.14.4-1.fc33.riscv64                        6/6 
+  Running scriptlet: xfdesktop-4.14.4-1.fc33.riscv64                        6/6 
+  Verifying        : desktop-backgrounds-compat-33.0.0-1.fc33.noarch        1/6 
+  Verifying        : f33-backgrounds-base-33.0.8-1.fc33.noarch              2/6 
+  Verifying        : libXpresent-1.0.0-12.fc33.riscv64                      3/6 
+  Verifying        : redhat-menus-12.0.2-18.fc33.noarch                     4/6 
+  Verifying        : xfdesktop-4.14.4-1.fc33.riscv64                        5/6 
+  Verifying        : xfwm4-4.14.6-1.fc33.riscv64                            6/6 
+
+Installed:
+  xfdesktop-4.14.4-1.fc33.riscv64                                               
+  desktop-backgrounds-compat-33.0.0-1.fc33.noarch                               
+  f33-backgrounds-base-33.0.8-1.fc33.noarch                                     
+  libXpresent-1.0.0-12.fc33.riscv64                                             
+  redhat-menus-12.0.2-18.fc33.noarch                                            
+  xfwm4-4.14.6-1.fc33.riscv64                                                   
+
+Complete!
+Last metadata expiration check: 1:33:32 ago on Wed Oct 27 07:35:15 2021.
+Package xfwm4-4.14.6-1.fc33.riscv64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Last metadata expiration check: 1:34:30 ago on Wed Oct 27 07:35:15 2021.
+Dependencies resolved.
+================================================================================
+ Package                    Architecture Version              Repository   Size
+================================================================================
+Installing:
+ xfce4-session              riscv64      4.14.2-2.oe1         xfce4       491 k
+Installing dependencies:
+ mcpp                       riscv64      2.7.2-26.oe1         xfce         74 k
+ libXxf86vm                 riscv64      1.1.4-14.fc33        fedora       17 k
+ xfce-polkit                riscv64      0.3-5.fc33           fedora       23 k
+ xorg-x11-server-utils      riscv64      7.7-36.fc33          fedora      182 k
+
+Transaction Summary
+================================================================================
+Install  5 Packages
+
+Total download size: 788 k
+Installed size: 2.6 M
+Downloading Packages:
+(1/5): mcpp-2.7.2-26.oe1.riscv64.rpm            200 kB/s |  74 kB     00:00    
+(2/5): xfce4-session-4.14.2-2.oe1.riscv64.rpm   917 kB/s | 491 kB     00:00    
+(3/5): libXxf86vm-1.1.4-14.fc33.riscv64.rpm      25 kB/s |  17 kB     00:00    
+(4/5): xfce-polkit-0.3-5.fc33.riscv64.rpm        39 kB/s |  23 kB     00:00    
+(5/5): xorg-x11-server-utils-7.7-36.fc33.riscv6 174 kB/s | 182 kB     00:01    
+--------------------------------------------------------------------------------
+Total                                           487 kB/s | 788 kB     00:01     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : xfce-polkit-0.3-5.fc33.riscv64                         1/5 
+  Installing       : libXxf86vm-1.1.4-14.fc33.riscv64                       2/5 
+  Installing       : mcpp-2.7.2-26.oe1.riscv64                              3/5 
+  Running scriptlet: mcpp-2.7.2-26.oe1.riscv64                              3/5 
+  Installing       : xorg-x11-server-utils-7.7-36.fc33.riscv64              4/5 
+  Installing       : xfce4-session-4.14.2-2.oe1.riscv64                     5/5 
+  Running scriptlet: xfce4-session-4.14.2-2.oe1.riscv64                     5/5 
+  Verifying        : mcpp-2.7.2-26.oe1.riscv64                              1/5 
+  Verifying        : xfce4-session-4.14.2-2.oe1.riscv64                     2/5 
+  Verifying        : libXxf86vm-1.1.4-14.fc33.riscv64                       3/5 
+  Verifying        : xfce-polkit-0.3-5.fc33.riscv64                         4/5 
+  Verifying        : xorg-x11-server-utils-7.7-36.fc33.riscv64              5/5 
+
+Installed:
+  xfce4-session-4.14.2-2.oe1.riscv64           mcpp-2.7.2-26.oe1.riscv64        
+  libXxf86vm-1.1.4-14.fc33.riscv64             xfce-polkit-0.3-5.fc33.riscv64   
+  xorg-x11-server-utils-7.7-36.fc33.riscv64   
+
+Complete!
+Last metadata expiration check: 1:35:46 ago on Wed Oct 27 07:35:15 2021.
+Dependencies resolved.
+================================================================================
+ Package                   Arch      Version                   Repository  Size
+================================================================================
+Installing:
+ parole                    riscv64   1.0.5-3.fc33              fedora     463 k
+Installing dependencies:
+ libdrm                    riscv64   2.4.103-1.oe1             xfce        84 k
+ libglvnd                  riscv64   1:1.3.2-2.oe1             xfce       242 k
+ pulseaudio                riscv64   13.0-4.oe1                xfce       1.6 M
+ flac                      riscv64   1.3.3-1.oe1               mainline   380 k
+ gstreamer1                riscv64   1.16.2-3.oe1              mainline   1.2 M
+ lame                      riscv64   3.100-9.oe1               mainline   455 k
+ libasyncns                riscv64   0.8-17.oe1                mainline    26 k
+ libogg                    riscv64   2:1.3.4-3.oe1             mainline    30 k
+ libshout                  riscv64   2.2.2-22.oe1              mainline    42 k
+ orc                       riscv64   0.4.32-1.oe1              mainline   163 k
+ rtkit                     riscv64   0.11-27.oe1               mainline    51 k
+ speexdsp                  riscv64   1.2.0-2.oe1               mainline    47 k
+ webrtc-audio-processing   riscv64   0.3.1-5.oe1               mainline   278 k
+ GConf2                    riscv64   3.2.6-29.fc33             fedora     998 k
+ alsa-lib                  riscv64   1.2.4-5.fc33              fedora     440 k
+ cdparanoia-libs           riscv64   10.2-34.fc33              fedora      52 k
+ dbus-glib                 riscv64   0.110-10.fc33             fedora     121 k
+ gsm                       riscv64   1.0.19-3.fc33             fedora      38 k
+ gstreamer1-plugins-base   riscv64   1.16.2-2.0.riscv64.fc33   fedora     1.9 M
+ gstreamer1-plugins-good   riscv64   1.16.2-2.0.riscv64.fc33   fedora     2.1 M
+ libXv                     riscv64   1.0.11-12.fc33            fedora      18 k
+ libavc1394                riscv64   0.5.4-14.fc33             fedora      55 k
+ libdv                     riscv64   1.0.0-32.fc33             fedora      81 k
+ libiec61883               riscv64   1.2.0-24.fc33             fedora      40 k
+ libraw1394                riscv64   2.1.2-12.fc33             fedora      64 k
+ libsbc                    riscv64   1.4-6.fc33                fedora      49 k
+ libsndfile                riscv64   1.0.31-3.fc33             fedora     217 k
+ libtdb                    riscv64   1.4.3-5.fc33              fedora      51 k
+ libtheora                 riscv64   1:1.1.1-28.fc33           fedora     155 k
+ libv4l                    riscv64   1.18.0-4.fc33             fedora     200 k
+ libvisual                 riscv64   1:0.4.0-29.fc33           fedora     143 k
+ libvorbis                 riscv64   1:1.3.7-2.fc33            fedora     190 k
+ libvpx                    riscv64   1.9.0-1.fc33              fedora     848 k
+ libxshmfence              riscv64   1.3-7.fc33                fedora      11 k
+ mesa-libEGL               riscv64   20.3.5-2.fc33.rvre0       fedora     123 k
+ mesa-libGL                riscv64   20.3.5-2.fc33.rvre0       fedora     204 k
+ mesa-libgbm               riscv64   20.3.5-2.fc33.rvre0       fedora      46 k
+ mesa-libglapi             riscv64   20.3.5-2.fc33.rvre0       fedora      85 k
+ mpg123-libs               riscv64   1.26.2-2.fc33             fedora     326 k
+ opus                      riscv64   1.3.1-6.fc33              fedora     216 k
+ speex                     riscv64   1.2.0-6.fc33              fedora      66 k
+ taglib                    riscv64   1.12-4.fc33               fedora     323 k
+ twolame-libs              riscv64   0.3.13-16.fc33            fedora      59 k
+ wavpack                   riscv64   5.4.0-1.fc33              fedora     215 k
+
+Transaction Summary
+================================================================================
+Install  45 Packages
+
+Total download size: 14 M
+Installed size: 50 M
+Downloading Packages:
+(1/45): libdrm-2.4.103-1.oe1.riscv64.rpm        375 kB/s |  84 kB     00:00    
+(2/45): libglvnd-1.3.2-2.oe1.riscv64.rpm        714 kB/s | 242 kB     00:00    
+(3/45): flac-1.3.3-1.oe1.riscv64.rpm            710 kB/s | 380 kB     00:00    
+(4/45): lame-3.100-9.oe1.riscv64.rpm            1.3 MB/s | 455 kB     00:00    
+(5/45): pulseaudio-13.0-4.oe1.riscv64.rpm       1.2 MB/s | 1.6 MB     00:01    
+(6/45): libasyncns-0.8-17.oe1.riscv64.rpm       139 kB/s |  26 kB     00:00    
+(7/45): libogg-1.3.4-3.oe1.riscv64.rpm          700 kB/s |  30 kB     00:00    
+(8/45): libshout-2.2.2-22.oe1.riscv64.rpm       489 kB/s |  42 kB     00:00    
+(9/45): rtkit-0.11-27.oe1.riscv64.rpm           982 kB/s |  51 kB     00:00    
+(10/45): speexdsp-1.2.0-2.oe1.riscv64.rpm       936 kB/s |  47 kB     00:00    
+(11/45): webrtc-audio-processing-0.3.1-5.oe1.ri 1.5 MB/s | 278 kB     00:00    
+(12/45): orc-0.4.32-1.oe1.riscv64.rpm           373 kB/s | 163 kB     00:00    
+(13/45): alsa-lib-1.2.4-5.fc33.riscv64.rpm      294 kB/s | 440 kB     00:01    
+(14/45): GConf2-3.2.6-29.fc33.riscv64.rpm       550 kB/s | 998 kB     00:01    
+(15/45): cdparanoia-libs-10.2-34.fc33.riscv64.r 196 kB/s |  52 kB     00:00    
+(16/45): gsm-1.0.19-3.fc33.riscv64.rpm          171 kB/s |  38 kB     00:00    
+(17/45): dbus-glib-0.110-10.fc33.riscv64.rpm    419 kB/s | 121 kB     00:00    
+(18/45): gstreamer1-1.16.2-3.oe1.riscv64.rpm    326 kB/s | 1.2 MB     00:03    
+(19/45): libXv-1.0.11-12.fc33.riscv64.rpm        18 kB/s |  18 kB     00:00    
+(20/45): gstreamer1-plugins-base-1.16.2-2.0.ris 1.2 MB/s | 1.9 MB     00:01    
+(21/45): libavc1394-0.5.4-14.fc33.riscv64.rpm   122 kB/s |  55 kB     00:00    
+(22/45): gstreamer1-plugins-good-1.16.2-2.0.ris 1.1 MB/s | 2.1 MB     00:01    
+(23/45): libiec61883-1.2.0-24.fc33.riscv64.rpm  129 kB/s |  40 kB     00:00    
+(24/45): libdv-1.0.0-32.fc33.riscv64.rpm        229 kB/s |  81 kB     00:00    
+(25/45): libraw1394-2.1.2-12.fc33.riscv64.rpm   218 kB/s |  64 kB     00:00    
+(26/45): libsbc-1.4-6.fc33.riscv64.rpm          165 kB/s |  49 kB     00:00    
+(27/45): libsndfile-1.0.31-3.fc33.riscv64.rpm   630 kB/s | 217 kB     00:00    
+(28/45): libtdb-1.4.3-5.fc33.riscv64.rpm        200 kB/s |  51 kB     00:00    
+(29/45): libv4l-1.18.0-4.fc33.riscv64.rpm       637 kB/s | 200 kB     00:00    
+(30/45): libtheora-1.1.1-28.fc33.riscv64.rpm    324 kB/s | 155 kB     00:00    
+(31/45): libvisual-0.4.0-29.fc33.riscv64.rpm    502 kB/s | 143 kB     00:00    
+(32/45): libvorbis-1.3.7-2.fc33.riscv64.rpm     535 kB/s | 190 kB     00:00    
+(33/45): libxshmfence-1.3-7.fc33.riscv64.rpm     51 kB/s |  11 kB     00:00    
+(34/45): mesa-libEGL-20.3.5-2.fc33.rvre0.riscv6 318 kB/s | 123 kB     00:00    
+(35/45): mesa-libGL-20.3.5-2.fc33.rvre0.riscv64 489 kB/s | 204 kB     00:00    
+(36/45): libvpx-1.9.0-1.fc33.riscv64.rpm        998 kB/s | 848 kB     00:00    
+(37/45): mesa-libgbm-20.3.5-2.fc33.rvre0.riscv6 203 kB/s |  46 kB     00:00    
+(38/45): mesa-libglapi-20.3.5-2.fc33.rvre0.risc 345 kB/s |  85 kB     00:00    
+(39/45): opus-1.3.1-6.fc33.riscv64.rpm          481 kB/s | 216 kB     00:00    
+(40/45): mpg123-libs-1.26.2-2.fc33.riscv64.rpm  609 kB/s | 326 kB     00:00    
+(41/45): parole-1.0.5-3.fc33.riscv64.rpm        878 kB/s | 463 kB     00:00    
+(42/45): speex-1.2.0-6.fc33.riscv64.rpm         276 kB/s |  66 kB     00:00    
+(43/45): twolame-libs-0.3.13-16.fc33.riscv64.rp 247 kB/s |  59 kB     00:00    
+(44/45): taglib-1.12-4.fc33.riscv64.rpm         743 kB/s | 323 kB     00:00    
+(45/45): wavpack-5.4.0-1.fc33.riscv64.rpm       715 kB/s | 215 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           1.7 MB/s |  14 MB     00:08     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : libogg-2:1.3.4-3.oe1.riscv64                          1/45 
+  Running scriptlet: libogg-2:1.3.4-3.oe1.riscv64                          1/45 
+  Installing       : libvorbis-1:1.3.7-2.fc33.riscv64                      2/45 
+  Installing       : libraw1394-2.1.2-12.fc33.riscv64                      3/45 
+  Installing       : orc-0.4.32-1.oe1.riscv64                              4/45 
+  Running scriptlet: orc-0.4.32-1.oe1.riscv64                              4/45 
+  Installing       : gstreamer1-1.16.2-3.oe1.riscv64                       5/45 
+  Installing       : libdrm-2.4.103-1.oe1.riscv64                          6/45 
+  Installing       : flac-1.3.3-1.oe1.riscv64                              7/45 
+  Installing       : libtheora-1:1.1.1-28.fc33.riscv64                     8/45 
+  Installing       : taglib-1.12-4.fc33.riscv64                            9/45 
+  Installing       : speex-1.2.0-6.fc33.riscv64                           10/45 
+  Installing       : opus-1.3.1-6.fc33.riscv64                            11/45 
+  Installing       : mesa-libglapi-20.3.5-2.fc33.rvre0.riscv64            12/45 
+  Installing       : libxshmfence-1.3-7.fc33.riscv64                      13/45 
+  Installing       : dbus-glib-0.110-10.fc33.riscv64                      14/45 
+  Installing       : alsa-lib-1.2.4-5.fc33.riscv64                        15/45 
+  Installing       : GConf2-3.2.6-29.fc33.riscv64                         16/45 
+  Running scriptlet: GConf2-3.2.6-29.fc33.riscv64                         16/45 
+  Running scriptlet: libshout-2.2.2-22.oe1.riscv64                        17/45 
+  Installing       : libshout-2.2.2-22.oe1.riscv64                        17/45 
+  Running scriptlet: libshout-2.2.2-22.oe1.riscv64                        17/45 
+  Installing       : mesa-libgbm-20.3.5-2.fc33.rvre0.riscv64              18/45 
+  Installing       : mesa-libGL-20.3.5-2.fc33.rvre0.riscv64               19/45 
+  Installing       : libglvnd-1:1.3.2-2.oe1.riscv64                       20/45 
+  Installing       : mesa-libEGL-20.3.5-2.fc33.rvre0.riscv64              21/45 
+  Installing       : libavc1394-0.5.4-14.fc33.riscv64                     22/45 
+  Installing       : libiec61883-1.2.0-24.fc33.riscv64                    23/45 
+  Installing       : wavpack-5.4.0-1.fc33.riscv64                         24/45 
+  Installing       : twolame-libs-0.3.13-16.fc33.riscv64                  25/45 
+  Installing       : mpg123-libs-1.26.2-2.fc33.riscv64                    26/45 
+  Installing       : libvpx-1.9.0-1.fc33.riscv64                          27/45 
+  Installing       : libvisual-1:0.4.0-29.fc33.riscv64                    28/45 
+  Installing       : libv4l-1.18.0-4.fc33.riscv64                         29/45 
+  Installing       : libtdb-1.4.3-5.fc33.riscv64                          30/45 
+  Installing       : libsbc-1.4-6.fc33.riscv64                            31/45 
+  Installing       : libdv-1.0.0-32.fc33.riscv64                          32/45 
+  Installing       : libXv-1.0.11-12.fc33.riscv64                         33/45 
+  Installing       : gsm-1.0.19-3.fc33.riscv64                            34/45 
+  Installing       : libsndfile-1.0.31-3.fc33.riscv64                     35/45 
+  Installing       : cdparanoia-libs-10.2-34.fc33.riscv64                 36/45 
+  Installing       : gstreamer1-plugins-base-1.16.2-2.0.riscv64.fc33.ri   37/45 
+  Installing       : webrtc-audio-processing-0.3.1-5.oe1.riscv64          38/45 
+  Installing       : speexdsp-1.2.0-2.oe1.riscv64                         39/45 
+  Running scriptlet: speexdsp-1.2.0-2.oe1.riscv64                         39/45 
+  Running scriptlet: rtkit-0.11-27.oe1.riscv64                            40/45 
+  Installing       : rtkit-0.11-27.oe1.riscv64                            40/45 
+  Running scriptlet: rtkit-0.11-27.oe1.riscv64                            40/45 
+Created symlink /etc/systemd/system/graphical.target.wants/rtkit-daemon.service → /usr/lib/systemd/system/rtkit-daemon.service.
+
+  Installing       : libasyncns-0.8-17.oe1.riscv64                        41/45 
+  Running scriptlet: pulseaudio-13.0-4.oe1.riscv64                        42/45 
+  Installing       : pulseaudio-13.0-4.oe1.riscv64                        42/45 
+  Installing       : lame-3.100-9.oe1.riscv64                             43/45 
+  Running scriptlet: lame-3.100-9.oe1.riscv64                             43/45 
+  Installing       : gstreamer1-plugins-good-1.16.2-2.0.riscv64.fc33.ri   44/45 
+  Installing       : parole-1.0.5-3.fc33.riscv64                          45/45 
+  Running scriptlet: pulseaudio-13.0-4.oe1.riscv64                        45/45 
+  Running scriptlet: parole-1.0.5-3.fc33.riscv64                          45/45 
+  Verifying        : libdrm-2.4.103-1.oe1.riscv64                          1/45 
+  Verifying        : libglvnd-1:1.3.2-2.oe1.riscv64                        2/45 
+  Verifying        : pulseaudio-13.0-4.oe1.riscv64                         3/45 
+  Verifying        : flac-1.3.3-1.oe1.riscv64                              4/45 
+  Verifying        : gstreamer1-1.16.2-3.oe1.riscv64                       5/45 
+  Verifying        : lame-3.100-9.oe1.riscv64                              6/45 
+  Verifying        : libasyncns-0.8-17.oe1.riscv64                         7/45 
+  Verifying        : libogg-2:1.3.4-3.oe1.riscv64                          8/45 
+  Verifying        : libshout-2.2.2-22.oe1.riscv64                         9/45 
+  Verifying        : orc-0.4.32-1.oe1.riscv64                             10/45 
+  Verifying        : rtkit-0.11-27.oe1.riscv64                            11/45 
+  Verifying        : speexdsp-1.2.0-2.oe1.riscv64                         12/45 
+  Verifying        : webrtc-audio-processing-0.3.1-5.oe1.riscv64          13/45 
+  Verifying        : GConf2-3.2.6-29.fc33.riscv64                         14/45 
+  Verifying        : alsa-lib-1.2.4-5.fc33.riscv64                        15/45 
+  Verifying        : cdparanoia-libs-10.2-34.fc33.riscv64                 16/45 
+  Verifying        : dbus-glib-0.110-10.fc33.riscv64                      17/45 
+  Verifying        : gsm-1.0.19-3.fc33.riscv64                            18/45 
+  Verifying        : gstreamer1-plugins-base-1.16.2-2.0.riscv64.fc33.ri   19/45 
+  Verifying        : gstreamer1-plugins-good-1.16.2-2.0.riscv64.fc33.ri   20/45 
+  Verifying        : libXv-1.0.11-12.fc33.riscv64                         21/45 
+  Verifying        : libavc1394-0.5.4-14.fc33.riscv64                     22/45 
+  Verifying        : libdv-1.0.0-32.fc33.riscv64                          23/45 
+  Verifying        : libiec61883-1.2.0-24.fc33.riscv64                    24/45 
+  Verifying        : libraw1394-2.1.2-12.fc33.riscv64                     25/45 
+  Verifying        : libsbc-1.4-6.fc33.riscv64                            26/45 
+  Verifying        : libsndfile-1.0.31-3.fc33.riscv64                     27/45 
+  Verifying        : libtdb-1.4.3-5.fc33.riscv64                          28/45 
+  Verifying        : libtheora-1:1.1.1-28.fc33.riscv64                    29/45 
+  Verifying        : libv4l-1.18.0-4.fc33.riscv64                         30/45 
+  Verifying        : libvisual-1:0.4.0-29.fc33.riscv64                    31/45 
+  Verifying        : libvorbis-1:1.3.7-2.fc33.riscv64                     32/45 
+  Verifying        : libvpx-1.9.0-1.fc33.riscv64                          33/45 
+  Verifying        : libxshmfence-1.3-7.fc33.riscv64                      34/45 
+  Verifying        : mesa-libEGL-20.3.5-2.fc33.rvre0.riscv64              35/45 
+  Verifying        : mesa-libGL-20.3.5-2.fc33.rvre0.riscv64               36/45 
+  Verifying        : mesa-libgbm-20.3.5-2.fc33.rvre0.riscv64              37/45 
+  Verifying        : mesa-libglapi-20.3.5-2.fc33.rvre0.riscv64            38/45 
+  Verifying        : mpg123-libs-1.26.2-2.fc33.riscv64                    39/45 
+  Verifying        : opus-1.3.1-6.fc33.riscv64                            40/45 
+  Verifying        : parole-1.0.5-3.fc33.riscv64                          41/45 
+  Verifying        : speex-1.2.0-6.fc33.riscv64                           42/45 
+  Verifying        : taglib-1.12-4.fc33.riscv64                           43/45 
+  Verifying        : twolame-libs-0.3.13-16.fc33.riscv64                  44/45 
+  Verifying        : wavpack-5.4.0-1.fc33.riscv64                         45/45 
+
+Installed:
+  parole-1.0.5-3.fc33.riscv64                                                   
+  libdrm-2.4.103-1.oe1.riscv64                                                  
+  libglvnd-1:1.3.2-2.oe1.riscv64                                                
+  pulseaudio-13.0-4.oe1.riscv64                                                 
+  flac-1.3.3-1.oe1.riscv64                                                      
+  gstreamer1-1.16.2-3.oe1.riscv64                                               
+  lame-3.100-9.oe1.riscv64                                                      
+  libasyncns-0.8-17.oe1.riscv64                                                 
+  libogg-2:1.3.4-3.oe1.riscv64                                                  
+  libshout-2.2.2-22.oe1.riscv64                                                 
+  orc-0.4.32-1.oe1.riscv64                                                      
+  rtkit-0.11-27.oe1.riscv64                                                     
+  speexdsp-1.2.0-2.oe1.riscv64                                                  
+  webrtc-audio-processing-0.3.1-5.oe1.riscv64                                   
+  GConf2-3.2.6-29.fc33.riscv64                                                  
+  alsa-lib-1.2.4-5.fc33.riscv64                                                 
+  cdparanoia-libs-10.2-34.fc33.riscv64                                          
+  dbus-glib-0.110-10.fc33.riscv64                                               
+  gsm-1.0.19-3.fc33.riscv64                                                     
+  gstreamer1-plugins-base-1.16.2-2.0.riscv64.fc33.riscv64                       
+  gstreamer1-plugins-good-1.16.2-2.0.riscv64.fc33.riscv64                       
+  libXv-1.0.11-12.fc33.riscv64                                                  
+  libavc1394-0.5.4-14.fc33.riscv64                                              
+  libdv-1.0.0-32.fc33.riscv64                                                   
+  libiec61883-1.2.0-24.fc33.riscv64                                             
+  libraw1394-2.1.2-12.fc33.riscv64                                              
+  libsbc-1.4-6.fc33.riscv64                                                     
+  libsndfile-1.0.31-3.fc33.riscv64                                              
+  libtdb-1.4.3-5.fc33.riscv64                                                   
+  libtheora-1:1.1.1-28.fc33.riscv64                                             
+  libv4l-1.18.0-4.fc33.riscv64                                                  
+  libvisual-1:0.4.0-29.fc33.riscv64                                             
+  libvorbis-1:1.3.7-2.fc33.riscv64                                              
+  libvpx-1.9.0-1.fc33.riscv64                                                   
+  libxshmfence-1.3-7.fc33.riscv64                                               
+  mesa-libEGL-20.3.5-2.fc33.rvre0.riscv64                                       
+  mesa-libGL-20.3.5-2.fc33.rvre0.riscv64                                        
+  mesa-libgbm-20.3.5-2.fc33.rvre0.riscv64                                       
+  mesa-libglapi-20.3.5-2.fc33.rvre0.riscv64                                     
+  mpg123-libs-1.26.2-2.fc33.riscv64                                             
+  opus-1.3.1-6.fc33.riscv64                                                     
+  speex-1.2.0-6.fc33.riscv64                                                    
+  taglib-1.12-4.fc33.riscv64                                                    
+  twolame-libs-0.3.13-16.fc33.riscv64                                           
+  wavpack-5.4.0-1.fc33.riscv64                                                  
+
+Complete!
+Last metadata expiration check: 1:37:50 ago on Wed Oct 27 07:35:15 2021.
+Dependencies resolved.
+================================================================================
+ Package              Architecture  Version                Repository      Size
+================================================================================
+Installing:
+ xfce4-terminal       riscv64       0.8.10-1.fc33          fedora         641 k
+Upgrading:
+ gtk3                 riscv64       3.24.29-1.oe1          xfce           4.4 M
+Installing dependencies:
+ dejavu-fonts         noarch        2.37-1.oe1             mainline       5.1 M
+ vte291               riscv64       0.62.3-1.oe1           mainline       277 k
+Installing weak dependencies:
+ dconf                riscv64       0.38.0-1.oe1           xfce            79 k
+
+Transaction Summary
+================================================================================
+Install  4 Packages
+Upgrade  1 Package
+
+Total download size: 10 M
+Downloading Packages:
+(1/5): vte291-0.62.3-1.oe1.riscv64.rpm          934 kB/s | 277 kB     00:00    
+(2/5): dconf-0.38.0-1.oe1.riscv64.rpm           136 kB/s |  79 kB     00:00    
+(3/5): xfce4-terminal-0.8.10-1.fc33.riscv64.rpm 356 kB/s | 641 kB     00:01    
+(4/5): dejavu-fonts-2.37-1.oe1.noarch.rpm       1.2 MB/s | 5.1 MB     00:04    
+(5/5): gtk3-3.24.29-1.oe1.riscv64.rpm           1.0 MB/s | 4.4 MB     00:04    
+--------------------------------------------------------------------------------
+Total                                           2.1 MB/s |  10 MB     00:04     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : dejavu-fonts-2.37-1.oe1.noarch                         1/6 
+  Installing       : dconf-0.38.0-1.oe1.riscv64                             2/6 
+  Running scriptlet: gtk3-3.24.29-1.oe1.riscv64                             3/6 
+  Upgrading        : gtk3-3.24.29-1.oe1.riscv64                             3/6 
+  Running scriptlet: gtk3-3.24.29-1.oe1.riscv64                             3/6 
+  Installing       : vte291-0.62.3-1.oe1.riscv64                            4/6 
+  Installing       : xfce4-terminal-0.8.10-1.fc33.riscv64                   5/6 
+  Running scriptlet: gtk3-3.24.1-3.oe1.riscv64                              6/6 
+  Cleanup          : gtk3-3.24.1-3.oe1.riscv64                              6/6 
+  Running scriptlet: gtk3-3.24.1-3.oe1.riscv64                              6/6 
+  Running scriptlet: dconf-0.38.0-1.oe1.riscv64                             6/6 
+  Running scriptlet: gtk3-3.24.1-3.oe1.riscv64                              6/6 
+  Verifying        : dconf-0.38.0-1.oe1.riscv64                             1/6 
+  Verifying        : dejavu-fonts-2.37-1.oe1.noarch                         2/6 
+  Verifying        : vte291-0.62.3-1.oe1.riscv64                            3/6 
+  Verifying        : xfce4-terminal-0.8.10-1.fc33.riscv64                   4/6 
+  Verifying        : gtk3-3.24.29-1.oe1.riscv64                             5/6 
+  Verifying        : gtk3-3.24.1-3.oe1.riscv64                              6/6 
+
+Upgraded:
+  gtk3-3.24.29-1.oe1.riscv64                                                    
+
+Installed:
+  xfce4-terminal-0.8.10-1.fc33.riscv64        dconf-0.38.0-1.oe1.riscv64        
+  dejavu-fonts-2.37-1.oe1.noarch              vte291-0.62.3-1.oe1.riscv64       
+
+Complete!
+Last metadata expiration check: 1:39:32 ago on Wed Oct 27 07:35:15 2021.
+Dependencies resolved.
+================================================================================
+ Package          Architecture    Version                Repository        Size
+================================================================================
+Installing:
+ xfburn           riscv64         0.6.2-2.fc33           fedora           592 k
+Installing dependencies:
+ libburn          riscv64         1.4.8-7.oe1            mainline         150 k
+ libisofs         riscv64         1.5.4-1.fc33           fedora           217 k
+
+Transaction Summary
+================================================================================
+Install  3 Packages
+
+Total download size: 959 k
+Installed size: 3.2 M
+Downloading Packages:
+(1/3): libburn-1.4.8-7.oe1.riscv64.rpm          1.2 MB/s | 150 kB     00:00    
+(2/3): libisofs-1.5.4-1.fc33.riscv64.rpm        170 kB/s | 217 kB     00:01    
+(3/3): xfburn-0.6.2-2.fc33.riscv64.rpm          385 kB/s | 592 kB     00:01    
+--------------------------------------------------------------------------------
+Total                                           608 kB/s | 959 kB     00:01     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : libisofs-1.5.4-1.fc33.riscv64                          1/3 
+  Installing       : libburn-1.4.8-7.oe1.riscv64                            2/3 
+  Running scriptlet: libburn-1.4.8-7.oe1.riscv64                            2/3 
+  Installing       : xfburn-0.6.2-2.fc33.riscv64                            3/3 
+  Running scriptlet: xfburn-0.6.2-2.fc33.riscv64                            3/3 
+  Verifying        : libburn-1.4.8-7.oe1.riscv64                            1/3 
+  Verifying        : libisofs-1.5.4-1.fc33.riscv64                          2/3 
+  Verifying        : xfburn-0.6.2-2.fc33.riscv64                            3/3 
+
+Installed:
+  xfburn-0.6.2-2.fc33.riscv64             libburn-1.4.8-7.oe1.riscv64          
+  libisofs-1.5.4-1.fc33.riscv64          
+
+Complete!
+Last metadata expiration check: 1:40:47 ago on Wed Oct 27 07:35:15 2021.
+Dependencies resolved.
+================================================================================
+ Package           Architecture    Version                 Repository      Size
+================================================================================
+Installing:
+ ristretto         riscv64         0.10.0-4.fc33           fedora         395 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 395 k
+Installed size: 1.6 M
+Downloading Packages:
+ristretto-0.10.0-4.fc33.riscv64.rpm              89 kB/s | 395 kB     00:04    
+--------------------------------------------------------------------------------
+Total                                            89 kB/s | 395 kB     00:04     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : ristretto-0.10.0-4.fc33.riscv64                        1/1 
+  Running scriptlet: ristretto-0.10.0-4.fc33.riscv64                        1/1 
+  Verifying        : ristretto-0.10.0-4.fc33.riscv64                        1/1 
+
+Installed:
+  ristretto-0.10.0-4.fc33.riscv64                                               
+
+Complete!
+Last metadata expiration check: 1:42:04 ago on Wed Oct 27 07:35:15 2021.
+Dependencies resolved.
+================================================================================
+ Package              Architecture   Version                Repository     Size
+================================================================================
+Installing:
+ xfce4-notifyd        riscv64        0.6.2-1.fc33           fedora        235 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 235 k
+Installed size: 972 k
+Downloading Packages:
+xfce4-notifyd-0.6.2-1.fc33.riscv64.rpm           85 kB/s | 235 kB     00:02    
+--------------------------------------------------------------------------------
+Total                                            85 kB/s | 235 kB     00:02     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : xfce4-notifyd-0.6.2-1.fc33.riscv64                     1/1 
+  Running scriptlet: xfce4-notifyd-0.6.2-1.fc33.riscv64                     1/1 
+  Verifying        : xfce4-notifyd-0.6.2-1.fc33.riscv64                     1/1 
+
+Installed:
+  xfce4-notifyd-0.6.2-1.fc33.riscv64                                            
+
+Complete!
+Waiting for process with pid 2139 to finish.
+Last metadata expiration check: 0:00:19 ago on Wed Oct 27 09:18:22 2021.
+Dependencies resolved.
+================================================================================
+ Package                      Architecture Version            Repository   Size
+================================================================================
+Installing:
+ xfce4-pulseaudio-plugin      riscv64      0.4.3-4.fc33       fedora      122 k
+Upgrading:
+ glibc                        riscv64      2.32-10.fc33       fedora      3.2 M
+ glibc-common                 riscv64      2.32-10.fc33       fedora      1.6 M
+ glibc-devel                  riscv64      2.32-10.fc33       fedora      1.4 M
+ pulseaudio                   riscv64      14.0-2.fc33        fedora      982 k
+Installing dependencies:
+ libcanberra                  riscv64      0.30-25.oe1        xfce         67 k
+ libcanberra-gtk3             riscv64      0.30-25.oe1        xfce         25 k
+ atkmm                        riscv64      2.28.1-1.fc33      fedora       89 k
+ cairomm                      riscv64      1.12.2-4.fc33      fedora       59 k
+ glibc-all-langpacks          riscv64      2.32-10.fc33       fedora       18 M
+ glibc-static                 riscv64      2.32-10.fc33       fedora      3.2 M
+ glibmm24                     riscv64      2.64.5-3.fc33      fedora      632 k
+ gtkmm30                      riscv64      3.24.4-1.fc33      fedora      971 k
+ keybinder3                   riscv64      0.3.2-10.fc33      fedora       19 k
+ libsigc++20                  riscv64      2.10.6-1.fc33      fedora       38 k
+ pangomm                      riscv64      2.42.2-1.fc33      fedora       67 k
+ pavucontrol                  riscv64      4.0-5.fc33         fedora      164 k
+ pulseaudio-libs              riscv64      14.0-2.fc33        fedora      680 k
+ pulseaudio-libs-glib2        riscv64      14.0-2.fc33        fedora       17 k
+ sound-theme-freedesktop      noarch       0.8-14.fc33        fedora      378 k
+ soxr                         riscv64      0.1.3-8.fc33       fedora       74 k
+
+Transaction Summary
+================================================================================
+Install  17 Packages
+Upgrade   4 Packages
+
+Total download size: 32 M
+Downloading Packages:
+(1/21): libcanberra-gtk3-0.30-25.oe1.riscv64.rp 437 kB/s |  25 kB     00:00    
+(2/21): libcanberra-0.30-25.oe1.riscv64.rpm     456 kB/s |  67 kB     00:00    
+(3/21): atkmm-2.28.1-1.fc33.riscv64.rpm         107 kB/s |  89 kB     00:00    
+(4/21): cairomm-1.12.2-4.fc33.riscv64.rpm        72 kB/s |  59 kB     00:00    
+(5/21): glibmm24-2.64.5-3.fc33.riscv64.rpm      390 kB/s | 632 kB     00:01    
+(6/21): gtkmm30-3.24.4-1.fc33.riscv64.rpm       614 kB/s | 971 kB     00:01    
+(7/21): glibc-static-2.32-10.fc33.riscv64.rpm   847 kB/s | 3.2 MB     00:03    
+(8/21): keybinder3-0.3.2-10.fc33.riscv64.rpm     37 kB/s |  19 kB     00:00    
+(9/21): libsigc++20-2.10.6-1.fc33.riscv64.rpm   157 kB/s |  38 kB     00:00    
+(10/21): pangomm-2.42.2-1.fc33.riscv64.rpm      168 kB/s |  67 kB     00:00    
+(11/21): pavucontrol-4.0-5.fc33.riscv64.rpm     299 kB/s | 164 kB     00:00    
+(12/21): pulseaudio-libs-glib2-14.0-2.fc33.risc  84 kB/s |  17 kB     00:00    
+(13/21): pulseaudio-libs-14.0-2.fc33.riscv64.rp 642 kB/s | 680 kB     00:01    
+(14/21): sound-theme-freedesktop-0.8-14.fc33.no 611 kB/s | 378 kB     00:00    
+(15/21): soxr-0.1.3-8.fc33.riscv64.rpm          316 kB/s |  74 kB     00:00    
+(16/21): xfce4-pulseaudio-plugin-0.4.3-4.fc33.r 467 kB/s | 122 kB     00:00    
+(17/21): glibc-common-2.32-10.fc33.riscv64.rpm  746 kB/s | 1.6 MB     00:02    
+(18/21): glibc-2.32-10.fc33.riscv64.rpm         871 kB/s | 3.2 MB     00:03    
+(19/21): glibc-devel-2.32-10.fc33.riscv64.rpm   783 kB/s | 1.4 MB     00:01    
+(20/21): pulseaudio-14.0-2.fc33.riscv64.rpm     812 kB/s | 982 kB     00:01    
+(21/21): glibc-all-langpacks-2.32-10.fc33.riscv 1.3 MB/s |  18 MB     00:13    
+--------------------------------------------------------------------------------
+Total                                           2.3 MB/s |  32 MB     00:13     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Upgrading        : glibc-common-2.32-10.fc33.riscv64                     1/25 
+  Running scriptlet: glibc-2.32-10.fc33.riscv64                            2/25 
+  Upgrading        : glibc-2.32-10.fc33.riscv64                            2/25 
+warning: /etc/nsswitch.conf created as /etc/nsswitch.conf.rpmnew
+
+  Running scriptlet: glibc-2.32-10.fc33.riscv64                            2/25 
+  Installing       : glibc-all-langpacks-2.32-10.fc33.riscv64              3/25 
+  Installing       : libsigc++20-2.10.6-1.fc33.riscv64                     4/25 
+  Installing       : pulseaudio-libs-14.0-2.fc33.riscv64                   5/25 
+  Installing       : glibmm24-2.64.5-3.fc33.riscv64                        6/25 
+  Installing       : atkmm-2.28.1-1.fc33.riscv64                           7/25 
+  Installing       : pulseaudio-libs-glib2-14.0-2.fc33.riscv64             8/25 
+  Installing       : cairomm-1.12.2-4.fc33.riscv64                         9/25 
+  Installing       : pangomm-2.42.2-1.fc33.riscv64                        10/25 
+  Installing       : gtkmm30-3.24.4-1.fc33.riscv64                        11/25 
+  Installing       : keybinder3-0.3.2-10.fc33.riscv64                     12/25 
+  Installing       : soxr-0.1.3-8.fc33.riscv64                            13/25 
+  Running scriptlet: pulseaudio-14.0-2.fc33.riscv64                       14/25 
+  Upgrading        : pulseaudio-14.0-2.fc33.riscv64                       14/25 
+  Running scriptlet: pulseaudio-14.0-2.fc33.riscv64                       14/25 
+  Upgrading        : glibc-devel-2.32-10.fc33.riscv64                     15/25 
+  Installing       : sound-theme-freedesktop-0.8-14.fc33.noarch           16/25 
+  Running scriptlet: sound-theme-freedesktop-0.8-14.fc33.noarch           16/25 
+  Installing       : libcanberra-0.30-25.oe1.riscv64                      17/25 
+  Running scriptlet: libcanberra-0.30-25.oe1.riscv64                      17/25 
+  Installing       : libcanberra-gtk3-0.30-25.oe1.riscv64                 18/25 
+  Installing       : pavucontrol-4.0-5.fc33.riscv64                       19/25 
+  Installing       : xfce4-pulseaudio-plugin-0.4.3-4.fc33.riscv64         20/25 
+  Installing       : glibc-static-2.32-10.fc33.riscv64                    21/25 
+  Cleanup          : glibc-devel-2.31-1.oe1.riscv64                       22/25 
+  Cleanup          : pulseaudio-13.0-4.oe1.riscv64                        23/25 
+  Cleanup          : glibc-2.31-1.oe1.riscv64                             24/25 
+  Cleanup          : glibc-common-2.31-1.oe1.riscv64                      25/25 
+  Running scriptlet: glibc-all-langpacks-2.32-10.fc33.riscv64             25/25 
+  Running scriptlet: pulseaudio-14.0-2.fc33.riscv64                       25/25 
+  Running scriptlet: glibc-common-2.31-1.oe1.riscv64                      25/25 
+  Running scriptlet: glibc-common-2.32-10.fc33.riscv64                    25/25 
+  Verifying        : libcanberra-0.30-25.oe1.riscv64                       1/25 
+  Verifying        : libcanberra-gtk3-0.30-25.oe1.riscv64                  2/25 
+  Verifying        : atkmm-2.28.1-1.fc33.riscv64                           3/25 
+  Verifying        : cairomm-1.12.2-4.fc33.riscv64                         4/25 
+  Verifying        : glibc-all-langpacks-2.32-10.fc33.riscv64              5/25 
+  Verifying        : glibc-static-2.32-10.fc33.riscv64                     6/25 
+  Verifying        : glibmm24-2.64.5-3.fc33.riscv64                        7/25 
+  Verifying        : gtkmm30-3.24.4-1.fc33.riscv64                         8/25 
+  Verifying        : keybinder3-0.3.2-10.fc33.riscv64                      9/25 
+  Verifying        : libsigc++20-2.10.6-1.fc33.riscv64                    10/25 
+  Verifying        : pangomm-2.42.2-1.fc33.riscv64                        11/25 
+  Verifying        : pavucontrol-4.0-5.fc33.riscv64                       12/25 
+  Verifying        : pulseaudio-libs-14.0-2.fc33.riscv64                  13/25 
+  Verifying        : pulseaudio-libs-glib2-14.0-2.fc33.riscv64            14/25 
+  Verifying        : sound-theme-freedesktop-0.8-14.fc33.noarch           15/25 
+  Verifying        : soxr-0.1.3-8.fc33.riscv64                            16/25 
+  Verifying        : xfce4-pulseaudio-plugin-0.4.3-4.fc33.riscv64         17/25 
+  Verifying        : glibc-2.32-10.fc33.riscv64                           18/25 
+  Verifying        : glibc-2.31-1.oe1.riscv64                             19/25 
+  Verifying        : glibc-common-2.32-10.fc33.riscv64                    20/25 
+  Verifying        : glibc-common-2.31-1.oe1.riscv64                      21/25 
+  Verifying        : glibc-devel-2.32-10.fc33.riscv64                     22/25 
+  Verifying        : glibc-devel-2.31-1.oe1.riscv64                       23/25 
+  Verifying        : pulseaudio-14.0-2.fc33.riscv64                       24/25 
+  Verifying        : pulseaudio-13.0-4.oe1.riscv64                        25/25 
+
+Upgraded:
+  glibc-2.32-10.fc33.riscv64             glibc-common-2.32-10.fc33.riscv64      
+  glibc-devel-2.32-10.fc33.riscv64       pulseaudio-14.0-2.fc33.riscv64         
+
+Installed:
+  xfce4-pulseaudio-plugin-0.4.3-4.fc33.riscv64                                  
+  libcanberra-0.30-25.oe1.riscv64                                               
+  libcanberra-gtk3-0.30-25.oe1.riscv64                                          
+  atkmm-2.28.1-1.fc33.riscv64                                                   
+  cairomm-1.12.2-4.fc33.riscv64                                                 
+  glibc-all-langpacks-2.32-10.fc33.riscv64                                      
+  glibc-static-2.32-10.fc33.riscv64                                             
+  glibmm24-2.64.5-3.fc33.riscv64                                                
+  gtkmm30-3.24.4-1.fc33.riscv64                                                 
+  keybinder3-0.3.2-10.fc33.riscv64                                              
+  libsigc++20-2.10.6-1.fc33.riscv64                                             
+  pangomm-2.42.2-1.fc33.riscv64                                                 
+  pavucontrol-4.0-5.fc33.riscv64                                                
+  pulseaudio-libs-14.0-2.fc33.riscv64                                           
+  pulseaudio-libs-glib2-14.0-2.fc33.riscv64                                     
+  sound-theme-freedesktop-0.8-14.fc33.noarch                                    
+  soxr-0.1.3-8.fc33.riscv64                                                     
+
+Complete!
