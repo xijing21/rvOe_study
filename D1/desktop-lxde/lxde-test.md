@@ -3,7 +3,7 @@
 1. 下载openEuler for D1的镜像：https://mirror.iscas.ac.cn/plct/openEuler-D1-wifi-hdmi-20210817.img.bz2
 
    ```text
-   $ wget https://mirror.iscas.ac.cn/plct/openEuler-D1-20210731.img.bz2
+   $ wget https://mirror.iscas.ac.cn/plct/openEuler-D1-wifi-hdmi-20210817.img.bz2
    ```
 
 
@@ -255,6 +255,8 @@ I/O 大小(最小/最佳)：512 字节 / 512 字节
 
    在添加上述列表中fedora的源后，全部17个包都安装成功。但是D1开机依然没有可视化界面显示。
 
+   其中gpicview lxappearance-obconf lxrandr 3个包是配置fedora源之后才安装成功的。
+
    
 
    2、对https://build.openeuler.org/project/show/home:pandora:lxde 罗列的38-17个包进行安装排查：
@@ -274,7 +276,7 @@ I/O 大小(最小/最佳)：512 字节 / 512 字节
    第二轮：python-parameterized   python-nose2   
 
    按照python-cov-core提示引导成功安装：python3-gpgme
-
+   
    最后成功安装了 selinux-policy ——》但是一旦安装这个包，D1镜像就启动不起来了（操作3次，每次都能复现）。
    
    ```
@@ -318,7 +320,7 @@ I/O 大小(最小/最佳)：512 字节 / 512 字节
    
 
    2. yum install的时候，总是提示：/sbin/ldconfig: /lib64/lp64d/libhunspell-1.6.so.0 is not a symbolic link
-
+   
    3. 明明系统中已经安装了python2.7和python3.7.4  ，且python3-gpgme也安装成功；但是安装python3-cov-core 的时候，依然报错：
    
    ```
@@ -397,7 +399,7 @@ I/O 大小(最小/最佳)：512 字节 / 512 字节
    ```
 
    
-
+   
    4. libstoragemgmt
    
    ```
@@ -421,7 +423,7 @@ I/O 大小(最小/最佳)：512 字节 / 512 字节
      - nothing provides python(abi) = 3.8 needed by python3-libstoragemgmt-1.8.2-1.0.riscv64.fc32.noarch
    (try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)
    ```
-
+   
    
    
    
