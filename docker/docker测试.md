@@ -270,9 +270,13 @@ exit 0
 
 
 
-目前看来，测试镜像系统存在一些不完整。
+又做了一些docker检查和daemon.json配置，依然报同样的错误。
 
-https://blog.csdn.net/weixin_45496075/article/details/109123709
+
+
+目前看来，测试镜像系统存在一些不完整。换个环境，在D1上进行docker安装测试以验证。
+
+
 
 
 
@@ -307,25 +311,9 @@ daemon.json 文件是 docker 的配置参数，默认安装 docker 后是没有�
 
 在/etc/docker/daemon.json文件中添加 "experimental": true 配置：
 
-/etc/docker/daemon.json原来的内容：
-
-{
-    "registry-mirrors": ["https://docker.mirrors.ustc.edu.cn"]
-}
-添加 "experimental": true 后：
-
-{
-    "registry-mirrors": ["https://docker.mirrors.ustc.edu.cn"],
-    "experimental": true
-}
-然后重启docker服务：
-
-sudo systemctl restart docker
-————————————————
-版权声明：本文为CSDN博主「季风」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/dc3120/article/details/115274342
-
-docker 国内镜像地址：https://www.cnblogs.com/sewen-H/p/13361452.html
+> 参考：https://blog.csdn.net/dc3120/article/details/115274342
+>
+> docker 国内镜像地址：https://www.cnblogs.com/sewen-H/p/13361452.html
 
 ```
 [root@openEuler-RISCV-rare docker]# pwd
