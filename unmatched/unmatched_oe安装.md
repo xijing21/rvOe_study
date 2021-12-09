@@ -126,127 +126,10 @@ $ bzcat openEuler-unmatched.img.bz2 | sudo dd of=/dev/sda bs=1M iflag=fullblock 
 
 
 
-## 2.分区扩容
-
-执行sudo fdisk /dev/sda，对TF卡中的最后一个分区进行扩容
-
-```
-$ sudo fdisk -l
-
-$ sudo fdisk /dev/sda
-
-欢迎使用 fdisk (util-linux 2.34)。
-更改将停留在内存中，直到您决定将更改写入磁盘。
-使用写入命令前请三思。
-
-GPT PMBR size mismatch (60456959 != 121634815) will be corrected by write.
-备份 GPT 表损坏，但主表似乎正常，将使用它。
-The backup GPT table is not on the end of the device. This problem will be corrected by write.
-
-命令(输入 m 获取帮助)： p
-
-Disk /dev/sda：58 GiB，62277025792 字节，121634816 个扇区
-Disk model: Storage Device  
-单元：扇区 / 1 * 512 = 512 字节
-扇区大小(逻辑/物理)：512 字节 / 512 字节
-I/O 大小(最小/最佳)：512 字节 / 512 字节
-磁盘标签类型：gpt
-磁盘标识符：4D142FCA-FC54-44BB-96F7-163057FEE8D0
-
-设备        起点     末尾     扇区  大小 类型
-/dev/sda1     34     2081     2048    1M HiFive Unleashed FSBL
-/dev/sda2   2082    10273     8192    4M HiFive Unleashed BBL
-/dev/sda3  16384 10997679 10981296  5.2G Linux 文件系统
-
-命令(输入 m 获取帮助)： d
-分区号 (1-3, 默认  3): 
-
-分区 3 已删除。
-
-命令(输入 m 获取帮助)： n
-分区号 (3-128, 默认  3): 
-第一个扇区 (10274-121634782, 默认 12288): 16384
-Last sector, +/-sectors or +/-size{K,M,G,T,P} (16384-121634782, 默认 121634782): 
-
-创建了一个新分区 3，类型为“Linux filesystem”，大小为 58 GiB。
-分区 #3 包含一个 ext4 签名。
-
-您想移除该签名吗？ 是[Y]/否[N]： n
-
-命令(输入 m 获取帮助)： w
-
-分区表已调整。
-将调用 ioctl() 来重新读分区表。
-正在同步磁盘。
-
-$ sudo fdisk -l
-
-Disk /dev/sda：58 GiB，62277025792 字节，121634816 个扇区
-Disk model: Storage Device  
-单元：扇区 / 1 * 512 = 512 字节
-扇区大小(逻辑/物理)：512 字节 / 512 字节
-I/O 大小(最小/最佳)：512 字节 / 512 字节
-磁盘标签类型：gpt
-磁盘标识符：4D142FCA-FC54-44BB-96F7-163057FEE8D0
-
-设备        起点      末尾      扇区 大小 类型
-/dev/sda1     34      2081      2048   1M HiFive Unleashed FSBL
-/dev/sda2   2082     10273      8192   4M HiFive Unleashed BBL
-/dev/sda3  16384 121634782 121618399  58G Linux 文件系统
-
-```
-
-
-
-对最后一个分区执行resize2fs命令来调整分区大小
-
-```
-xijing@xijing-S1-Series:~/unmatched/openEuler-unmatched$ sudo resize2fs /dev/sda3
-resize2fs 1.45.5 (07-Jan-2020)
-请先运行“e2fsck -f /dev/sda3”。
-
-
-xijing@xijing-S1-Series:~/unmatched/openEuler-unmatched$ sudo e2fsck -f /dev/sda3
-e2fsck 1.45.5 (07-Jan-2020)
-rootfs：正在修复日志
-第 1 步：检查inode、块和大小
-第 2 步：检查目录结构
-第 3 步：检查目录连接性
-第 4 步：检查引用计数
-第 5 步：检查组概要信息
-rootfs：105639/338016 文件（0.2% 为非连续的）， 1309093/1372662 块
-
-
-xijing@xijing-S1-Series:~/unmatched/openEuler-unmatched$ sudo resize2fs /dev/sda3
-resize2fs 1.45.5 (07-Jan-2020)
-将 /dev/sda3 上的文件系统调整为 15202299 个块（每块 4k）。
-/dev/sda3 上的文件系统现在为 15202299 个块（每块 4k）。
-
-
-xijing@xijing-S1-Series:~/unmatched/openEuler-unmatched$ sudo fdisk -l
-
-Disk /dev/sda：58 GiB，62277025792 字节，121634816 个扇区
-Disk model: Storage Device  
-单元：扇区 / 1 * 512 = 512 字节
-扇区大小(逻辑/物理)：512 字节 / 512 字节
-I/O 大小(最小/最佳)：512 字节 / 512 字节
-磁盘标签类型：gpt
-磁盘标识符：4D142FCA-FC54-44BB-96F7-163057FEE8D0
-
-设备        起点      末尾      扇区 大小 类型
-/dev/sda1     34      2081      2048   1M HiFive Unleashed FSBL
-/dev/sda2   2082     10273      8192   4M HiFive Unleashed BBL
-/dev/sda3  16384 121634782 121618399  58G Linux 文件系统
-
-```
-
-注意，resize2fs一次可能不起作用，可以把TF卡拔出重插，再使用`sudo fdisk -l`和`df -Th`查看磁盘大小，再次resize2fs一下，按照提示，也可能要求执行e2fsck -f .
-
-
-
-## 3. 开机
+## 2. 开机
 
 1. 打开串口会话窗口。用于查看开机过程中的信息。
+
 2. 按下unmatched上的开机按钮
 
 3. 串口连接窗口上会显示回显信息，正常的情况下，最后会出现登录提示：
@@ -257,13 +140,19 @@ I/O 大小(最小/最佳)：512 字节 / 512 字节
 
 4. 可以根据自己的选择，在串口会话窗口输入操作、或者接入unmatched的显示器+键鼠上直接操作。
 
-   第一次我按照用户名`root`、密码`openEuler12#$ `输入好几次都没有成功，后来提示我设置新密码后能够登陆系统。
+   按照提示输入用户名，并设置密码：
+
+   ![image-20211209125522519](images/image-20211209125522519.png)
 
 5. 进入系统后，就可以进行一些常规的操作了。
 
+   检查下磁盘空间：（鉴于D1上安装openeulr需要进行扩容处理，在unmatched上检查下，貌似不存在问题了）
+
+   ![image-20211209130745525](images/image-20211209130745525.png)
 
 
-## 4. 使用系统
+
+## 3. 使用系统
 
 1. 网络设置：用nmtui 命令对wifi进行设置后，能够联网
 
