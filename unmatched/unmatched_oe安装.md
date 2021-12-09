@@ -159,9 +159,8 @@ $ bzcat openEuler-unmatched.img.bz2 | sudo dd of=/dev/sda bs=1M iflag=fullblock 
    ![image](images/145204588-658f5cd0-2ae2-4428-b094-0a2a318c7ea7.png)
 
 2. 看到ifconfig有docker信息，发现镜像已经内置了docker，测一下docker：
-   修改/etc/docker/daemon.json
-   添加内容：
-
+   vim  /etc/docker/daemon.json  添加内容：
+   
    ```
    "registry-mirrors": [
    "https://hub.daocloud.io/",
@@ -176,8 +175,23 @@ $ bzcat openEuler-unmatched.img.bz2 | sudo dd of=/dev/sda bs=1M iflag=fullblock 
    ],
    "experimental": true
    ```
-
-   重启docker之后，拉取ubuntu镜像并启动ubuntu成功。
-
+   
+   重启docker：
+   
+   ```
+   $ systemctl daemon-reload # 加载配置文件
+   $ systemctl  restart docker # 重启docker生效
+   $ ps aux | grep docker 
+   $ docker version 
+   $ docker system info
+   $ docker pull ubuntu
+   $ docker images
+   $ docker run -i -t ubuntu /bin/bash
+   ```
+   
+   
+   
+   拉取ubuntu镜像并启动ubuntu成功。
+   
    ![image](images/145206110-d0519037-fd3d-4f09-b00e-aef00abe52d0.png)
 
